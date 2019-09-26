@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FitnessTrackerAddActivityDateDescTVC" id="KGk-i7-Jjw" customClass="FitnessTrackerAddActivityDateDescTVC" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-n2-CLP" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="345" height="185.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-qv-Wpw" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="25" y="20" width="295" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dM-xJ-5y7">
+                                <rect key="frame" x="25" y="68.5" width="295" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeF-a2-RFi" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <state key="normal" title="21 March, 2018"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onDateBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mkw-wf-UUq"/>
+                                        </connections>
+                                    </button>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iq6-bo-v9z">
+                                        <rect key="frame" x="0.0" y="39" width="295" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Tjf-6z-2ff"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Iq6-bo-v9z" secondAttribute="bottom" id="1Zq-DO-QrB"/>
+                                    <constraint firstAttribute="trailing" secondItem="QeF-a2-RFi" secondAttribute="trailing" id="4BW-h3-4V2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iq6-bo-v9z" secondAttribute="trailing" id="Dr4-jx-9G1"/>
+                                    <constraint firstItem="QeF-a2-RFi" firstAttribute="leading" secondItem="1dM-xJ-5y7" secondAttribute="leading" id="O7o-Bx-usV"/>
+                                    <constraint firstItem="QeF-a2-RFi" firstAttribute="top" secondItem="1dM-xJ-5y7" secondAttribute="top" id="TBl-Rp-HBM"/>
+                                    <constraint firstItem="Iq6-bo-v9z" firstAttribute="top" secondItem="QeF-a2-RFi" secondAttribute="bottom" constant="5" id="XTG-wG-2Ao"/>
+                                    <constraint firstItem="Iq6-bo-v9z" firstAttribute="leading" secondItem="1dM-xJ-5y7" secondAttribute="leading" id="lqx-pq-gBY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-zN-49P">
+                                <rect key="frame" x="25" y="133.5" width="295" height="32"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDF-OH-foD" customClass="PlaceholderTextView" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderColorTypeAdapter">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Activity Description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJw-qE-Lye">
+                                        <rect key="frame" x="0.0" y="31" width="295" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="mVY-0x-h8M"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SJw-qE-Lye" firstAttribute="leading" secondItem="Ocd-zN-49P" secondAttribute="leading" id="Coz-7B-KCF"/>
+                                    <constraint firstItem="ZDF-OH-foD" firstAttribute="leading" secondItem="Ocd-zN-49P" secondAttribute="leading" id="NT7-UW-YAX"/>
+                                    <constraint firstAttribute="height" constant="32" id="Pcy-VK-HUj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDF-OH-foD" secondAttribute="trailing" id="QQ3-an-y0S"/>
+                                    <constraint firstAttribute="bottom" secondItem="SJw-qE-Lye" secondAttribute="bottom" id="RU3-wb-rPQ"/>
+                                    <constraint firstItem="ZDF-OH-foD" firstAttribute="top" secondItem="Ocd-zN-49P" secondAttribute="top" id="pr9-dJ-0ta"/>
+                                    <constraint firstAttribute="trailing" secondItem="SJw-qE-Lye" secondAttribute="trailing" id="rS7-Gx-MQG"/>
+                                    <constraint firstItem="SJw-qE-Lye" firstAttribute="top" secondItem="ZDF-OH-foD" secondAttribute="bottom" id="wjq-uK-50K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1dM-xJ-5y7" secondAttribute="trailing" constant="25" id="6b8-xG-Dhk"/>
+                            <constraint firstItem="Dtq-qv-Wpw" firstAttribute="leading" secondItem="LK9-n2-CLP" secondAttribute="leading" constant="25" id="C0m-B9-2xq"/>
+                            <constraint firstItem="1dM-xJ-5y7" firstAttribute="leading" secondItem="LK9-n2-CLP" secondAttribute="leading" constant="25" id="IXP-nU-ATf"/>
+                            <constraint firstItem="Ocd-zN-49P" firstAttribute="top" secondItem="1dM-xJ-5y7" secondAttribute="bottom" constant="25" id="Ihu-CH-0Ef"/>
+                            <constraint firstItem="1dM-xJ-5y7" firstAttribute="top" secondItem="Dtq-qv-Wpw" secondAttribute="bottom" constant="25" id="KJ4-FX-9MY"/>
+                            <constraint firstItem="Dtq-qv-Wpw" firstAttribute="top" secondItem="LK9-n2-CLP" secondAttribute="top" constant="20" id="NAF-k2-Aui"/>
+                            <constraint firstAttribute="trailing" secondItem="Dtq-qv-Wpw" secondAttribute="trailing" constant="25" id="asb-e7-aiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ocd-zN-49P" secondAttribute="trailing" constant="25" id="rIv-LP-J1f"/>
+                            <constraint firstAttribute="bottom" secondItem="Ocd-zN-49P" secondAttribute="bottom" constant="20" id="sSW-T9-rYE"/>
+                            <constraint firstItem="Ocd-zN-49P" firstAttribute="leading" secondItem="LK9-n2-CLP" secondAttribute="leading" constant="25" id="swn-md-y98"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LK9-n2-CLP" secondAttribute="bottom" constant="10" id="8gL-h9-uUu"/>
+                    <constraint firstItem="LK9-n2-CLP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="LJz-3X-mqi"/>
+                    <constraint firstAttribute="trailing" secondItem="LK9-n2-CLP" secondAttribute="trailing" constant="15" id="RYk-VG-sxr"/>
+                    <constraint firstItem="LK9-n2-CLP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gpV-r4-9TZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateBtn" destination="QeF-a2-RFi" id="n8b-Px-9Eh"/>
+                <outlet property="descTxtView" destination="ZDF-OH-foD" id="Wep-XR-yfz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

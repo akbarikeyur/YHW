@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FitnessTrackerCollectionViewCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UZh-Ze-P1C">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="160"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C52-ry-c4x">
+                        <rect key="frame" x="63.5" y="15" width="30" height="34"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqR-29-s9H" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="60.5" y="59" width="35" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 FEB, 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-Ed-yLM" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="31.5" y="83" width="94" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 MIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pF1-2Y-DI9" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="43" y="112" width="72" height="26"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UZh-Ze-P1C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fst-Oc-FfZ"/>
+                <constraint firstAttribute="bottom" secondItem="UZh-Ze-P1C" secondAttribute="bottom" id="Ir7-3w-2sw"/>
+                <constraint firstItem="pF1-2Y-DI9" firstAttribute="top" secondItem="kQf-Ed-yLM" secondAttribute="bottom" constant="10" id="Nne-Bd-Zmg"/>
+                <constraint firstItem="kQf-Ed-yLM" firstAttribute="top" secondItem="ZqR-29-s9H" secondAttribute="bottom" constant="5" id="SUU-84-oK7"/>
+                <constraint firstItem="kQf-Ed-yLM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XWY-I0-Ndg"/>
+                <constraint firstItem="UZh-Ze-P1C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZAq-bw-4qH"/>
+                <constraint firstItem="pF1-2Y-DI9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aMW-Yv-RLR"/>
+                <constraint firstItem="ZqR-29-s9H" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eyh-lL-nwL"/>
+                <constraint firstItem="C52-ry-c4x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="pVd-NX-VlV"/>
+                <constraint firstItem="ZqR-29-s9H" firstAttribute="top" secondItem="C52-ry-c4x" secondAttribute="bottom" constant="10" id="trf-8z-Goz"/>
+                <constraint firstAttribute="trailing" secondItem="UZh-Ze-P1C" secondAttribute="trailing" id="uDy-e2-798"/>
+                <constraint firstItem="C52-ry-c4x" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="umj-db-wgw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+</document>

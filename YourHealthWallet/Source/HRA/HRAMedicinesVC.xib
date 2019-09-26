@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HRAMedicinesVC" customModule="YourHealthWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="ck8-4R-efc" id="LSL-7o-9u6"/>
+                <outlet property="hraChoiceView" destination="xQT-Je-YFe" id="2Wb-Ph-Dwe"/>
+                <outlet property="view" destination="6bv-KZ-sE1" id="czv-NY-Mtf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" id="6bv-KZ-sE1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-Yz-cs4">
+                    <rect key="frame" x="15" y="20" width="345" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-JW-KSt">
+                            <rect key="frame" x="0.0" y="8" width="345" height="25"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXt-Qd-kGY" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="0.0" width="25" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="1"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oqB-CG-RZg" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="12" width="51" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRd-8h-Tdc" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="84" y="0.0" width="25" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="2"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecB-hO-de4" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="109" y="12" width="51" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdS-Mv-IL5" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="160" y="0.0" width="25" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="3"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-uQ-qXk" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="185" y="12" width="51" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-br-cDW" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="236" y="0.0" width="25" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="4"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-fc-5Pb" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="261" y="12" width="51" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-7X-r0X" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="312" y="0.0" width="25" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="5"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="404"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="vLi-sd-5WQ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicines" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cya-t6-g2L">
+                            <rect key="frame" x="275" y="35" width="70" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="gBG-Jc-e4o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5go-hc-nBG"/>
+                        <constraint firstItem="cya-t6-g2L" firstAttribute="top" secondItem="GuN-JW-KSt" secondAttribute="bottom" constant="2" id="9FA-Sv-seM"/>
+                        <constraint firstItem="GuN-JW-KSt" firstAttribute="leading" secondItem="Hjh-Yz-cs4" secondAttribute="leading" id="EOH-Yq-sHJ"/>
+                        <constraint firstAttribute="trailing" secondItem="cya-t6-g2L" secondAttribute="trailing" id="GwJ-7b-ikG"/>
+                        <constraint firstAttribute="bottom" secondItem="cya-t6-g2L" secondAttribute="bottom" id="LHw-DF-GBC"/>
+                        <constraint firstAttribute="trailing" secondItem="GuN-JW-KSt" secondAttribute="trailing" id="W0c-Tn-mPG"/>
+                        <constraint firstItem="GuN-JW-KSt" firstAttribute="top" secondItem="Hjh-Yz-cs4" secondAttribute="top" constant="8" id="WnR-GI-vOH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ck8-4R-efc">
+                    <rect key="frame" x="15" y="105" width="345" height="562"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many medications do you take?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oWz-0A-apE" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                            <rect key="frame" x="20" y="20" width="305" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="BV7-WH-zpB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                    <integer key="value" value="403"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-Je-YFe" customClass="HRAChoice" customModule="YourHealthWallet" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="75" width="345" height="487"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oWz-0A-apE" firstAttribute="leading" secondItem="ck8-4R-efc" secondAttribute="leading" constant="20" id="0iA-Nc-AXO"/>
+                        <constraint firstAttribute="bottom" secondItem="xQT-Je-YFe" secondAttribute="bottom" id="9W5-GW-dos"/>
+                        <constraint firstItem="xQT-Je-YFe" firstAttribute="leading" secondItem="ck8-4R-efc" secondAttribute="leading" id="F0s-dn-7AI"/>
+                        <constraint firstItem="xQT-Je-YFe" firstAttribute="top" secondItem="oWz-0A-apE" secondAttribute="bottom" constant="25" id="ZlV-Uj-p4Z"/>
+                        <constraint firstAttribute="trailing" secondItem="xQT-Je-YFe" secondAttribute="trailing" id="aGJ-0k-Gnt"/>
+                        <constraint firstAttribute="trailing" secondItem="oWz-0A-apE" secondAttribute="trailing" constant="20" id="hUz-9g-KQ5"/>
+                        <constraint firstItem="oWz-0A-apE" firstAttribute="top" secondItem="ck8-4R-efc" secondAttribute="top" constant="20" id="o6S-hj-ZMb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LzV-tI-P2a" firstAttribute="trailing" secondItem="ck8-4R-efc" secondAttribute="trailing" constant="15" id="J9i-ea-QtG"/>
+                <constraint firstItem="ck8-4R-efc" firstAttribute="top" secondItem="Hjh-Yz-cs4" secondAttribute="bottom" constant="15" id="O0o-pp-A8c"/>
+                <constraint firstItem="ck8-4R-efc" firstAttribute="bottom" secondItem="LzV-tI-P2a" secondAttribute="bottom" id="gca-Uo-8EY"/>
+                <constraint firstItem="LzV-tI-P2a" firstAttribute="trailing" secondItem="Hjh-Yz-cs4" secondAttribute="trailing" constant="15" id="hdJ-gY-2sr"/>
+                <constraint firstItem="ck8-4R-efc" firstAttribute="leading" secondItem="LzV-tI-P2a" secondAttribute="leading" constant="15" id="qqo-jI-bmk"/>
+                <constraint firstItem="Hjh-Yz-cs4" firstAttribute="top" secondItem="LzV-tI-P2a" secondAttribute="top" id="s3V-L0-wyw"/>
+                <constraint firstItem="Hjh-Yz-cs4" firstAttribute="leading" secondItem="LzV-tI-P2a" secondAttribute="leading" constant="15" id="vpH-xK-3O7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="LzV-tI-P2a"/>
+            <point key="canvasLocation" x="-514.5" y="76.5"/>
+        </view>
+    </objects>
+</document>

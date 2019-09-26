@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  YourHealthWallet
+
+  Created by Keyur on 27/08/18.
+  Copyright © 2018 yourhealthwallet. All rights reserved.
+*/
+
+
+//Camera
+"take_photo" = "Take Photo";
+"existing_photo" = "Choose from gallery";
+"no_camera" = "Your device has no camera";
+"cancel_picker" = "Cancel";

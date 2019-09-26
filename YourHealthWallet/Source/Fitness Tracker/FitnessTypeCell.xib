@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FitnessTypeCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb5-xY-q1Q" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PFIttness_Tracker Icon" translatesAutoresizingMaskIntoConstraints="NO" id="a8g-d3-9if" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="15" width="25" height="13"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRv-8o-gGD" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="36" width="35" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 JUN, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-Id-E4z" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="63" width="85" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 MIN 56 SEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-uU-Imz" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="33.5" y="123" width="94" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JfW-uU-Imz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pwS-Id-E4z" secondAttribute="bottom" constant="8" id="0EL-5Y-Uhs"/>
+                            <constraint firstItem="JfW-uU-Imz" firstAttribute="centerX" secondItem="jb5-xY-q1Q" secondAttribute="centerX" id="10y-X0-VUi"/>
+                            <constraint firstItem="a8g-d3-9if" firstAttribute="top" secondItem="jb5-xY-q1Q" secondAttribute="top" constant="15" id="119-MS-tMq"/>
+                            <constraint firstAttribute="bottom" secondItem="JfW-uU-Imz" secondAttribute="bottom" constant="20.5" id="2C7-rg-fGG"/>
+                            <constraint firstItem="tRv-8o-gGD" firstAttribute="top" secondItem="a8g-d3-9if" secondAttribute="bottom" constant="8" id="8XS-ec-F6Z"/>
+                            <constraint firstItem="pwS-Id-E4z" firstAttribute="top" secondItem="tRv-8o-gGD" secondAttribute="bottom" constant="8" id="MjA-DK-EPP"/>
+                            <constraint firstItem="a8g-d3-9if" firstAttribute="centerX" secondItem="jb5-xY-q1Q" secondAttribute="centerX" id="c67-dm-doT"/>
+                            <constraint firstItem="pwS-Id-E4z" firstAttribute="centerX" secondItem="jb5-xY-q1Q" secondAttribute="centerX" id="h8M-nE-3lF"/>
+                            <constraint firstItem="tRv-8o-gGD" firstAttribute="centerX" secondItem="jb5-xY-q1Q" secondAttribute="centerX" id="nqW-YF-qD3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jb5-xY-q1Q" secondAttribute="trailing" id="AxW-HV-57u"/>
+                <constraint firstItem="jb5-xY-q1Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="deL-Tm-uMS"/>
+                <constraint firstAttribute="bottom" secondItem="jb5-xY-q1Q" secondAttribute="bottom" id="g09-2k-Wwb"/>
+                <constraint firstItem="jb5-xY-q1Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wdq-Lt-xkC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backContentView" destination="jb5-xY-q1Q" id="uGY-BE-9fH"/>
+                <outlet property="goalImageIcon" destination="a8g-d3-9if" id="iIl-6s-RKS"/>
+                <outlet property="lblDetail" destination="JfW-uU-Imz" id="0fq-DD-owE"/>
+                <outlet property="lblFitnessItemName" destination="tRv-8o-gGD" id="Dqx-Nm-ghj"/>
+                <outlet property="lblTime" destination="pwS-Id-E4z" id="p3m-du-RPe"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PFIttness_Tracker Icon" width="25" height="13"/>
+    </resources>
+</document>

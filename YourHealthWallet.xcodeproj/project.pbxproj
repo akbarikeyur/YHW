@@ -1,0 +1,2419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040450F020261D6A00CE2D2B /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040450EE20261D6A00CE2D2B /* ReminderViewController.swift */; };
+		040450F120261D6A00CE2D2B /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040450EF20261D6A00CE2D2B /* ReminderViewController.xib */; };
+		042ED2992022ABF500B3D2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042ED2972022ABF500B3D2A5 /* HomeViewController.swift */; };
+		042ED29A2022ABF500B3D2A5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042ED2982022ABF500B3D2A5 /* HomeViewController.xib */; };
+		042ED29C202371DE00B3D2A5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042ED29B202371DE00B3D2A5 /* TabBarController.swift */; };
+		042ED29E20238EC400B3D2A5 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042ED29D20238EC400B3D2A5 /* GradientLayer.swift */; };
+		04315C592041CA8D008185F0 /* CircularBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315C582041CA8D008185F0 /* CircularBorderView.swift */; };
+		043B5EEC2021B18400023E34 /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B5EEB2021B18400023E34 /* AppUserDefaults.swift */; };
+		044107B1204A77A000A5E22A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044107AF204A779F00A5E22A /* Fabric.framework */; };
+		044107B2204A77A000A5E22A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044107B0204A779F00A5E22A /* Crashlytics.framework */; };
+		0441E625202A232400691572 /* RemindersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E624202A232400691572 /* RemindersCollectionView.swift */; };
+		0441E628202A238900691572 /* RemindersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E626202A238900691572 /* RemindersCollectionViewCell.swift */; };
+		0441E629202A238900691572 /* RemindersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0441E627202A238900691572 /* RemindersCollectionViewCell.xib */; };
+		044DBCBE2020D18C00B6DEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCBD2020D18C00B6DEDF /* AppDelegate.swift */; };
+		044DBCC02020D18C00B6DEDF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCBF2020D18C00B6DEDF /* FirstViewController.swift */; };
+		044DBCC32020D18C00B6DEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DBCC12020D18C00B6DEDF /* Main.storyboard */; };
+		044DBCC62020D18C00B6DEDF /* YourHealthWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCC42020D18C00B6DEDF /* YourHealthWallet.xcdatamodeld */; };
+		044DBCC82020D18C00B6DEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044DBCC72020D18C00B6DEDF /* Assets.xcassets */; };
+		044DBCCB2020D18C00B6DEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DBCC92020D18C00B6DEDF /* LaunchScreen.storyboard */; };
+		044DBCD320214B5F00B6DEDF /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCD220214B5F00B6DEDF /* TextCollectionViewCell.swift */; };
+		044DBD1E20218EDE00B6DEDF /* Array+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCD720218EDE00B6DEDF /* Array+RUI.swift */; };
+		044DBD2A20218EDE00B6DEDF /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCE420218EDE00B6DEDF /* HelperFunctions.swift */; };
+		044DBD3020218EDE00B6DEDF /* NSError+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCEA20218EDE00B6DEDF /* NSError+RUI.swift */; };
+		044DBD3120218EDE00B6DEDF /* NSObject+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCEB20218EDE00B6DEDF /* NSObject+Copy.swift */; };
+		044DBD3820218EDE00B6DEDF /* String+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCF220218EDE00B6DEDF /* String+RUI.swift */; };
+		044DBD3920218EDE00B6DEDF /* UIColor+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCF320218EDE00B6DEDF /* UIColor+RUI.swift */; };
+		044DBD3A20218EDE00B6DEDF /* UIDevice+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCF420218EDE00B6DEDF /* UIDevice+Type.swift */; };
+		044DBD3B20218EDE00B6DEDF /* UIView+ParentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCF520218EDE00B6DEDF /* UIView+ParentController.swift */; };
+		044DBD4420218EDE00B6DEDF /* BackBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCFE20218EDE00B6DEDF /* BackBarButton.swift */; };
+		044DBD4520218EDE00B6DEDF /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBCFF20218EDE00B6DEDF /* BarButtonItem.swift */; };
+		044DBD4620218EDE00B6DEDF /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0020218EDE00B6DEDF /* Button.swift */; };
+		044DBD4820218EDE00B6DEDF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0220218EDE00B6DEDF /* CollectionViewCell.swift */; };
+		044DBD4920218EDE00B6DEDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0320218EDE00B6DEDF /* Colors.swift */; };
+		044DBD4B20218EDE00B6DEDF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0520218EDE00B6DEDF /* DatePicker.swift */; };
+		044DBD4C20218EDE00B6DEDF /* VIYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0620218EDE00B6DEDF /* VIYDrawerController.swift */; };
+		044DBD4E20218EDE00B6DEDF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0820218EDE00B6DEDF /* ImageView.swift */; };
+		044DBD5020218EDE00B6DEDF /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0A20218EDE00B6DEDF /* Label.swift */; };
+		044DBD5120218EDE00B6DEDF /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0B20218EDE00B6DEDF /* NavigationBar.swift */; };
+		044DBD5220218EDE00B6DEDF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0C20218EDE00B6DEDF /* NavigationController.swift */; };
+		044DBD5520218EDE00B6DEDF /* RetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD0F20218EDE00B6DEDF /* RetryView.swift */; };
+		044DBD5620218EDE00B6DEDF /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1020218EDE00B6DEDF /* ScrollView.swift */; };
+		044DBD5720218EDE00B6DEDF /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1120218EDE00B6DEDF /* SegmentedControl.swift */; };
+		044DBD5820218EDE00B6DEDF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1220218EDE00B6DEDF /* TableView.swift */; };
+		044DBD5920218EDE00B6DEDF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1320218EDE00B6DEDF /* TableViewCell.swift */; };
+		044DBD5A20218EDE00B6DEDF /* TabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1420218EDE00B6DEDF /* TabStripViewController.swift */; };
+		044DBD5C20218EDE00B6DEDF /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1620218EDE00B6DEDF /* TextField.swift */; };
+		044DBD5D20218EDE00B6DEDF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1720218EDE00B6DEDF /* TextView.swift */; };
+		044DBD5F20218EDE00B6DEDF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1920218EDE00B6DEDF /* View.swift */; };
+		044DBD6020218EDE00B6DEDF /* ViewController+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1A20218EDE00B6DEDF /* ViewController+RUI.swift */; };
+		044DBD6120218EDE00B6DEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBD1B20218EDE00B6DEDF /* ViewController.swift */; };
+		0494202E2039FB1A0031A888 /* DPPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494202D2039FB1A0031A888 /* DPPickerManager.swift */; };
+		049827DB2028D3D00052A9AB /* RemindersDateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049827DA2028D3D00052A9AB /* RemindersDateCollectionView.swift */; };
+		049827DD2028D3F90052A9AB /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049827DC2028D3F90052A9AB /* CollectionView.swift */; };
+		049827E02028D4570052A9AB /* RemindersDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049827DE2028D4570052A9AB /* RemindersDateCollectionViewCell.swift */; };
+		049827E12028D4570052A9AB /* RemindersDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049827DF2028D4570052A9AB /* RemindersDateCollectionViewCell.xib */; };
+		04AB233920407AE100983D36 /* HTBloodSugarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB233720407AE100983D36 /* HTBloodSugarCell.swift */; };
+		04AB233A20407AE100983D36 /* HTBloodSugarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB233820407AE100983D36 /* HTBloodSugarCell.xib */; };
+		04AB233D2040861C00983D36 /* HTBodyWeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB233B2040861C00983D36 /* HTBodyWeightCell.swift */; };
+		04AB233E2040861C00983D36 /* HTBodyWeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB233C2040861C00983D36 /* HTBodyWeightCell.xib */; };
+		04B617232022319800AC7311 /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B617222022319800AC7311 /* DashboardTabBarController.swift */; };
+		04B617262022327000AC7311 /* HomeDraverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B617252022327000AC7311 /* HomeDraverController.swift */; };
+		04B972A9203DE605002597CB /* HTHeartRateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B972A7203DE605002597CB /* HTHeartRateCollectionViewCell.swift */; };
+		04B972AA203DE605002597CB /* HTHeartRateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B972A8203DE605002597CB /* HTHeartRateCollectionViewCell.xib */; };
+		04B972AC203DE892002597CB /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B972AB203DE892002597CB /* StackView.swift */; };
+		04B972AE203DF0E6002597CB /* HealthTrackerCollectionVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B972AD203DF0E6002597CB /* HealthTrackerCollectionVeiw.swift */; };
+		04E7107C2033610900429195 /* ReminderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7107B2033610900429195 /* ReminderInfo.swift */; };
+		04E7107E2033685100429195 /* RemindersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7107D2033685100429195 /* RemindersService.swift */; };
+		04E710802033689200429195 /* WebcomUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7107F2033689200429195 /* WebcomUrls.swift */; };
+		181314542133FC7800299D1C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 181314532133FC7800299D1C /* Localizable.strings */; };
+		18131456213400C400299D1C /* AddBloodSugerReadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18131455213400C400299D1C /* AddBloodSugerReadingVC.xib */; };
+		18131458213400D000299D1C /* AddBloodSugerReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18131457213400D000299D1C /* AddBloodSugerReadingVC.swift */; };
+		1813145A2134135400299D1C /* AddBloodPressureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181314592134135400299D1C /* AddBloodPressureVC.swift */; };
+		1813145C2134135E00299D1C /* AddBloodPressureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1813145B2134135E00299D1C /* AddBloodPressureVC.xib */; };
+		1835D812213AA85200071882 /* AddWeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835D811213AA85200071882 /* AddWeightService.swift */; };
+		183ADBBE2136B7E7005DBEAB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183ADBBD2136B7E7005DBEAB /* Utility.swift */; };
+		183ADBC02136C105005DBEAB /* BloodPressureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183ADBBF2136C105005DBEAB /* BloodPressureInfo.swift */; };
+		183ADBC22136C18D005DBEAB /* BloodPressureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183ADBC12136C18D005DBEAB /* BloodPressureService.swift */; };
+		18603B582133C7C300836879 /* AddHeartRateReadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18603B572133C7C300836879 /* AddHeartRateReadingVC.xib */; };
+		18603B5A2133D40400836879 /* AddHeartRateReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18603B592133D40400836879 /* AddHeartRateReadingVC.swift */; };
+		187A3823213FE26500BAC255 /* AddHeartRateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A3822213FE26500BAC255 /* AddHeartRateInfo.swift */; };
+		1884463921416AB70018F9DA /* BloodSugarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884463821416AB70018F9DA /* BloodSugarService.swift */; };
+		1884463B21416EED0018F9DA /* AddBloodSugarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884463A21416EED0018F9DA /* AddBloodSugarInfo.swift */; };
+		18B6AF68213AA9FF00588C78 /* AddWeightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6AF67213AA9FF00588C78 /* AddWeightInfo.swift */; };
+		18CA2F22213EB09300E29CAB /* HeartRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA2F21213EB09300E29CAB /* HeartRateService.swift */; };
+		18E0F5CD212C397E00B5F347 /* AddReminderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E0F5CC212C397E00B5F347 /* AddReminderVC.xib */; };
+		18E0F5CF212C4B0600B5F347 /* AddReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0F5CE212C4B0600B5F347 /* AddReminderVC.swift */; };
+		4F3A4BD0206B748C0024A8B1 /* GlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A4BCF206B748C0024A8B1 /* GlobalVars.swift */; };
+		4F4B5FAF2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B5FAD2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.swift */; };
+		4F4B5FB02058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4B5FAE2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.xib */; };
+		4F4B5FB520591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B5FB320591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.swift */; };
+		4F4B5FB620591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4B5FB420591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.xib */; };
+		4F4B5FBA2059201700D9CEE9 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B5FB92059201600D9CEE9 /* PlaceholderTextView.swift */; };
+		4F4B5FBD2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B5FBB2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.swift */; };
+		4F4B5FBE2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4B5FBC2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.xib */; };
+		4F4B5FC120593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B5FBF20593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.swift */; };
+		4F4B5FC220593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4B5FC020593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.xib */; };
+		4F57C7E02036A13100F4786D /* YHWTokensTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57C7DC2036A13000F4786D /* YHWTokensTVC.swift */; };
+		4F57C7E22036A13100F4786D /* YHWTokensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57C7DE2036A13000F4786D /* YHWTokensViewController.swift */; };
+		4F60F32320373442001CCF27 /* Avenir Next Condensed.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31620373442001CCF27 /* Avenir Next Condensed.ttc */; };
+		4F60F32420373442001CCF27 /* Avenir Next.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31720373442001CCF27 /* Avenir Next.ttc */; };
+		4F60F32520373442001CCF27 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31820373442001CCF27 /* Avenir.ttc */; };
+		4F60F32620373442001CCF27 /* Avenir35-Light Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31920373442001CCF27 /* Avenir35-Light Oblique.ttf */; };
+		4F60F32720373442001CCF27 /* Avenir45-Book Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31A20373442001CCF27 /* Avenir45-Book Oblique.ttf */; };
+		4F60F32820373442001CCF27 /* Avenir55Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31B20373442001CCF27 /* Avenir55Roman.ttf */; };
+		4F60F32920373442001CCF27 /* Avenir65-Medium Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31C20373442001CCF27 /* Avenir65-Medium Oblique.ttf */; };
+		4F60F32A20373442001CCF27 /* Avenir85-Heavy Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31D20373442001CCF27 /* Avenir85-Heavy Oblique.ttf */; };
+		4F60F32B20373442001CCF27 /* Avenir95-Black Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F31E20373442001CCF27 /* Avenir95-Black Oblique.ttf */; };
+		4F60F32C20373442001CCF27 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F32020373442001CCF27 /* Roboto-Bold.ttf */; };
+		4F60F32D20373442001CCF27 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F32120373442001CCF27 /* Roboto-Medium.ttf */; };
+		4F60F32E20373442001CCF27 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F32220373442001CCF27 /* Roboto-Regular.ttf */; };
+		4F60F33420373774001CCF27 /* YHWTokensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F33220373773001CCF27 /* YHWTokensViewController.xib */; };
+		4F60F33520373774001CCF27 /* YHWTokensTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F60F33320373774001CCF27 /* YHWTokensTVC.xib */; };
+		4F7B612A20527A9A00B1EF82 /* FitnessTrackerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B612920527A9A00B1EF82 /* FitnessTrackerTabBarController.swift */; };
+		4F7B61312052861F00B1EF82 /* FitnessTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B612F2052861F00B1EF82 /* FitnessTrackerViewController.swift */; };
+		4F7B61322052861F00B1EF82 /* FitnessTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7B61302052861F00B1EF82 /* FitnessTrackerViewController.xib */; };
+		4F7B61352052863100B1EF82 /* FitnessTrackerWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B61332052863100B1EF82 /* FitnessTrackerWalkViewController.swift */; };
+		4F7B61362052863100B1EF82 /* FitnessTrackerWalkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7B61342052863100B1EF82 /* FitnessTrackerWalkViewController.xib */; };
+		4FA12FDE2036A7FF006D90C8 /* HealthTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA12FDC2036A7FF006D90C8 /* HealthTrackerViewController.swift */; };
+		4FA12FDF2036A7FF006D90C8 /* HealthTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA12FDD2036A7FF006D90C8 /* HealthTrackerViewController.xib */; };
+		4FDC49D82041EED3006D9D52 /* AddDoseAddNotesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49B62041EED3006D9D52 /* AddDoseAddNotesTVC.swift */; };
+		4FDC49D92041EED3006D9D52 /* AddDoseAddNotesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49B72041EED3006D9D52 /* AddDoseAddNotesTVC.xib */; };
+		4FDC49DA2041EED3006D9D52 /* AddDoseDosageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49B82041EED3006D9D52 /* AddDoseDosageTVC.swift */; };
+		4FDC49DB2041EED3006D9D52 /* AddDoseDosageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49B92041EED3006D9D52 /* AddDoseDosageTVC.xib */; };
+		4FDC49DC2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49BA2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.swift */; };
+		4FDC49DD2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49BB2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.xib */; };
+		4FDC49DE2041EED3006D9D52 /* AddDoseSelectMedicationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49BC2041EED3006D9D52 /* AddDoseSelectMedicationTVC.swift */; };
+		4FDC49DF2041EED3006D9D52 /* AddDoseSelectMedicationTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49BD2041EED3006D9D52 /* AddDoseSelectMedicationTVC.xib */; };
+		4FDC49E82041EED3006D9D52 /* MedicationAddDoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49C62041EED3006D9D52 /* MedicationAddDoseViewController.swift */; };
+		4FDC49E92041EED3006D9D52 /* MedicationAddDoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49C72041EED3006D9D52 /* MedicationAddDoseViewController.xib */; };
+		4FDC49EC2041EED3006D9D52 /* MedicationMedicinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49CA2041EED3006D9D52 /* MedicationMedicinesTableViewCell.swift */; };
+		4FDC49ED2041EED3006D9D52 /* MedicationMedicinesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49CB2041EED3006D9D52 /* MedicationMedicinesTableViewCell.xib */; };
+		4FDC49EE2041EED3006D9D52 /* MedicationMedicinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49CC2041EED3006D9D52 /* MedicationMedicinesViewController.swift */; };
+		4FDC49EF2041EED3006D9D52 /* MedicationMedicinesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49CD2041EED3006D9D52 /* MedicationMedicinesViewController.xib */; };
+		4FDC49F22041EED3006D9D52 /* MedicationReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49D02041EED3006D9D52 /* MedicationReportsViewController.swift */; };
+		4FDC49F32041EED3006D9D52 /* MedicationReportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49D12041EED3006D9D52 /* MedicationReportsViewController.xib */; };
+		4FDC49F42041EED3006D9D52 /* MedicationReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49D22041EED3006D9D52 /* MedicationReportTableViewCell.swift */; };
+		4FDC49F52041EED3006D9D52 /* MedicationReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49D32041EED3006D9D52 /* MedicationReportTableViewCell.xib */; };
+		4FDC49F62041EED3006D9D52 /* MedicationReportTableViewSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49D42041EED3006D9D52 /* MedicationReportTableViewSectionCell.swift */; };
+		4FDC49F72041EED3006D9D52 /* MedicationReportTableViewSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49D52041EED3006D9D52 /* MedicationReportTableViewSectionCell.xib */; };
+		4FDC49F82041EED3006D9D52 /* MedicationSelectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC49D62041EED3006D9D52 /* MedicationSelectionTVC.swift */; };
+		4FDC49F92041EED3006D9D52 /* MedicationSelectionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC49D72041EED3006D9D52 /* MedicationSelectionTVC.xib */; };
+		4FF4AA1E204A5B1B003078C6 /* Date+RUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4AA1D204A5B1B003078C6 /* Date+RUI.swift */; };
+		D8952173206A1A8E00D6A727 /* FitnessTrackerStartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8952171206A1A8E00D6A727 /* FitnessTrackerStartActivity.swift */; };
+		D8952174206A1A8E00D6A727 /* FitnessTrackerStartActivity.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8952172206A1A8E00D6A727 /* FitnessTrackerStartActivity.xib */; };
+		E700A6FB20696C070054DFC2 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E700A6F920696C070054DFC2 /* ForgotPasswordVC.swift */; };
+		E700A6FC20696C070054DFC2 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E700A6FA20696C070054DFC2 /* ForgotPasswordVC.xib */; };
+		E701C71320CE170D0093D053 /* GoalTrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E701C71120CE170D0093D053 /* GoalTrackerVC.swift */; };
+		E701C71420CE170D0093D053 /* GoalTrackerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E701C71220CE170D0093D053 /* GoalTrackerVC.xib */; };
+		E702905B20C2BC77002F9B0D /* AddWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702905920C2BC77002F9B0D /* AddWeightVC.swift */; };
+		E702905C20C2BC77002F9B0D /* AddWeightVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E702905A20C2BC77002F9B0D /* AddWeightVC.xib */; };
+		E703BB4120C303F300C2E7DA /* AddWeightDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB3F20C303F300C2E7DA /* AddWeightDateCell.swift */; };
+		E703BB4220C303F300C2E7DA /* AddWeightDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB4020C303F300C2E7DA /* AddWeightDateCell.xib */; };
+		E703BB4520C3042B00C2E7DA /* AddWeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB4320C3042B00C2E7DA /* AddWeightCell.swift */; };
+		E703BB4620C3042B00C2E7DA /* AddWeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB4420C3042B00C2E7DA /* AddWeightCell.xib */; };
+		E703BB4920C3045A00C2E7DA /* AddWeightBodyFatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB4720C3045A00C2E7DA /* AddWeightBodyFatsCell.swift */; };
+		E703BB4A20C3045A00C2E7DA /* AddWeightBodyFatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB4820C3045A00C2E7DA /* AddWeightBodyFatsCell.xib */; };
+		E703BB4D20C3047700C2E7DA /* AddWeightImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB4B20C3047700C2E7DA /* AddWeightImageCell.swift */; };
+		E703BB4E20C3047700C2E7DA /* AddWeightImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB4C20C3047700C2E7DA /* AddWeightImageCell.xib */; };
+		E703BB5120C3049700C2E7DA /* AddWeightNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB4F20C3049700C2E7DA /* AddWeightNoteCell.swift */; };
+		E703BB5220C3049700C2E7DA /* AddWeightNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5020C3049700C2E7DA /* AddWeightNoteCell.xib */; };
+		E7042EC9204D78B80038E0A7 /* HRAMedicalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7042EC7204D78B80038E0A7 /* HRAMedicalVC.swift */; };
+		E7042ECA204D78B80038E0A7 /* HRAMedicalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7042EC8204D78B80038E0A7 /* HRAMedicalVC.xib */; };
+		E7042ECD204D78D50038E0A7 /* HRATreatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7042ECB204D78D50038E0A7 /* HRATreatmentVC.swift */; };
+		E7042ECE204D78D50038E0A7 /* HRATreatmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7042ECC204D78D50038E0A7 /* HRATreatmentVC.xib */; };
+		E7042ED3204D790A0038E0A7 /* HRAMedicinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7042ED1204D790A0038E0A7 /* HRAMedicinesVC.swift */; };
+		E7042ED4204D790A0038E0A7 /* HRAMedicinesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7042ED2204D790A0038E0A7 /* HRAMedicinesVC.xib */; };
+		E7042ED6204DA6140038E0A7 /* HRAChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7042ED5204DA6140038E0A7 /* HRAChoice.swift */; };
+		E7042ED8204DA8920038E0A7 /* HRAQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7042ED7204DA8920038E0A7 /* HRAQuestionModel.swift */; };
+		E7074C1B205D713000FD1BEB /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7074C1A205D713000FD1BEB /* XYMarkerView.swift */; };
+		E7074C1D205D729B00FD1BEB /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7074C1C205D729B00FD1BEB /* BalloonMarker.swift */; };
+		E70788C5204A99E900FD6C27 /* HRAAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70788C3204A99E900FD6C27 /* HRAAboutVC.swift */; };
+		E70788C6204A99E900FD6C27 /* HRAAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70788C4204A99E900FD6C27 /* HRAAboutVC.xib */; };
+		E7087424212DE24A00396912 /* AddActivityWalkRunCycleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7087422212DE24A00396912 /* AddActivityWalkRunCycleVC.swift */; };
+		E7087425212DE24A00396912 /* AddActivityWalkRunCycleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7087423212DE24A00396912 /* AddActivityWalkRunCycleVC.xib */; };
+		E709ABD3211C9DB600CB92ED /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABB2211C9DB600CB92ED /* FSCalendar+Deprecated.m */; };
+		E709ABD4211C9DB600CB92ED /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABB4211C9DB600CB92ED /* FSCalendar.m */; };
+		E709ABD5211C9DB600CB92ED /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABB6211C9DB600CB92ED /* FSCalendarAppearance.m */; };
+		E709ABD6211C9DB600CB92ED /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABB8211C9DB600CB92ED /* FSCalendarCalculator.m */; };
+		E709ABD7211C9DB600CB92ED /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABBA211C9DB600CB92ED /* FSCalendarCell.m */; };
+		E709ABD8211C9DB600CB92ED /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABBC211C9DB600CB92ED /* FSCalendarCollectionView.m */; };
+		E709ABD9211C9DB600CB92ED /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABBE211C9DB600CB92ED /* FSCalendarCollectionViewLayout.m */; };
+		E709ABDA211C9DB600CB92ED /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABC0211C9DB600CB92ED /* FSCalendarConstants.m */; };
+		E709ABDB211C9DB600CB92ED /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABC2211C9DB600CB92ED /* FSCalendarDelegationFactory.m */; };
+		E709ABDC211C9DB600CB92ED /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABC4211C9DB600CB92ED /* FSCalendarDelegationProxy.m */; };
+		E709ABDD211C9DB600CB92ED /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABC7211C9DB600CB92ED /* FSCalendarExtensions.m */; };
+		E709ABDE211C9DB600CB92ED /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABC9211C9DB600CB92ED /* FSCalendarHeaderView.m */; };
+		E709ABDF211C9DB600CB92ED /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABCB211C9DB600CB92ED /* FSCalendarScopeHandle.m */; };
+		E709ABE0211C9DB600CB92ED /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABCD211C9DB600CB92ED /* FSCalendarStickyHeader.m */; };
+		E709ABE1211C9DB600CB92ED /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABCF211C9DB600CB92ED /* FSCalendarTransitionCoordinator.m */; };
+		E709ABE2211C9DB700CB92ED /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E709ABD1211C9DB600CB92ED /* FSCalendarWeekdayView.m */; };
+		E709ABE3211C9DB700CB92ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E709ABD2211C9DB600CB92ED /* Info.plist */; };
+		E70A2C6121244C9F005E4365 /* HealthProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70A2C6021244C9F005E4365 /* HealthProfileManager.swift */; };
+		E70AAB4F21370EE7006922C6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AAB4E21370EE7006922C6 /* LocationManager.swift */; };
+		E70AAB5121372133006922C6 /* ActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AAB5021372133006922C6 /* ActivityTracker.swift */; };
+		E70D6E1F20C3C16700F372E2 /* XYChartWeightMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D6E1E20C3C16700F372E2 /* XYChartWeightMarker.swift */; };
+		E70FA54920D036310072E4C2 /* ActivityGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FA54720D036310072E4C2 /* ActivityGoalVC.swift */; };
+		E70FA54A20D036310072E4C2 /* ActivityGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70FA54820D036310072E4C2 /* ActivityGoalVC.xib */; };
+		E70FA54D20D043E60072E4C2 /* StepsGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FA54B20D043E60072E4C2 /* StepsGoalVC.swift */; };
+		E70FA54E20D043E60072E4C2 /* StepsGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70FA54C20D043E60072E4C2 /* StepsGoalVC.xib */; };
+		E712C47D203035D5008BF5C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E712C47C203035D5008BF5C6 /* GoogleService-Info.plist */; };
+		E713B85421170CF1003D48CA /* CaloriesGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E713B85221170CF1003D48CA /* CaloriesGoalVC.swift */; };
+		E713B85521170CF1003D48CA /* CaloriesGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E713B85321170CF1003D48CA /* CaloriesGoalVC.xib */; };
+		E715624B2059891C00F4DA5B /* WalkListcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71562492059891C00F4DA5B /* WalkListcell.swift */; };
+		E715624C2059891C00F4DA5B /* WalkListcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E715624A2059891C00F4DA5B /* WalkListcell.xib */; };
+		E72B782020DE118000569298 /* WakeUpTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B781E20DE118000569298 /* WakeUpTimeCell.swift */; };
+		E72B782120DE118000569298 /* WakeUpTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72B781F20DE118000569298 /* WakeUpTimeCell.xib */; };
+		E74DFB0020D35C7800E3441F /* CustomGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DFAFE20D35C7800E3441F /* CustomGoalVC.swift */; };
+		E74DFB0120D35C7800E3441F /* CustomGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74DFAFF20D35C7800E3441F /* CustomGoalVC.xib */; };
+		E75122D321024C9A005AD0ED /* ShapeItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75122D121024C9A005AD0ED /* ShapeItemListCell.xib */; };
+		E75122D621024CA8005AD0ED /* ColorItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75122D421024CA8005AD0ED /* ColorItemCell.swift */; };
+		E75122D721024CA8005AD0ED /* ColorItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75122D521024CA8005AD0ED /* ColorItemCell.xib */; };
+		E75122D921024DBD005AD0ED /* ShapeItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75122D821024DBD005AD0ED /* ShapeItemListCell.swift */; };
+		E7577A5720448698007C566D /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7577A5520448698007C566D /* PopOverViewController.swift */; };
+		E7577A5820448698007C566D /* PopOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7577A5620448698007C566D /* PopOverViewController.xib */; };
+		E7577A5B204498B7007C566D /* PopUpItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7577A59204498B7007C566D /* PopUpItemCell.swift */; };
+		E7577A5C204498B7007C566D /* PopUpItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7577A5A204498B7007C566D /* PopUpItemCell.xib */; };
+		E75989E120617971007970C2 /* FitnessTrackerSleepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75989DF20617971007970C2 /* FitnessTrackerSleepVC.swift */; };
+		E75989E220617971007970C2 /* FitnessTrackerSleepVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75989E020617971007970C2 /* FitnessTrackerSleepVC.xib */; };
+		E75989EE20617CEF007970C2 /* SleepFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75989EC20617CEF007970C2 /* SleepFirstCell.swift */; };
+		E75989EF20617CEF007970C2 /* SleepFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75989ED20617CEF007970C2 /* SleepFirstCell.xib */; };
+		E75989F220617D04007970C2 /* SleepTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75989F020617D04007970C2 /* SleepTimeCell.swift */; };
+		E75989F320617D04007970C2 /* SleepTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75989F120617D04007970C2 /* SleepTimeCell.xib */; };
+		E75989F620617D19007970C2 /* SleepAddManualCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75989F420617D18007970C2 /* SleepAddManualCell.swift */; };
+		E75989F720617D19007970C2 /* SleepAddManualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75989F520617D18007970C2 /* SleepAddManualCell.xib */; };
+		E7653A7920432367003EFE7F /* DayHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A6A20432367003EFE7F /* DayHeaderCell.swift */; };
+		E7653A7A20432367003EFE7F /* DayHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7653A6B20432367003EFE7F /* DayHeaderCell.xib */; };
+		E7653A7B20432367003EFE7F /* MedicationAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A6C20432367003EFE7F /* MedicationAllViewController.swift */; };
+		E7653A7C20432367003EFE7F /* MedicationAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7653A6D20432367003EFE7F /* MedicationAllViewController.xib */; };
+		E7653A7D20432367003EFE7F /* MedicationDateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A6E20432367003EFE7F /* MedicationDateCollectionView.swift */; };
+		E7653A7E20432367003EFE7F /* MedicationDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A6F20432367003EFE7F /* MedicationDateCollectionViewCell.swift */; };
+		E7653A7F20432367003EFE7F /* MedicationDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7653A7020432367003EFE7F /* MedicationDateCollectionViewCell.xib */; };
+		E7653A8020432367003EFE7F /* MedicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7120432367003EFE7F /* MedicationInfo.swift */; };
+		E7653A8120432367003EFE7F /* MedicationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7220432367003EFE7F /* MedicationListCell.swift */; };
+		E7653A8220432367003EFE7F /* MedicationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7653A7320432367003EFE7F /* MedicationListCell.xib */; };
+		E7653A8320432367003EFE7F /* MedicationsDaywiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7420432367003EFE7F /* MedicationsDaywiseViewController.swift */; };
+		E7653A8420432367003EFE7F /* MedicationsDaywiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7653A7520432367003EFE7F /* MedicationsDaywiseViewController.xib */; };
+		E7653A8520432367003EFE7F /* MedicationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7620432367003EFE7F /* MedicationsService.swift */; };
+		E7653A8620432367003EFE7F /* MedicationsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7720432367003EFE7F /* MedicationsTabBarController.swift */; };
+		E7653A8720432367003EFE7F /* MedicationTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7653A7820432367003EFE7F /* MedicationTableview.swift */; };
+		E769B79420ED3EBF009B4D0C /* GoalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769B79320ED3EBF009B4D0C /* GoalInfo.swift */; };
+		E769B79620ED4D7C009B4D0C /* GoalTrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769B79520ED4D7C009B4D0C /* GoalTrackerService.swift */; };
+		E771A6F7203DEF7200D3AD7F /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771A6F6203DEF7200D3AD7F /* NetworkConnectivity.swift */; };
+		E777A03020CAF3640087A935 /* WMGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E777A02E20CAF3640087A935 /* WMGaugeView.m */; };
+		E78534A62035EC8500DB5C3C /* RegisterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78534A52035EC8500DB5C3C /* RegisterInfo.swift */; };
+		E78534AA2036034900DB5C3C /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78534A92036034900DB5C3C /* RegisterService.swift */; };
+		E7966EA7211C8BCD00AA0861 /* MedicationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7966EA5211C8BCD00AA0861 /* MedicationHistoryVC.swift */; };
+		E7966EA8211C8BCD00AA0861 /* MedicationHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7966EA6211C8BCD00AA0861 /* MedicationHistoryVC.xib */; };
+		E7AC268D20C5A4D700287043 /* WMGaugeViewStyle3D.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC268920C5A4D700287043 /* WMGaugeViewStyle3D.m */; };
+		E7AC268E20C5A4D700287043 /* WMGaugeViewStyleFlatThin.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC268B20C5A4D700287043 /* WMGaugeViewStyleFlatThin.m */; };
+		E7AC269620C5A85A00287043 /* WeightImageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC269220C5A85900287043 /* WeightImageListCell.xib */; };
+		E7AC269720C5A85A00287043 /* WeightImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC269320C5A85900287043 /* WeightImageListCell.swift */; };
+		E7AC269820C5A85A00287043 /* AddImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC269420C5A85A00287043 /* AddImageCell.swift */; };
+		E7AC269920C5A85A00287043 /* AddImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC269520C5A85A00287043 /* AddImageCell.xib */; };
+		E7BD6C5420A6E39A00C2BB56 /* HRAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6C5320A6E39A00C2BB56 /* HRAService.swift */; };
+		E7BD6C5620A6E4BC00C2BB56 /* HRAInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6C5520A6E4BC00C2BB56 /* HRAInfo.swift */; };
+		E7BE05812037593300C524CD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE05802037593300C524CD /* Constant.swift */; };
+		E7BFBD132131244D00FFA3C4 /* AddSleepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFBD112131244D00FFA3C4 /* AddSleepVC.swift */; };
+		E7BFBD142131244D00FFA3C4 /* AddSleepVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BFBD122131244D00FFA3C4 /* AddSleepVC.xib */; };
+		E7C2208420C8486700F5F4D5 /* WeightResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C2208220C8486700F5F4D5 /* WeightResultVC.swift */; };
+		E7C2208520C8486700F5F4D5 /* WeightResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C2208320C8486700F5F4D5 /* WeightResultVC.xib */; };
+		E7C7208B212AD0F20072FC6D /* MedicationAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C72089212AD0F20072FC6D /* MedicationAddEditVC.swift */; };
+		E7C7208C212AD0F20072FC6D /* MedicationAddEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C7208A212AD0F20072FC6D /* MedicationAddEditVC.xib */; };
+		E7C7208F212B0D7B0072FC6D /* MedicationReminderTimesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C7208D212B0D7B0072FC6D /* MedicationReminderTimesTVC.xib */; };
+		E7C72090212B0D7B0072FC6D /* MedicationReminderTimesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7208E212B0D7B0072FC6D /* MedicationReminderTimesTVC.swift */; };
+		E7C72094212B23E10072FC6D /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C72092212B23E10072FC6D /* PrivacyPolicyVC.swift */; };
+		E7C72095212B23E10072FC6D /* PrivacyPolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C72093212B23E10072FC6D /* PrivacyPolicyVC.xib */; };
+		E7C78BC4211621E600DAC667 /* RunGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C78BC2211621E500DAC667 /* RunGoalVC.swift */; };
+		E7C78BC5211621E600DAC667 /* RunGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C78BC3211621E500DAC667 /* RunGoalVC.xib */; };
+		E7C90FAD21207274008FC353 /* HealthManagerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C90FAC21207274008FC353 /* HealthManagerKit.swift */; };
+		E7C970C720E3F764009B6CC2 /* LunchWalkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C970C520E3F764009B6CC2 /* LunchWalkingVC.swift */; };
+		E7C970C820E3F764009B6CC2 /* LunchWalkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C970C620E3F764009B6CC2 /* LunchWalkingVC.xib */; };
+		E7C970CB20E3FC63009B6CC2 /* LunchWalkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C970C920E3FC63009B6CC2 /* LunchWalkingCell.swift */; };
+		E7C970CC20E3FC63009B6CC2 /* LunchWalkingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C970CA20E3FC63009B6CC2 /* LunchWalkingCell.xib */; };
+		E7CD491020D18C290090E8C9 /* SleepGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD490E20D18C290090E8C9 /* SleepGoalVC.swift */; };
+		E7CD491120D18C290090E8C9 /* SleepGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD490F20D18C290090E8C9 /* SleepGoalVC.xib */; };
+		E7CD491420D18DD30090E8C9 /* PickYourGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD491220D18DD30090E8C9 /* PickYourGoalVC.swift */; };
+		E7CD491520D18DD30090E8C9 /* PickYourGoalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD491320D18DD30090E8C9 /* PickYourGoalVC.xib */; };
+		E7CD491920D191D70090E8C9 /* PickGoalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD491720D191D70090E8C9 /* PickGoalListCell.swift */; };
+		E7CD491A20D191D70090E8C9 /* PickGoalListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD491820D191D70090E8C9 /* PickGoalListCell.xib */; };
+		E7DA1BB1211D95810062624D /* MedicationHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DA1BAF211D95810062624D /* MedicationHistoryCell.swift */; };
+		E7DA1BB2211D95810062624D /* MedicationHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DA1BB0211D95810062624D /* MedicationHistoryCell.xib */; };
+		E7DF4299210DAE2A00CA485C /* RadialProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DF4298210DAE2A00CA485C /* RadialProgressView.swift */; };
+		E7DFF6AB210B7F26008DEB39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DFF6AA210B7F26008DEB39 /* HealthKit.framework */; };
+		E7E221622058474600D75EAC /* WalkFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E221602058474600D75EAC /* WalkFirstCell.swift */; };
+		E7E221632058474600D75EAC /* WalkFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E221612058474600D75EAC /* WalkFirstCell.xib */; };
+		E7E81AD2206024EC00763B01 /* FitnessTrackerRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81AD0206024EC00763B01 /* FitnessTrackerRunVC.swift */; };
+		E7E81AD3206024EC00763B01 /* FitnessTrackerRunVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81AD1206024EC00763B01 /* FitnessTrackerRunVC.xib */; };
+		E7E81AD92060285200763B01 /* RunFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81AD72060285200763B01 /* RunFirstCell.swift */; };
+		E7E81ADA2060285200763B01 /* RunFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81AD82060285200763B01 /* RunFirstCell.xib */; };
+		E7E81ADD2060286400763B01 /* RunListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81ADB2060286400763B01 /* RunListCell.swift */; };
+		E7E81ADE2060286400763B01 /* RunListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81ADC2060286400763B01 /* RunListCell.xib */; };
+		E7E81AE32060354700763B01 /* CycleFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81AE12060354700763B01 /* CycleFirstCell.swift */; };
+		E7E81AE42060354700763B01 /* CycleFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81AE22060354700763B01 /* CycleFirstCell.xib */; };
+		E7E81AEB206036D200763B01 /* CycleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81AE9206036D200763B01 /* CycleListCell.swift */; };
+		E7E81AEC206036D200763B01 /* CycleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81AEA206036D200763B01 /* CycleListCell.xib */; };
+		E7E81AEF2060374B00763B01 /* FitnessTrackerCycleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E81AED2060374B00763B01 /* FitnessTrackerCycleVC.swift */; };
+		E7E81AF02060374B00763B01 /* FitnessTrackerCycleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E81AEE2060374B00763B01 /* FitnessTrackerCycleVC.xib */; };
+		E7EF0C1A20C1B4890095633D /* FitnessTrackerWeightVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EF0C1820C1B4880095633D /* FitnessTrackerWeightVC.xib */; };
+		E7EF0C1B20C1B4890095633D /* FitnessTrackerWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF0C1920C1B4890095633D /* FitnessTrackerWeightVC.swift */; };
+		E7EF0C2020C1B4950095633D /* WeightFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF0C1C20C1B4940095633D /* WeightFirstCell.swift */; };
+		E7EF0C2120C1B4950095633D /* WeightFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EF0C1D20C1B4950095633D /* WeightFirstCell.xib */; };
+		E7EF0C2220C1B4950095633D /* WeightListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF0C1E20C1B4950095633D /* WeightListCell.swift */; };
+		E7EF0C2320C1B4950095633D /* WeightListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EF0C1F20C1B4950095633D /* WeightListCell.xib */; };
+		E7F1784720335C0100199D4D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1784320335C0000199D4D /* InitialViewController.swift */; };
+		E7F1784820335C0100199D4D /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F1784420335C0000199D4D /* InitialViewController.xib */; };
+		E7F1784920335C0100199D4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1784520335C0100199D4D /* RegisterViewController.swift */; };
+		E7F1784A20335C0100199D4D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F1784620335C0100199D4D /* RegisterViewController.xib */; };
+		E7F1784F20335C8D00199D4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1784E20335C8D00199D4D /* LoginViewController.swift */; };
+		E7F1785120335C9700199D4D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F1785020335C9700199D4D /* LoginViewController.xib */; };
+		E7F3CEE220DABF1000A51F95 /* FitnessTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3CEE020DABF1000A51F95 /* FitnessTypeCell.swift */; };
+		E7F3CEE320DABF1000A51F95 /* FitnessTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F3CEE120DABF1000A51F95 /* FitnessTypeCell.xib */; };
+		E7F633C920BAE1110016B9C4 /* LeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F633C720BAE1110016B9C4 /* LeftMenuVC.swift */; };
+		E7F633CA20BAE1110016B9C4 /* LeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F633C820BAE1110016B9C4 /* LeftMenuVC.xib */; };
+		E7F7534A2127DB1800B894EF /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F753492127DB1800B894EF /* DateHelper.swift */; };
+		E7F94D29204C2BB100680084 /* HRABaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F94D27204C2BB100680084 /* HRABaseVC.swift */; };
+		E7F94D2A204C2BB100680084 /* HRABaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F94D28204C2BB100680084 /* HRABaseVC.xib */; };
+		E7F94D2D204C2DD300680084 /* HRAPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F94D2B204C2DD300680084 /* HRAPageVC.swift */; };
+		E7F94D2E204C2DD300680084 /* HRAPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F94D2C204C2DD300680084 /* HRAPageVC.xib */; };
+		E7F94D31204C2FF500680084 /* HRAActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F94D2F204C2FF500680084 /* HRAActivityVC.swift */; };
+		E7F94D32204C2FF500680084 /* HRAActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F94D30204C2FF500680084 /* HRAActivityVC.xib */; };
+		E9B990ACDBDCCB615FBEE147 /* Pods_YourHealthWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AC3A972BB8DD6BF2FA8B73 /* Pods_YourHealthWallet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040450EE20261D6A00CE2D2B /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		040450EF20261D6A00CE2D2B /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		042ED2972022ABF500B3D2A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		042ED2982022ABF500B3D2A5 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		042ED29B202371DE00B3D2A5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		042ED29D20238EC400B3D2A5 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		04315C582041CA8D008185F0 /* CircularBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBorderView.swift; sourceTree = "<group>"; };
+		043B5EEB2021B18400023E34 /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		044107AF204A779F00A5E22A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		044107B0204A779F00A5E22A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		0441E624202A232400691572 /* RemindersCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCollectionView.swift; sourceTree = "<group>"; };
+		0441E626202A238900691572 /* RemindersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCollectionViewCell.swift; sourceTree = "<group>"; };
+		0441E627202A238900691572 /* RemindersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindersCollectionViewCell.xib; sourceTree = "<group>"; };
+		044DBCBA2020D18C00B6DEDF /* YourHealthWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourHealthWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044DBCBD2020D18C00B6DEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044DBCBF2020D18C00B6DEDF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		044DBCC22020D18C00B6DEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044DBCC52020D18C00B6DEDF /* YourHealthWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YourHealthWallet.xcdatamodel; sourceTree = "<group>"; };
+		044DBCC72020D18C00B6DEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044DBCCA2020D18C00B6DEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044DBCCC2020D18C00B6DEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044DBCD220214B5F00B6DEDF /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
+		044DBCD720218EDE00B6DEDF /* Array+RUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+RUI.swift"; sourceTree = "<group>"; };
+		044DBCE420218EDE00B6DEDF /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		044DBCEA20218EDE00B6DEDF /* NSError+RUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+RUI.swift"; sourceTree = "<group>"; };
+		044DBCEB20218EDE00B6DEDF /* NSObject+Copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Copy.swift"; sourceTree = "<group>"; };
+		044DBCF220218EDE00B6DEDF /* String+RUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RUI.swift"; sourceTree = "<group>"; };
+		044DBCF320218EDE00B6DEDF /* UIColor+RUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RUI.swift"; sourceTree = "<group>"; };
+		044DBCF420218EDE00B6DEDF /* UIDevice+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Type.swift"; sourceTree = "<group>"; };
+		044DBCF520218EDE00B6DEDF /* UIView+ParentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ParentController.swift"; sourceTree = "<group>"; };
+		044DBCFE20218EDE00B6DEDF /* BackBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackBarButton.swift; sourceTree = "<group>"; };
+		044DBCFF20218EDE00B6DEDF /* BarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		044DBD0020218EDE00B6DEDF /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		044DBD0220218EDE00B6DEDF /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		044DBD0320218EDE00B6DEDF /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		044DBD0520218EDE00B6DEDF /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		044DBD0620218EDE00B6DEDF /* VIYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIYDrawerController.swift; sourceTree = "<group>"; };
+		044DBD0820218EDE00B6DEDF /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		044DBD0A20218EDE00B6DEDF /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		044DBD0B20218EDE00B6DEDF /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		044DBD0C20218EDE00B6DEDF /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		044DBD0F20218EDE00B6DEDF /* RetryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryView.swift; sourceTree = "<group>"; };
+		044DBD1020218EDE00B6DEDF /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		044DBD1120218EDE00B6DEDF /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		044DBD1220218EDE00B6DEDF /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		044DBD1320218EDE00B6DEDF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		044DBD1420218EDE00B6DEDF /* TabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabStripViewController.swift; sourceTree = "<group>"; };
+		044DBD1620218EDE00B6DEDF /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		044DBD1720218EDE00B6DEDF /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		044DBD1920218EDE00B6DEDF /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		044DBD1A20218EDE00B6DEDF /* ViewController+RUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+RUI.swift"; sourceTree = "<group>"; };
+		044DBD1B20218EDE00B6DEDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0494202D2039FB1A0031A888 /* DPPickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPPickerManager.swift; sourceTree = "<group>"; };
+		049827DA2028D3D00052A9AB /* RemindersDateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersDateCollectionView.swift; sourceTree = "<group>"; };
+		049827DC2028D3F90052A9AB /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		049827DE2028D4570052A9AB /* RemindersDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		049827DF2028D4570052A9AB /* RemindersDateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindersDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		04AB233720407AE100983D36 /* HTBloodSugarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBloodSugarCell.swift; sourceTree = "<group>"; };
+		04AB233820407AE100983D36 /* HTBloodSugarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTBloodSugarCell.xib; sourceTree = "<group>"; };
+		04AB233B2040861C00983D36 /* HTBodyWeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBodyWeightCell.swift; sourceTree = "<group>"; };
+		04AB233C2040861C00983D36 /* HTBodyWeightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTBodyWeightCell.xib; sourceTree = "<group>"; };
+		04B617222022319800AC7311 /* DashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		04B617252022327000AC7311 /* HomeDraverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDraverController.swift; sourceTree = "<group>"; };
+		04B972A7203DE605002597CB /* HTHeartRateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTHeartRateCollectionViewCell.swift; sourceTree = "<group>"; };
+		04B972A8203DE605002597CB /* HTHeartRateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTHeartRateCollectionViewCell.xib; sourceTree = "<group>"; };
+		04B972AB203DE892002597CB /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		04B972AD203DF0E6002597CB /* HealthTrackerCollectionVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerCollectionVeiw.swift; sourceTree = "<group>"; };
+		04E7107B2033610900429195 /* ReminderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfo.swift; sourceTree = "<group>"; };
+		04E7107D2033685100429195 /* RemindersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersService.swift; sourceTree = "<group>"; };
+		04E7107F2033689200429195 /* WebcomUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcomUrls.swift; sourceTree = "<group>"; };
+		181314532133FC7800299D1C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		18131455213400C400299D1C /* AddBloodSugerReadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBloodSugerReadingVC.xib; sourceTree = "<group>"; };
+		18131457213400D000299D1C /* AddBloodSugerReadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodSugerReadingVC.swift; sourceTree = "<group>"; };
+		181314592134135400299D1C /* AddBloodPressureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodPressureVC.swift; sourceTree = "<group>"; };
+		1813145B2134135E00299D1C /* AddBloodPressureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBloodPressureVC.xib; sourceTree = "<group>"; };
+		1835D811213AA85200071882 /* AddWeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightService.swift; sourceTree = "<group>"; };
+		183ADBBD2136B7E7005DBEAB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		183ADBBF2136C105005DBEAB /* BloodPressureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureInfo.swift; sourceTree = "<group>"; };
+		183ADBC12136C18D005DBEAB /* BloodPressureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureService.swift; sourceTree = "<group>"; };
+		18603B572133C7C300836879 /* AddHeartRateReadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHeartRateReadingVC.xib; sourceTree = "<group>"; };
+		18603B592133D40400836879 /* AddHeartRateReadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeartRateReadingVC.swift; sourceTree = "<group>"; };
+		187A3822213FE26500BAC255 /* AddHeartRateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeartRateInfo.swift; sourceTree = "<group>"; };
+		1884463821416AB70018F9DA /* BloodSugarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarService.swift; sourceTree = "<group>"; };
+		1884463A21416EED0018F9DA /* AddBloodSugarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodSugarInfo.swift; sourceTree = "<group>"; };
+		18B6AF67213AA9FF00588C78 /* AddWeightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightInfo.swift; sourceTree = "<group>"; };
+		18CA2F21213EB09300E29CAB /* HeartRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateService.swift; sourceTree = "<group>"; };
+		18E0F5CC212C397E00B5F347 /* AddReminderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddReminderVC.xib; sourceTree = "<group>"; };
+		18E0F5CE212C4B0600B5F347 /* AddReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderVC.swift; sourceTree = "<group>"; };
+		25AC3A972BB8DD6BF2FA8B73 /* Pods_YourHealthWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourHealthWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3A4BCF206B748C0024A8B1 /* GlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVars.swift; sourceTree = "<group>"; };
+		4F4B5FAD2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerAddActivityViewController.swift; sourceTree = "<group>"; };
+		4F4B5FAE2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerAddActivityViewController.xib; sourceTree = "<group>"; };
+		4F4B5FB320591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerAddActivityDateDescTVC.swift; sourceTree = "<group>"; };
+		4F4B5FB420591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerAddActivityDateDescTVC.xib; sourceTree = "<group>"; };
+		4F4B5FB92059201600D9CEE9 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		4F4B5FBB2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerAddActivityTimeTVC.swift; sourceTree = "<group>"; };
+		4F4B5FBC2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerAddActivityTimeTVC.xib; sourceTree = "<group>"; };
+		4F4B5FBF20593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerAddActivityNotesTVC.swift; sourceTree = "<group>"; };
+		4F4B5FC020593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerAddActivityNotesTVC.xib; sourceTree = "<group>"; };
+		4F57C7DC2036A13000F4786D /* YHWTokensTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHWTokensTVC.swift; sourceTree = "<group>"; };
+		4F57C7DE2036A13000F4786D /* YHWTokensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHWTokensViewController.swift; sourceTree = "<group>"; };
+		4F60F31620373442001CCF27 /* Avenir Next Condensed.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next Condensed.ttc"; sourceTree = "<group>"; };
+		4F60F31720373442001CCF27 /* Avenir Next.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next.ttc"; sourceTree = "<group>"; };
+		4F60F31820373442001CCF27 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
+		4F60F31920373442001CCF27 /* Avenir35-Light Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir35-Light Oblique.ttf"; sourceTree = "<group>"; };
+		4F60F31A20373442001CCF27 /* Avenir45-Book Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir45-Book Oblique.ttf"; sourceTree = "<group>"; };
+		4F60F31B20373442001CCF27 /* Avenir55Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir55Roman.ttf; sourceTree = "<group>"; };
+		4F60F31C20373442001CCF27 /* Avenir65-Medium Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir65-Medium Oblique.ttf"; sourceTree = "<group>"; };
+		4F60F31D20373442001CCF27 /* Avenir85-Heavy Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir85-Heavy Oblique.ttf"; sourceTree = "<group>"; };
+		4F60F31E20373442001CCF27 /* Avenir95-Black Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir95-Black Oblique.ttf"; sourceTree = "<group>"; };
+		4F60F32020373442001CCF27 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4F60F32120373442001CCF27 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4F60F32220373442001CCF27 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4F60F33220373773001CCF27 /* YHWTokensViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YHWTokensViewController.xib; sourceTree = "<group>"; };
+		4F60F33320373774001CCF27 /* YHWTokensTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YHWTokensTVC.xib; sourceTree = "<group>"; };
+		4F7B612920527A9A00B1EF82 /* FitnessTrackerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerTabBarController.swift; sourceTree = "<group>"; };
+		4F7B612F2052861F00B1EF82 /* FitnessTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerViewController.swift; sourceTree = "<group>"; };
+		4F7B61302052861F00B1EF82 /* FitnessTrackerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerViewController.xib; sourceTree = "<group>"; };
+		4F7B61332052863100B1EF82 /* FitnessTrackerWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerWalkViewController.swift; sourceTree = "<group>"; };
+		4F7B61342052863100B1EF82 /* FitnessTrackerWalkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerWalkViewController.xib; sourceTree = "<group>"; };
+		4FA12FDC2036A7FF006D90C8 /* HealthTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerViewController.swift; sourceTree = "<group>"; };
+		4FA12FDD2036A7FF006D90C8 /* HealthTrackerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthTrackerViewController.xib; sourceTree = "<group>"; };
+		4FDC49B62041EED3006D9D52 /* AddDoseAddNotesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoseAddNotesTVC.swift; sourceTree = "<group>"; };
+		4FDC49B72041EED3006D9D52 /* AddDoseAddNotesTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDoseAddNotesTVC.xib; sourceTree = "<group>"; };
+		4FDC49B82041EED3006D9D52 /* AddDoseDosageTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoseDosageTVC.swift; sourceTree = "<group>"; };
+		4FDC49B92041EED3006D9D52 /* AddDoseDosageTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDoseDosageTVC.xib; sourceTree = "<group>"; };
+		4FDC49BA2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoseSelectDateTimeTVC.swift; sourceTree = "<group>"; };
+		4FDC49BB2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDoseSelectDateTimeTVC.xib; sourceTree = "<group>"; };
+		4FDC49BC2041EED3006D9D52 /* AddDoseSelectMedicationTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDoseSelectMedicationTVC.swift; sourceTree = "<group>"; };
+		4FDC49BD2041EED3006D9D52 /* AddDoseSelectMedicationTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDoseSelectMedicationTVC.xib; sourceTree = "<group>"; };
+		4FDC49C62041EED3006D9D52 /* MedicationAddDoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationAddDoseViewController.swift; path = ../Reminders/Medications/MedicationAddDoseViewController.swift; sourceTree = "<group>"; };
+		4FDC49C72041EED3006D9D52 /* MedicationAddDoseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationAddDoseViewController.xib; path = ../Reminders/Medications/MedicationAddDoseViewController.xib; sourceTree = "<group>"; };
+		4FDC49CA2041EED3006D9D52 /* MedicationMedicinesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationMedicinesTableViewCell.swift; sourceTree = "<group>"; };
+		4FDC49CB2041EED3006D9D52 /* MedicationMedicinesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationMedicinesTableViewCell.xib; sourceTree = "<group>"; };
+		4FDC49CC2041EED3006D9D52 /* MedicationMedicinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationMedicinesViewController.swift; path = ../Reminders/Medications/MedicationMedicinesViewController.swift; sourceTree = "<group>"; };
+		4FDC49CD2041EED3006D9D52 /* MedicationMedicinesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationMedicinesViewController.xib; path = ../Reminders/Medications/MedicationMedicinesViewController.xib; sourceTree = "<group>"; };
+		4FDC49D02041EED3006D9D52 /* MedicationReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationReportsViewController.swift; path = ../Reminders/Medications/MedicationReportsViewController.swift; sourceTree = "<group>"; };
+		4FDC49D12041EED3006D9D52 /* MedicationReportsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationReportsViewController.xib; path = ../Reminders/Medications/MedicationReportsViewController.xib; sourceTree = "<group>"; };
+		4FDC49D22041EED3006D9D52 /* MedicationReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationReportTableViewCell.swift; sourceTree = "<group>"; };
+		4FDC49D32041EED3006D9D52 /* MedicationReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationReportTableViewCell.xib; sourceTree = "<group>"; };
+		4FDC49D42041EED3006D9D52 /* MedicationReportTableViewSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationReportTableViewSectionCell.swift; sourceTree = "<group>"; };
+		4FDC49D52041EED3006D9D52 /* MedicationReportTableViewSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationReportTableViewSectionCell.xib; sourceTree = "<group>"; };
+		4FDC49D62041EED3006D9D52 /* MedicationSelectionTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationSelectionTVC.swift; sourceTree = "<group>"; };
+		4FDC49D72041EED3006D9D52 /* MedicationSelectionTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationSelectionTVC.xib; sourceTree = "<group>"; };
+		4FF4AA1D204A5B1B003078C6 /* Date+RUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RUI.swift"; sourceTree = "<group>"; };
+		D8952171206A1A8E00D6A727 /* FitnessTrackerStartActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerStartActivity.swift; sourceTree = "<group>"; };
+		D8952172206A1A8E00D6A727 /* FitnessTrackerStartActivity.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerStartActivity.xib; sourceTree = "<group>"; };
+		D8952175206A251100D6A727 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E700A6F920696C070054DFC2 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		E700A6FA20696C070054DFC2 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		E701C71120CE170D0093D053 /* GoalTrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerVC.swift; sourceTree = "<group>"; };
+		E701C71220CE170D0093D053 /* GoalTrackerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalTrackerVC.xib; sourceTree = "<group>"; };
+		E702905920C2BC77002F9B0D /* AddWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightVC.swift; sourceTree = "<group>"; };
+		E702905A20C2BC77002F9B0D /* AddWeightVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightVC.xib; sourceTree = "<group>"; };
+		E703BB3F20C303F300C2E7DA /* AddWeightDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightDateCell.swift; sourceTree = "<group>"; };
+		E703BB4020C303F300C2E7DA /* AddWeightDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightDateCell.xib; sourceTree = "<group>"; };
+		E703BB4320C3042B00C2E7DA /* AddWeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightCell.swift; sourceTree = "<group>"; };
+		E703BB4420C3042B00C2E7DA /* AddWeightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightCell.xib; sourceTree = "<group>"; };
+		E703BB4720C3045A00C2E7DA /* AddWeightBodyFatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightBodyFatsCell.swift; sourceTree = "<group>"; };
+		E703BB4820C3045A00C2E7DA /* AddWeightBodyFatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightBodyFatsCell.xib; sourceTree = "<group>"; };
+		E703BB4B20C3047700C2E7DA /* AddWeightImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightImageCell.swift; sourceTree = "<group>"; };
+		E703BB4C20C3047700C2E7DA /* AddWeightImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightImageCell.xib; sourceTree = "<group>"; };
+		E703BB4F20C3049700C2E7DA /* AddWeightNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightNoteCell.swift; sourceTree = "<group>"; };
+		E703BB5020C3049700C2E7DA /* AddWeightNoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWeightNoteCell.xib; sourceTree = "<group>"; };
+		E7042EC7204D78B80038E0A7 /* HRAMedicalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAMedicalVC.swift; sourceTree = "<group>"; };
+		E7042EC8204D78B80038E0A7 /* HRAMedicalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRAMedicalVC.xib; sourceTree = "<group>"; };
+		E7042ECB204D78D50038E0A7 /* HRATreatmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRATreatmentVC.swift; sourceTree = "<group>"; };
+		E7042ECC204D78D50038E0A7 /* HRATreatmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRATreatmentVC.xib; sourceTree = "<group>"; };
+		E7042ED1204D790A0038E0A7 /* HRAMedicinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAMedicinesVC.swift; sourceTree = "<group>"; };
+		E7042ED2204D790A0038E0A7 /* HRAMedicinesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRAMedicinesVC.xib; sourceTree = "<group>"; };
+		E7042ED5204DA6140038E0A7 /* HRAChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAChoice.swift; sourceTree = "<group>"; };
+		E7042ED7204DA8920038E0A7 /* HRAQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAQuestionModel.swift; sourceTree = "<group>"; };
+		E7074C1A205D713000FD1BEB /* XYMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		E7074C1C205D729B00FD1BEB /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		E70788C3204A99E900FD6C27 /* HRAAboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAAboutVC.swift; sourceTree = "<group>"; };
+		E70788C4204A99E900FD6C27 /* HRAAboutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRAAboutVC.xib; sourceTree = "<group>"; };
+		E7087422212DE24A00396912 /* AddActivityWalkRunCycleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityWalkRunCycleVC.swift; sourceTree = "<group>"; };
+		E7087423212DE24A00396912 /* AddActivityWalkRunCycleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddActivityWalkRunCycleVC.xib; sourceTree = "<group>"; };
+		E709ABB2211C9DB600CB92ED /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		E709ABB3211C9DB600CB92ED /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		E709ABB4211C9DB600CB92ED /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		E709ABB5211C9DB600CB92ED /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		E709ABB6211C9DB600CB92ED /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		E709ABB7211C9DB600CB92ED /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		E709ABB8211C9DB600CB92ED /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		E709ABB9211C9DB600CB92ED /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		E709ABBA211C9DB600CB92ED /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		E709ABBB211C9DB600CB92ED /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		E709ABBC211C9DB600CB92ED /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		E709ABBD211C9DB600CB92ED /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		E709ABBE211C9DB600CB92ED /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		E709ABBF211C9DB600CB92ED /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		E709ABC0211C9DB600CB92ED /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		E709ABC1211C9DB600CB92ED /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		E709ABC2211C9DB600CB92ED /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		E709ABC3211C9DB600CB92ED /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		E709ABC4211C9DB600CB92ED /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		E709ABC5211C9DB600CB92ED /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		E709ABC6211C9DB600CB92ED /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		E709ABC7211C9DB600CB92ED /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		E709ABC8211C9DB600CB92ED /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		E709ABC9211C9DB600CB92ED /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		E709ABCA211C9DB600CB92ED /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		E709ABCB211C9DB600CB92ED /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		E709ABCC211C9DB600CB92ED /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		E709ABCD211C9DB600CB92ED /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		E709ABCE211C9DB600CB92ED /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		E709ABCF211C9DB600CB92ED /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		E709ABD0211C9DB600CB92ED /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		E709ABD1211C9DB600CB92ED /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		E709ABD2211C9DB600CB92ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70A2C6021244C9F005E4365 /* HealthProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileManager.swift; sourceTree = "<group>"; };
+		E70AAB4E21370EE7006922C6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E70AAB5021372133006922C6 /* ActivityTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracker.swift; sourceTree = "<group>"; };
+		E70D6E1E20C3C16700F372E2 /* XYChartWeightMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYChartWeightMarker.swift; sourceTree = "<group>"; };
+		E70FA54720D036310072E4C2 /* ActivityGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityGoalVC.swift; sourceTree = "<group>"; };
+		E70FA54820D036310072E4C2 /* ActivityGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityGoalVC.xib; sourceTree = "<group>"; };
+		E70FA54B20D043E60072E4C2 /* StepsGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalVC.swift; sourceTree = "<group>"; };
+		E70FA54C20D043E60072E4C2 /* StepsGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepsGoalVC.xib; sourceTree = "<group>"; };
+		E712C47C203035D5008BF5C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E713B85221170CF1003D48CA /* CaloriesGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesGoalVC.swift; sourceTree = "<group>"; };
+		E713B85321170CF1003D48CA /* CaloriesGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaloriesGoalVC.xib; sourceTree = "<group>"; };
+		E71562492059891C00F4DA5B /* WalkListcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkListcell.swift; sourceTree = "<group>"; };
+		E715624A2059891C00F4DA5B /* WalkListcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkListcell.xib; sourceTree = "<group>"; };
+		E72B781E20DE118000569298 /* WakeUpTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpTimeCell.swift; sourceTree = "<group>"; };
+		E72B781F20DE118000569298 /* WakeUpTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WakeUpTimeCell.xib; sourceTree = "<group>"; };
+		E74DFAFE20D35C7800E3441F /* CustomGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGoalVC.swift; sourceTree = "<group>"; };
+		E74DFAFF20D35C7800E3441F /* CustomGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomGoalVC.xib; sourceTree = "<group>"; };
+		E75122D121024C9A005AD0ED /* ShapeItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShapeItemListCell.xib; sourceTree = "<group>"; };
+		E75122D421024CA8005AD0ED /* ColorItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorItemCell.swift; sourceTree = "<group>"; };
+		E75122D521024CA8005AD0ED /* ColorItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorItemCell.xib; sourceTree = "<group>"; };
+		E75122D821024DBD005AD0ED /* ShapeItemListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeItemListCell.swift; sourceTree = "<group>"; };
+		E7577A5520448698007C566D /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		E7577A5620448698007C566D /* PopOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopOverViewController.xib; sourceTree = "<group>"; };
+		E7577A59204498B7007C566D /* PopUpItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpItemCell.swift; sourceTree = "<group>"; };
+		E7577A5A204498B7007C566D /* PopUpItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpItemCell.xib; sourceTree = "<group>"; };
+		E75989DF20617971007970C2 /* FitnessTrackerSleepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerSleepVC.swift; sourceTree = "<group>"; };
+		E75989E020617971007970C2 /* FitnessTrackerSleepVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerSleepVC.xib; sourceTree = "<group>"; };
+		E75989EC20617CEF007970C2 /* SleepFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepFirstCell.swift; sourceTree = "<group>"; };
+		E75989ED20617CEF007970C2 /* SleepFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepFirstCell.xib; sourceTree = "<group>"; };
+		E75989F020617D04007970C2 /* SleepTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeCell.swift; sourceTree = "<group>"; };
+		E75989F120617D04007970C2 /* SleepTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepTimeCell.xib; sourceTree = "<group>"; };
+		E75989F420617D18007970C2 /* SleepAddManualCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAddManualCell.swift; sourceTree = "<group>"; };
+		E75989F520617D18007970C2 /* SleepAddManualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepAddManualCell.xib; sourceTree = "<group>"; };
+		E7653A6A20432367003EFE7F /* DayHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHeaderCell.swift; sourceTree = "<group>"; };
+		E7653A6B20432367003EFE7F /* DayHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayHeaderCell.xib; sourceTree = "<group>"; };
+		E7653A6C20432367003EFE7F /* MedicationAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationAllViewController.swift; sourceTree = "<group>"; };
+		E7653A6D20432367003EFE7F /* MedicationAllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationAllViewController.xib; sourceTree = "<group>"; };
+		E7653A6E20432367003EFE7F /* MedicationDateCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDateCollectionView.swift; sourceTree = "<group>"; };
+		E7653A6F20432367003EFE7F /* MedicationDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7653A7020432367003EFE7F /* MedicationDateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		E7653A7120432367003EFE7F /* MedicationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationInfo.swift; sourceTree = "<group>"; };
+		E7653A7220432367003EFE7F /* MedicationListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationListCell.swift; sourceTree = "<group>"; };
+		E7653A7320432367003EFE7F /* MedicationListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationListCell.xib; sourceTree = "<group>"; };
+		E7653A7420432367003EFE7F /* MedicationsDaywiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsDaywiseViewController.swift; sourceTree = "<group>"; };
+		E7653A7520432367003EFE7F /* MedicationsDaywiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationsDaywiseViewController.xib; sourceTree = "<group>"; };
+		E7653A7620432367003EFE7F /* MedicationsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsService.swift; sourceTree = "<group>"; };
+		E7653A7720432367003EFE7F /* MedicationsTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsTabBarController.swift; sourceTree = "<group>"; };
+		E7653A7820432367003EFE7F /* MedicationTableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationTableview.swift; sourceTree = "<group>"; };
+		E769B79320ED3EBF009B4D0C /* GoalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalInfo.swift; sourceTree = "<group>"; };
+		E769B79520ED4D7C009B4D0C /* GoalTrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerService.swift; sourceTree = "<group>"; };
+		E771A6F6203DEF7200D3AD7F /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		E777A02E20CAF3640087A935 /* WMGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeView.m; sourceTree = "<group>"; };
+		E777A02F20CAF3640087A935 /* WMGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeView.h; sourceTree = "<group>"; };
+		E78534A52035EC8500DB5C3C /* RegisterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInfo.swift; sourceTree = "<group>"; };
+		E78534A92036034900DB5C3C /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		E7966EA5211C8BCD00AA0861 /* MedicationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryVC.swift; sourceTree = "<group>"; };
+		E7966EA6211C8BCD00AA0861 /* MedicationHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicationHistoryVC.xib; sourceTree = "<group>"; };
+		E7AC268720C5A4D700287043 /* WMGaugeViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyle.h; sourceTree = "<group>"; };
+		E7AC268820C5A4D700287043 /* WMGaugeViewStyle3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyle3D.h; sourceTree = "<group>"; };
+		E7AC268920C5A4D700287043 /* WMGaugeViewStyle3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeViewStyle3D.m; sourceTree = "<group>"; };
+		E7AC268A20C5A4D700287043 /* WMGaugeViewStyleFlatThin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMGaugeViewStyleFlatThin.h; sourceTree = "<group>"; };
+		E7AC268B20C5A4D700287043 /* WMGaugeViewStyleFlatThin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGaugeViewStyleFlatThin.m; sourceTree = "<group>"; };
+		E7AC268F20C5A54100287043 /* YourHealthWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YourHealthWallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7AC269220C5A85900287043 /* WeightImageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightImageListCell.xib; sourceTree = "<group>"; };
+		E7AC269320C5A85900287043 /* WeightImageListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightImageListCell.swift; sourceTree = "<group>"; };
+		E7AC269420C5A85A00287043 /* AddImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageCell.swift; sourceTree = "<group>"; };
+		E7AC269520C5A85A00287043 /* AddImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddImageCell.xib; sourceTree = "<group>"; };
+		E7BD6C5320A6E39A00C2BB56 /* HRAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAService.swift; sourceTree = "<group>"; };
+		E7BD6C5520A6E4BC00C2BB56 /* HRAInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAInfo.swift; sourceTree = "<group>"; };
+		E7BE05802037593300C524CD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E7BFBD112131244D00FFA3C4 /* AddSleepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSleepVC.swift; sourceTree = "<group>"; };
+		E7BFBD122131244D00FFA3C4 /* AddSleepVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSleepVC.xib; sourceTree = "<group>"; };
+		E7C2208220C8486700F5F4D5 /* WeightResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightResultVC.swift; sourceTree = "<group>"; };
+		E7C2208320C8486700F5F4D5 /* WeightResultVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightResultVC.xib; sourceTree = "<group>"; };
+		E7C72089212AD0F20072FC6D /* MedicationAddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationAddEditVC.swift; sourceTree = "<group>"; };
+		E7C7208A212AD0F20072FC6D /* MedicationAddEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicationAddEditVC.xib; sourceTree = "<group>"; };
+		E7C7208D212B0D7B0072FC6D /* MedicationReminderTimesTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicationReminderTimesTVC.xib; sourceTree = "<group>"; };
+		E7C7208E212B0D7B0072FC6D /* MedicationReminderTimesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationReminderTimesTVC.swift; sourceTree = "<group>"; };
+		E7C72092212B23E10072FC6D /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
+		E7C72093212B23E10072FC6D /* PrivacyPolicyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyPolicyVC.xib; sourceTree = "<group>"; };
+		E7C78BC2211621E500DAC667 /* RunGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunGoalVC.swift; sourceTree = "<group>"; };
+		E7C78BC3211621E500DAC667 /* RunGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunGoalVC.xib; sourceTree = "<group>"; };
+		E7C90FAC21207274008FC353 /* HealthManagerKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManagerKit.swift; sourceTree = "<group>"; };
+		E7C970C520E3F764009B6CC2 /* LunchWalkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchWalkingVC.swift; sourceTree = "<group>"; };
+		E7C970C620E3F764009B6CC2 /* LunchWalkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunchWalkingVC.xib; sourceTree = "<group>"; };
+		E7C970C920E3FC63009B6CC2 /* LunchWalkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchWalkingCell.swift; sourceTree = "<group>"; };
+		E7C970CA20E3FC63009B6CC2 /* LunchWalkingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunchWalkingCell.xib; sourceTree = "<group>"; };
+		E7CD490E20D18C290090E8C9 /* SleepGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepGoalVC.swift; sourceTree = "<group>"; };
+		E7CD490F20D18C290090E8C9 /* SleepGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepGoalVC.xib; sourceTree = "<group>"; };
+		E7CD491220D18DD30090E8C9 /* PickYourGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickYourGoalVC.swift; sourceTree = "<group>"; };
+		E7CD491320D18DD30090E8C9 /* PickYourGoalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickYourGoalVC.xib; sourceTree = "<group>"; };
+		E7CD491720D191D70090E8C9 /* PickGoalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickGoalListCell.swift; sourceTree = "<group>"; };
+		E7CD491820D191D70090E8C9 /* PickGoalListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickGoalListCell.xib; sourceTree = "<group>"; };
+		E7DA1BAF211D95810062624D /* MedicationHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryCell.swift; sourceTree = "<group>"; };
+		E7DA1BB0211D95810062624D /* MedicationHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicationHistoryCell.xib; sourceTree = "<group>"; };
+		E7DF4298210DAE2A00CA485C /* RadialProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialProgressView.swift; sourceTree = "<group>"; };
+		E7DFF6AA210B7F26008DEB39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		E7DFF6AC210B7F26008DEB39 /* YourHealthWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YourHealthWallet.entitlements; sourceTree = "<group>"; };
+		E7E221602058474600D75EAC /* WalkFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkFirstCell.swift; sourceTree = "<group>"; };
+		E7E221612058474600D75EAC /* WalkFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkFirstCell.xib; sourceTree = "<group>"; };
+		E7E81AD0206024EC00763B01 /* FitnessTrackerRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerRunVC.swift; sourceTree = "<group>"; };
+		E7E81AD1206024EC00763B01 /* FitnessTrackerRunVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerRunVC.xib; sourceTree = "<group>"; };
+		E7E81AD72060285200763B01 /* RunFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunFirstCell.swift; sourceTree = "<group>"; };
+		E7E81AD82060285200763B01 /* RunFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunFirstCell.xib; sourceTree = "<group>"; };
+		E7E81ADB2060286400763B01 /* RunListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunListCell.swift; sourceTree = "<group>"; };
+		E7E81ADC2060286400763B01 /* RunListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunListCell.xib; sourceTree = "<group>"; };
+		E7E81AE12060354700763B01 /* CycleFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleFirstCell.swift; sourceTree = "<group>"; };
+		E7E81AE22060354700763B01 /* CycleFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CycleFirstCell.xib; sourceTree = "<group>"; };
+		E7E81AE9206036D200763B01 /* CycleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleListCell.swift; sourceTree = "<group>"; };
+		E7E81AEA206036D200763B01 /* CycleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CycleListCell.xib; sourceTree = "<group>"; };
+		E7E81AED2060374B00763B01 /* FitnessTrackerCycleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerCycleVC.swift; sourceTree = "<group>"; };
+		E7E81AEE2060374B00763B01 /* FitnessTrackerCycleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTrackerCycleVC.xib; sourceTree = "<group>"; };
+		E7EF0C1820C1B4880095633D /* FitnessTrackerWeightVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitnessTrackerWeightVC.xib; sourceTree = "<group>"; };
+		E7EF0C1920C1B4890095633D /* FitnessTrackerWeightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessTrackerWeightVC.swift; sourceTree = "<group>"; };
+		E7EF0C1C20C1B4940095633D /* WeightFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightFirstCell.swift; sourceTree = "<group>"; };
+		E7EF0C1D20C1B4950095633D /* WeightFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightFirstCell.xib; sourceTree = "<group>"; };
+		E7EF0C1E20C1B4950095633D /* WeightListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightListCell.swift; sourceTree = "<group>"; };
+		E7EF0C1F20C1B4950095633D /* WeightListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightListCell.xib; sourceTree = "<group>"; };
+		E7F1784320335C0000199D4D /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		E7F1784420335C0000199D4D /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		E7F1784520335C0100199D4D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E7F1784620335C0100199D4D /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		E7F1784E20335C8D00199D4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7F1785020335C9700199D4D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E7F3CEE020DABF1000A51F95 /* FitnessTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTypeCell.swift; sourceTree = "<group>"; };
+		E7F3CEE120DABF1000A51F95 /* FitnessTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessTypeCell.xib; sourceTree = "<group>"; };
+		E7F633C720BAE1110016B9C4 /* LeftMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuVC.swift; sourceTree = "<group>"; };
+		E7F633C820BAE1110016B9C4 /* LeftMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuVC.xib; sourceTree = "<group>"; };
+		E7F753492127DB1800B894EF /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		E7F94D27204C2BB100680084 /* HRABaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRABaseVC.swift; sourceTree = "<group>"; };
+		E7F94D28204C2BB100680084 /* HRABaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRABaseVC.xib; sourceTree = "<group>"; };
+		E7F94D2B204C2DD300680084 /* HRAPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAPageVC.swift; sourceTree = "<group>"; };
+		E7F94D2C204C2DD300680084 /* HRAPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRAPageVC.xib; sourceTree = "<group>"; };
+		E7F94D2F204C2FF500680084 /* HRAActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRAActivityVC.swift; sourceTree = "<group>"; };
+		E7F94D30204C2FF500680084 /* HRAActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRAActivityVC.xib; sourceTree = "<group>"; };
+		F336D6F2F5F6A9BFCF833D6C /* Pods-YourHealthWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourHealthWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		F66A291DE7C6EAC6107781EE /* Pods-YourHealthWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourHealthWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044DBCB72020D18B00B6DEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044107B2204A77A000A5E22A /* Crashlytics.framework in Frameworks */,
+				E7DFF6AB210B7F26008DEB39 /* HealthKit.framework in Frameworks */,
+				044107B1204A77A000A5E22A /* Fabric.framework in Frameworks */,
+				E9B990ACDBDCCB615FBEE147 /* Pods_YourHealthWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040450EA20261CCC00CE2D2B /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				040450ED20261D2000CE2D2B /* Model */,
+				040450EC20261D1C00CE2D2B /* View */,
+				040450EB20261D0A00CE2D2B /* Controller */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		040450EB20261D0A00CE2D2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				040450EE20261D6A00CE2D2B /* ReminderViewController.swift */,
+				18E0F5CE212C4B0600B5F347 /* AddReminderVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		040450EC20261D1C00CE2D2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040450EF20261D6A00CE2D2B /* ReminderViewController.xib */,
+				18E0F5CC212C397E00B5F347 /* AddReminderVC.xib */,
+				049827DA2028D3D00052A9AB /* RemindersDateCollectionView.swift */,
+				049827DE2028D4570052A9AB /* RemindersDateCollectionViewCell.swift */,
+				049827DF2028D4570052A9AB /* RemindersDateCollectionViewCell.xib */,
+				0441E624202A232400691572 /* RemindersCollectionView.swift */,
+				0441E626202A238900691572 /* RemindersCollectionViewCell.swift */,
+				0441E627202A238900691572 /* RemindersCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		040450ED20261D2000CE2D2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E7107B2033610900429195 /* ReminderInfo.swift */,
+				04E7107D2033685100429195 /* RemindersService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		043B5EE62021A18700023E34 /* AppCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E70AAB4E21370EE7006922C6 /* LocationManager.swift */,
+				043B5EEB2021B18400023E34 /* AppUserDefaults.swift */,
+				04E7107F2033689200429195 /* WebcomUrls.swift */,
+				E7BE05802037593300C524CD /* Constant.swift */,
+				E771A6F6203DEF7200D3AD7F /* NetworkConnectivity.swift */,
+				4F3A4BCF206B748C0024A8B1 /* GlobalVars.swift */,
+				183ADBBD2136B7E7005DBEAB /* Utility.swift */,
+			);
+			path = AppCommon;
+			sourceTree = "<group>";
+		};
+		043B5EE72021A25000023E34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7F753492127DB1800B894EF /* DateHelper.swift */,
+				044DBD1A20218EDE00B6DEDF /* ViewController+RUI.swift */,
+				044DBCEA20218EDE00B6DEDF /* NSError+RUI.swift */,
+				044DBCD720218EDE00B6DEDF /* Array+RUI.swift */,
+				044DBCEB20218EDE00B6DEDF /* NSObject+Copy.swift */,
+				044DBCF220218EDE00B6DEDF /* String+RUI.swift */,
+				044DBCF320218EDE00B6DEDF /* UIColor+RUI.swift */,
+				044DBCF420218EDE00B6DEDF /* UIDevice+Type.swift */,
+				044DBCF520218EDE00B6DEDF /* UIView+ParentController.swift */,
+				4FF4AA1D204A5B1B003078C6 /* Date+RUI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		043B5EE82021A28100023E34 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				044DBD0320218EDE00B6DEDF /* Colors.swift */,
+				044DBCE420218EDE00B6DEDF /* HelperFunctions.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		043B5EE92021A2F100023E34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				044DBCFE20218EDE00B6DEDF /* BackBarButton.swift */,
+				044DBCFF20218EDE00B6DEDF /* BarButtonItem.swift */,
+				044DBD0020218EDE00B6DEDF /* Button.swift */,
+				044DBD0220218EDE00B6DEDF /* CollectionViewCell.swift */,
+				044DBD0520218EDE00B6DEDF /* DatePicker.swift */,
+				044DBD0820218EDE00B6DEDF /* ImageView.swift */,
+				044DBD0A20218EDE00B6DEDF /* Label.swift */,
+				044DBD0B20218EDE00B6DEDF /* NavigationBar.swift */,
+				044DBD0F20218EDE00B6DEDF /* RetryView.swift */,
+				044DBD1020218EDE00B6DEDF /* ScrollView.swift */,
+				044DBD1120218EDE00B6DEDF /* SegmentedControl.swift */,
+				044DBD1220218EDE00B6DEDF /* TableView.swift */,
+				044DBD1320218EDE00B6DEDF /* TableViewCell.swift */,
+				044DBD1620218EDE00B6DEDF /* TextField.swift */,
+				044DBD1720218EDE00B6DEDF /* TextView.swift */,
+				4F4B5FB92059201600D9CEE9 /* PlaceholderTextView.swift */,
+				044DBD1920218EDE00B6DEDF /* View.swift */,
+				042ED29D20238EC400B3D2A5 /* GradientLayer.swift */,
+				049827DC2028D3F90052A9AB /* CollectionView.swift */,
+				04B972AB203DE892002597CB /* StackView.swift */,
+				04315C582041CA8D008185F0 /* CircularBorderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		043B5EEA2021A38C00023E34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044DBD0620218EDE00B6DEDF /* VIYDrawerController.swift */,
+				044DBD0C20218EDE00B6DEDF /* NavigationController.swift */,
+				044DBD1420218EDE00B6DEDF /* TabStripViewController.swift */,
+				044DBD1B20218EDE00B6DEDF /* ViewController.swift */,
+				042ED29B202371DE00B3D2A5 /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044DBCB12020D18B00B6DEDF = {
+			isa = PBXGroup;
+			children = (
+				044107B0204A779F00A5E22A /* Crashlytics.framework */,
+				044107AF204A779F00A5E22A /* Fabric.framework */,
+				044DBCBC2020D18C00B6DEDF /* YourHealthWallet */,
+				044DBCBB2020D18C00B6DEDF /* Products */,
+				107EC1252A8D0FA2CE8A25D7 /* Frameworks */,
+				E56CB438AA4E2A7CB85A47AF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		044DBCBB2020D18C00B6DEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044DBCBA2020D18C00B6DEDF /* YourHealthWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044DBCBC2020D18C00B6DEDF /* YourHealthWallet */ = {
+			isa = PBXGroup;
+			children = (
+				E7DFF6AC210B7F26008DEB39 /* YourHealthWallet.entitlements */,
+				044DBCD520218EDE00B6DEDF /* ReusableInterfaces */,
+				043B5EE62021A18700023E34 /* AppCommon */,
+				044DBCD420215CE400B6DEDF /* Source */,
+				044DBCBD2020D18C00B6DEDF /* AppDelegate.swift */,
+				044DBCBF2020D18C00B6DEDF /* FirstViewController.swift */,
+				044DBCC12020D18C00B6DEDF /* Main.storyboard */,
+				044DBCC72020D18C00B6DEDF /* Assets.xcassets */,
+				044DBCC92020D18C00B6DEDF /* LaunchScreen.storyboard */,
+				044DBCCC2020D18C00B6DEDF /* Info.plist */,
+				E712C47C203035D5008BF5C6 /* GoogleService-Info.plist */,
+				181314532133FC7800299D1C /* Localizable.strings */,
+				044DBCC42020D18C00B6DEDF /* YourHealthWallet.xcdatamodeld */,
+				E7AC268F20C5A54100287043 /* YourHealthWallet-Bridging-Header.h */,
+				044DBCD220214B5F00B6DEDF /* TextCollectionViewCell.swift */,
+			);
+			path = YourHealthWallet;
+			sourceTree = "<group>";
+		};
+		044DBCD420215CE400B6DEDF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E701C70C20CE16A70093D053 /* Goal Tracker */,
+				4F7B6123205275A100B1EF82 /* Fitness Tracker */,
+				E70788BD204A976500FD6C27 /* HRA */,
+				E7653A6920432367003EFE7F /* Medications */,
+				4FA12FD52036A712006D90C8 /* Health Tracker */,
+				4F57C7DB2036A13000F4786D /* YHW Tokens */,
+				E712C47020302ED3008BF5C6 /* Startup */,
+				040450EA20261CCC00CE2D2B /* Reminders */,
+				04B6171E2022301800AC7311 /* Dashboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		044DBCD520218EDE00B6DEDF /* ReusableInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E7C90FAB21207262008FC353 /* HealthKitManager */,
+				0494202B2039FAA40031A888 /* ThirdPartyLibraries */,
+				043B5EEA2021A38C00023E34 /* Controller */,
+				043B5EE92021A2F100023E34 /* Views */,
+				043B5EE82021A28100023E34 /* Data */,
+				043B5EE72021A25000023E34 /* Extensions */,
+				044DBCDA20218EDE00B6DEDF /* Fonts */,
+			);
+			path = ReusableInterfaces;
+			sourceTree = "<group>";
+		};
+		044DBCDA20218EDE00B6DEDF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4F60F31520373442001CCF27 /* Avenir */,
+				4F60F31F20373442001CCF27 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0494202B2039FAA40031A888 /* ThirdPartyLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				E709ABB1211C9DB600CB92ED /* FSCalendar */,
+				E7DF4298210DAE2A00CA485C /* RadialProgressView.swift */,
+				E7AC268420C5A4D700287043 /* WMGaugeView */,
+				0494202C2039FB0C0031A888 /* Picker */,
+			);
+			path = ThirdPartyLibraries;
+			sourceTree = "<group>";
+		};
+		0494202C2039FB0C0031A888 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				0494202D2039FB1A0031A888 /* DPPickerManager.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		04B6171E2022301800AC7311 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				04B617212022303D00AC7311 /* Model */,
+				04B61724202231AF00AC7311 /* View */,
+				04B6171F2022302C00AC7311 /* Controller */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		04B6171F2022302C00AC7311 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B617222022319800AC7311 /* DashboardTabBarController.swift */,
+				04B617252022327000AC7311 /* HomeDraverController.swift */,
+				042ED2972022ABF500B3D2A5 /* HomeViewController.swift */,
+				E7F633C720BAE1110016B9C4 /* LeftMenuVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04B617212022303D00AC7311 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04B61724202231AF00AC7311 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042ED2982022ABF500B3D2A5 /* HomeViewController.xib */,
+				E7F633C820BAE1110016B9C4 /* LeftMenuVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		107EC1252A8D0FA2CE8A25D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7DFF6AA210B7F26008DEB39 /* HealthKit.framework */,
+				D8952175206A251100D6A727 /* AVFoundation.framework */,
+				25AC3A972BB8DD6BF2FA8B73 /* Pods_YourHealthWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F36561820372D7D00A1912A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA12FDD2036A7FF006D90C8 /* HealthTrackerViewController.xib */,
+				04B972AD203DF0E6002597CB /* HealthTrackerCollectionVeiw.swift */,
+				04B972A7203DE605002597CB /* HTHeartRateCollectionViewCell.swift */,
+				04B972A8203DE605002597CB /* HTHeartRateCollectionViewCell.xib */,
+				04AB233720407AE100983D36 /* HTBloodSugarCell.swift */,
+				04AB233820407AE100983D36 /* HTBloodSugarCell.xib */,
+				04AB233B2040861C00983D36 /* HTBodyWeightCell.swift */,
+				04AB233C2040861C00983D36 /* HTBodyWeightCell.xib */,
+				18603B572133C7C300836879 /* AddHeartRateReadingVC.xib */,
+				18131455213400C400299D1C /* AddBloodSugerReadingVC.xib */,
+				1813145B2134135E00299D1C /* AddBloodPressureVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F4B5FB220591DA200D9CEE9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F4B5FB320591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.swift */,
+				4F4B5FB420591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.xib */,
+				4F4B5FBB2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.swift */,
+				4F4B5FBC2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.xib */,
+				4F4B5FBF20593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.swift */,
+				4F4B5FC020593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.xib */,
+				E7F3CEE020DABF1000A51F95 /* FitnessTypeCell.swift */,
+				E7F3CEE120DABF1000A51F95 /* FitnessTypeCell.xib */,
+				E72B781E20DE118000569298 /* WakeUpTimeCell.swift */,
+				E72B781F20DE118000569298 /* WakeUpTimeCell.xib */,
+				E7C970C920E3FC63009B6CC2 /* LunchWalkingCell.swift */,
+				E7C970CA20E3FC63009B6CC2 /* LunchWalkingCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		4F57C7DB2036A13000F4786D /* YHW Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				4FA12FD72036A725006D90C8 /* Model */,
+				4F60F33120373763001CCF27 /* View */,
+				4FA12FDB2036A795006D90C8 /* Controller */,
+			);
+			path = "YHW Tokens";
+			sourceTree = "<group>";
+		};
+		4F60F31520373442001CCF27 /* Avenir */ = {
+			isa = PBXGroup;
+			children = (
+				4F60F31620373442001CCF27 /* Avenir Next Condensed.ttc */,
+				4F60F31720373442001CCF27 /* Avenir Next.ttc */,
+				4F60F31820373442001CCF27 /* Avenir.ttc */,
+				4F60F31920373442001CCF27 /* Avenir35-Light Oblique.ttf */,
+				4F60F31A20373442001CCF27 /* Avenir45-Book Oblique.ttf */,
+				4F60F31B20373442001CCF27 /* Avenir55Roman.ttf */,
+				4F60F31C20373442001CCF27 /* Avenir65-Medium Oblique.ttf */,
+				4F60F31D20373442001CCF27 /* Avenir85-Heavy Oblique.ttf */,
+				4F60F31E20373442001CCF27 /* Avenir95-Black Oblique.ttf */,
+			);
+			path = Avenir;
+			sourceTree = "<group>";
+		};
+		4F60F31F20373442001CCF27 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				4F60F32020373442001CCF27 /* Roboto-Bold.ttf */,
+				4F60F32120373442001CCF27 /* Roboto-Medium.ttf */,
+				4F60F32220373442001CCF27 /* Roboto-Regular.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		4F60F33120373763001CCF27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F60F33320373774001CCF27 /* YHWTokensTVC.xib */,
+				4F60F33220373773001CCF27 /* YHWTokensViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F7B6123205275A100B1EF82 /* Fitness Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				4F7B612820527A5700B1EF82 /* Model */,
+				4F7B612620527A5200B1EF82 /* View */,
+				4F7B612420527A4D00B1EF82 /* Controller */,
+			);
+			path = "Fitness Tracker";
+			sourceTree = "<group>";
+		};
+		4F7B612420527A4D00B1EF82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7087420212DE1B600396912 /* Sleep */,
+				E708741F212DE1AB00396912 /* Cycle */,
+				E708741E212DE19E00396912 /* Run */,
+				E708741D212DE18F00396912 /* Walk */,
+				4F7B612920527A9A00B1EF82 /* FitnessTrackerTabBarController.swift */,
+				4F7B612F2052861F00B1EF82 /* FitnessTrackerViewController.swift */,
+				4F4B5FAD2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.swift */,
+				D8952171206A1A8E00D6A727 /* FitnessTrackerStartActivity.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4F7B612620527A5200B1EF82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7087427212DE2AB00396912 /* Views */,
+				E7087426212DE26900396912 /* Cell */,
+				4F7B61302052861F00B1EF82 /* FitnessTrackerViewController.xib */,
+				4F4B5FAE2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.xib */,
+				D8952172206A1A8E00D6A727 /* FitnessTrackerStartActivity.xib */,
+				E7087423212DE24A00396912 /* AddActivityWalkRunCycleVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F7B612820527A5700B1EF82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7074C1A205D713000FD1BEB /* XYMarkerView.swift */,
+				E70D6E1E20C3C16700F372E2 /* XYChartWeightMarker.swift */,
+				E7074C1C205D729B00FD1BEB /* BalloonMarker.swift */,
+				E70AAB5021372133006922C6 /* ActivityTracker.swift */,
+				1835D811213AA85200071882 /* AddWeightService.swift */,
+				18B6AF67213AA9FF00588C78 /* AddWeightInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4FA12FD52036A712006D90C8 /* Health Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				4FA12FD62036A717006D90C8 /* Model */,
+				4F36561820372D7D00A1912A /* View */,
+				4FA12FD92036A775006D90C8 /* Controller */,
+			);
+			path = "Health Tracker";
+			sourceTree = "<group>";
+		};
+		4FA12FD62036A717006D90C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				183ADBBF2136C105005DBEAB /* BloodPressureInfo.swift */,
+				183ADBC12136C18D005DBEAB /* BloodPressureService.swift */,
+				1884463A21416EED0018F9DA /* AddBloodSugarInfo.swift */,
+				1884463821416AB70018F9DA /* BloodSugarService.swift */,
+				187A3822213FE26500BAC255 /* AddHeartRateInfo.swift */,
+				18CA2F21213EB09300E29CAB /* HeartRateService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4FA12FD72036A725006D90C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4FA12FD92036A775006D90C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FA12FDC2036A7FF006D90C8 /* HealthTrackerViewController.swift */,
+				18603B592133D40400836879 /* AddHeartRateReadingVC.swift */,
+				18131457213400D000299D1C /* AddBloodSugerReadingVC.swift */,
+				181314592134135400299D1C /* AddBloodPressureVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4FA12FDB2036A795006D90C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F57C7DC2036A13000F4786D /* YHWTokensTVC.swift */,
+				4F57C7DE2036A13000F4786D /* YHWTokensViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4FDC4A002041EF6E006D9D52 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4FDC49CA2041EED3006D9D52 /* MedicationMedicinesTableViewCell.swift */,
+				4FDC49CB2041EED3006D9D52 /* MedicationMedicinesTableViewCell.xib */,
+				4FDC49D22041EED3006D9D52 /* MedicationReportTableViewCell.swift */,
+				4FDC49D32041EED3006D9D52 /* MedicationReportTableViewCell.xib */,
+				4FDC49D42041EED3006D9D52 /* MedicationReportTableViewSectionCell.swift */,
+				4FDC49D52041EED3006D9D52 /* MedicationReportTableViewSectionCell.xib */,
+				4FDC4A092041EFBB006D9D52 /* MedicationAddMedicineCell */,
+				4FDC4A072041EFB5006D9D52 /* Common */,
+				4FDC4A022041EFA4006D9D52 /* MedicationAddDoseCell */,
+			);
+			name = Cell;
+			path = ../Reminders/Medications;
+			sourceTree = "<group>";
+		};
+		4FDC4A022041EFA4006D9D52 /* MedicationAddDoseCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7208E212B0D7B0072FC6D /* MedicationReminderTimesTVC.swift */,
+				E7C7208D212B0D7B0072FC6D /* MedicationReminderTimesTVC.xib */,
+				4FDC49BC2041EED3006D9D52 /* AddDoseSelectMedicationTVC.swift */,
+				4FDC49BD2041EED3006D9D52 /* AddDoseSelectMedicationTVC.xib */,
+				4FDC49BA2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.swift */,
+				4FDC49BB2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.xib */,
+				4FDC49B82041EED3006D9D52 /* AddDoseDosageTVC.swift */,
+				4FDC49B92041EED3006D9D52 /* AddDoseDosageTVC.xib */,
+				4FDC49B62041EED3006D9D52 /* AddDoseAddNotesTVC.swift */,
+				4FDC49B72041EED3006D9D52 /* AddDoseAddNotesTVC.xib */,
+			);
+			name = MedicationAddDoseCell;
+			sourceTree = "<group>";
+		};
+		4FDC4A072041EFB5006D9D52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FDC49D62041EED3006D9D52 /* MedicationSelectionTVC.swift */,
+				4FDC49D72041EED3006D9D52 /* MedicationSelectionTVC.xib */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4FDC4A092041EFBB006D9D52 /* MedicationAddMedicineCell */ = {
+			isa = PBXGroup;
+			children = (
+				E75122D821024DBD005AD0ED /* ShapeItemListCell.swift */,
+				E75122D121024C9A005AD0ED /* ShapeItemListCell.xib */,
+				E75122D421024CA8005AD0ED /* ColorItemCell.swift */,
+				E75122D521024CA8005AD0ED /* ColorItemCell.xib */,
+			);
+			name = MedicationAddMedicineCell;
+			sourceTree = "<group>";
+		};
+		E56CB438AA4E2A7CB85A47AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F336D6F2F5F6A9BFCF833D6C /* Pods-YourHealthWallet.debug.xcconfig */,
+				F66A291DE7C6EAC6107781EE /* Pods-YourHealthWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E701C70C20CE16A70093D053 /* Goal Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				E701C70E20CE16CB0093D053 /* Model */,
+				E701C70F20CE16D10093D053 /* View */,
+				E701C71020CE16DC0093D053 /* Controller */,
+			);
+			path = "Goal Tracker";
+			sourceTree = "<group>";
+		};
+		E701C70E20CE16CB0093D053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E769B79320ED3EBF009B4D0C /* GoalInfo.swift */,
+				E769B79520ED4D7C009B4D0C /* GoalTrackerService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E701C70F20CE16D10093D053 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7CD491620D1919E0090E8C9 /* PickYourGoalCell */,
+				E701C71220CE170D0093D053 /* GoalTrackerVC.xib */,
+				E70FA54C20D043E60072E4C2 /* StepsGoalVC.xib */,
+				E70FA54820D036310072E4C2 /* ActivityGoalVC.xib */,
+				E7CD490F20D18C290090E8C9 /* SleepGoalVC.xib */,
+				E7CD491320D18DD30090E8C9 /* PickYourGoalVC.xib */,
+				E74DFAFF20D35C7800E3441F /* CustomGoalVC.xib */,
+				E713B85321170CF1003D48CA /* CaloriesGoalVC.xib */,
+				E7C78BC3211621E500DAC667 /* RunGoalVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E701C71020CE16DC0093D053 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E701C71120CE170D0093D053 /* GoalTrackerVC.swift */,
+				E70FA54720D036310072E4C2 /* ActivityGoalVC.swift */,
+				E70FA54B20D043E60072E4C2 /* StepsGoalVC.swift */,
+				E7CD490E20D18C290090E8C9 /* SleepGoalVC.swift */,
+				E7C78BC2211621E500DAC667 /* RunGoalVC.swift */,
+				E7CD491220D18DD30090E8C9 /* PickYourGoalVC.swift */,
+				E713B85221170CF1003D48CA /* CaloriesGoalVC.swift */,
+				E74DFAFE20D35C7800E3441F /* CustomGoalVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E703BB3E20C2FFF600C2E7DA /* AddWeightCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC269120C5A84400287043 /* AddImageCell */,
+				E703BB3F20C303F300C2E7DA /* AddWeightDateCell.swift */,
+				E703BB4020C303F300C2E7DA /* AddWeightDateCell.xib */,
+				E703BB4320C3042B00C2E7DA /* AddWeightCell.swift */,
+				E703BB4420C3042B00C2E7DA /* AddWeightCell.xib */,
+				E703BB4720C3045A00C2E7DA /* AddWeightBodyFatsCell.swift */,
+				E703BB4820C3045A00C2E7DA /* AddWeightBodyFatsCell.xib */,
+				E703BB4B20C3047700C2E7DA /* AddWeightImageCell.swift */,
+				E703BB4C20C3047700C2E7DA /* AddWeightImageCell.xib */,
+				E703BB4F20C3049700C2E7DA /* AddWeightNoteCell.swift */,
+				E703BB5020C3049700C2E7DA /* AddWeightNoteCell.xib */,
+			);
+			name = AddWeightCell;
+			sourceTree = "<group>";
+		};
+		E70788BD204A976500FD6C27 /* HRA */ = {
+			isa = PBXGroup;
+			children = (
+				E70788C2204A97C900FD6C27 /* Controller */,
+				E70788C1204A97B900FD6C27 /* View */,
+				E70788C0204A97AC00FD6C27 /* Model */,
+			);
+			path = HRA;
+			sourceTree = "<group>";
+		};
+		E70788C0204A97AC00FD6C27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7042ED7204DA8920038E0A7 /* HRAQuestionModel.swift */,
+				E7BD6C5320A6E39A00C2BB56 /* HRAService.swift */,
+				E7BD6C5520A6E4BC00C2BB56 /* HRAInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E70788C1204A97B900FD6C27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7F94D28204C2BB100680084 /* HRABaseVC.xib */,
+				E7F94D2C204C2DD300680084 /* HRAPageVC.xib */,
+				E70788C4204A99E900FD6C27 /* HRAAboutVC.xib */,
+				E7F94D30204C2FF500680084 /* HRAActivityVC.xib */,
+				E7042EC8204D78B80038E0A7 /* HRAMedicalVC.xib */,
+				E7042ECC204D78D50038E0A7 /* HRATreatmentVC.xib */,
+				E7042ED2204D790A0038E0A7 /* HRAMedicinesVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E70788C2204A97C900FD6C27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7042ED5204DA6140038E0A7 /* HRAChoice.swift */,
+				E7F94D27204C2BB100680084 /* HRABaseVC.swift */,
+				E7F94D2B204C2DD300680084 /* HRAPageVC.swift */,
+				E70788C3204A99E900FD6C27 /* HRAAboutVC.swift */,
+				E7F94D2F204C2FF500680084 /* HRAActivityVC.swift */,
+				E7042EC7204D78B80038E0A7 /* HRAMedicalVC.swift */,
+				E7042ECB204D78D50038E0A7 /* HRATreatmentVC.swift */,
+				E7042ED1204D790A0038E0A7 /* HRAMedicinesVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E708741D212DE18F00396912 /* Walk */ = {
+			isa = PBXGroup;
+			children = (
+				E7C970C520E3F764009B6CC2 /* LunchWalkingVC.swift */,
+				4F7B61332052863100B1EF82 /* FitnessTrackerWalkViewController.swift */,
+				E7087422212DE24A00396912 /* AddActivityWalkRunCycleVC.swift */,
+			);
+			name = Walk;
+			sourceTree = "<group>";
+		};
+		E708741E212DE19E00396912 /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				E7E81AD0206024EC00763B01 /* FitnessTrackerRunVC.swift */,
+			);
+			name = Run;
+			sourceTree = "<group>";
+		};
+		E708741F212DE1AB00396912 /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				E7087421212DE1E500396912 /* Weight */,
+				E7E81AED2060374B00763B01 /* FitnessTrackerCycleVC.swift */,
+			);
+			name = Cycle;
+			sourceTree = "<group>";
+		};
+		E7087420212DE1B600396912 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				E75989DF20617971007970C2 /* FitnessTrackerSleepVC.swift */,
+				E7BFBD112131244D00FFA3C4 /* AddSleepVC.swift */,
+			);
+			name = Sleep;
+			sourceTree = "<group>";
+		};
+		E7087421212DE1E500396912 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF0C1920C1B4890095633D /* FitnessTrackerWeightVC.swift */,
+				E702905920C2BC77002F9B0D /* AddWeightVC.swift */,
+				E7C2208220C8486700F5F4D5 /* WeightResultVC.swift */,
+			);
+			name = Weight;
+			sourceTree = "<group>";
+		};
+		E7087426212DE26900396912 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E703BB3E20C2FFF600C2E7DA /* AddWeightCell */,
+				E7EF0C1720C1B4530095633D /* WeightCell */,
+				E75989E320617C85007970C2 /* SleepCell */,
+				E7E81AE02060351D00763B01 /* CycleCell */,
+				E7E81AD6206027F300763B01 /* RunCell */,
+				E7E81AD5206027D800763B01 /* WalkCell */,
+				4F4B5FB220591DA200D9CEE9 /* Cell */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E7087427212DE2AB00396912 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E708742C212DE2D700396912 /* Weight */,
+				E708742B212DE2D100396912 /* Sleep */,
+				E708742A212DE2CC00396912 /* Cycle */,
+				E7087429212DE2C600396912 /* Run */,
+				E7087428212DE2B800396912 /* Walk */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E7087428212DE2B800396912 /* Walk */ = {
+			isa = PBXGroup;
+			children = (
+				E7C970C620E3F764009B6CC2 /* LunchWalkingVC.xib */,
+				4F7B61342052863100B1EF82 /* FitnessTrackerWalkViewController.xib */,
+			);
+			name = Walk;
+			sourceTree = "<group>";
+		};
+		E7087429212DE2C600396912 /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				E7E81AD1206024EC00763B01 /* FitnessTrackerRunVC.xib */,
+			);
+			name = Run;
+			sourceTree = "<group>";
+		};
+		E708742A212DE2CC00396912 /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				E7E81AEE2060374B00763B01 /* FitnessTrackerCycleVC.xib */,
+			);
+			name = Cycle;
+			sourceTree = "<group>";
+		};
+		E708742B212DE2D100396912 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				E75989E020617971007970C2 /* FitnessTrackerSleepVC.xib */,
+				E7BFBD122131244D00FFA3C4 /* AddSleepVC.xib */,
+			);
+			name = Sleep;
+			sourceTree = "<group>";
+		};
+		E708742C212DE2D700396912 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF0C1820C1B4880095633D /* FitnessTrackerWeightVC.xib */,
+				E702905A20C2BC77002F9B0D /* AddWeightVC.xib */,
+				E7C2208320C8486700F5F4D5 /* WeightResultVC.xib */,
+			);
+			name = Weight;
+			sourceTree = "<group>";
+		};
+		E709ABB1211C9DB600CB92ED /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				E709ABB2211C9DB600CB92ED /* FSCalendar+Deprecated.m */,
+				E709ABB3211C9DB600CB92ED /* FSCalendar.h */,
+				E709ABB4211C9DB600CB92ED /* FSCalendar.m */,
+				E709ABB5211C9DB600CB92ED /* FSCalendarAppearance.h */,
+				E709ABB6211C9DB600CB92ED /* FSCalendarAppearance.m */,
+				E709ABB7211C9DB600CB92ED /* FSCalendarCalculator.h */,
+				E709ABB8211C9DB600CB92ED /* FSCalendarCalculator.m */,
+				E709ABB9211C9DB600CB92ED /* FSCalendarCell.h */,
+				E709ABBA211C9DB600CB92ED /* FSCalendarCell.m */,
+				E709ABBB211C9DB600CB92ED /* FSCalendarCollectionView.h */,
+				E709ABBC211C9DB600CB92ED /* FSCalendarCollectionView.m */,
+				E709ABBD211C9DB600CB92ED /* FSCalendarCollectionViewLayout.h */,
+				E709ABBE211C9DB600CB92ED /* FSCalendarCollectionViewLayout.m */,
+				E709ABBF211C9DB600CB92ED /* FSCalendarConstants.h */,
+				E709ABC0211C9DB600CB92ED /* FSCalendarConstants.m */,
+				E709ABC1211C9DB600CB92ED /* FSCalendarDelegationFactory.h */,
+				E709ABC2211C9DB600CB92ED /* FSCalendarDelegationFactory.m */,
+				E709ABC3211C9DB600CB92ED /* FSCalendarDelegationProxy.h */,
+				E709ABC4211C9DB600CB92ED /* FSCalendarDelegationProxy.m */,
+				E709ABC5211C9DB600CB92ED /* FSCalendarDynamicHeader.h */,
+				E709ABC6211C9DB600CB92ED /* FSCalendarExtensions.h */,
+				E709ABC7211C9DB600CB92ED /* FSCalendarExtensions.m */,
+				E709ABC8211C9DB600CB92ED /* FSCalendarHeaderView.h */,
+				E709ABC9211C9DB600CB92ED /* FSCalendarHeaderView.m */,
+				E709ABCA211C9DB600CB92ED /* FSCalendarScopeHandle.h */,
+				E709ABCB211C9DB600CB92ED /* FSCalendarScopeHandle.m */,
+				E709ABCC211C9DB600CB92ED /* FSCalendarStickyHeader.h */,
+				E709ABCD211C9DB600CB92ED /* FSCalendarStickyHeader.m */,
+				E709ABCE211C9DB600CB92ED /* FSCalendarTransitionCoordinator.h */,
+				E709ABCF211C9DB600CB92ED /* FSCalendarTransitionCoordinator.m */,
+				E709ABD0211C9DB600CB92ED /* FSCalendarWeekdayView.h */,
+				E709ABD1211C9DB600CB92ED /* FSCalendarWeekdayView.m */,
+				E709ABD2211C9DB600CB92ED /* Info.plist */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		E712C47020302ED3008BF5C6 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1784D20335C1D00199D4D /* View */,
+				E7F1784C20335C1A00199D4D /* Model */,
+				E7F1784B20335C0700199D4D /* Controller */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		E74AC54D204337E400AD4238 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C72089212AD0F20072FC6D /* MedicationAddEditVC.swift */,
+				E7653A6C20432367003EFE7F /* MedicationAllViewController.swift */,
+				E7653A7420432367003EFE7F /* MedicationsDaywiseViewController.swift */,
+				E7653A7720432367003EFE7F /* MedicationsTabBarController.swift */,
+				E7577A5520448698007C566D /* PopOverViewController.swift */,
+				4FDC49CC2041EED3006D9D52 /* MedicationMedicinesViewController.swift */,
+				4FDC49C62041EED3006D9D52 /* MedicationAddDoseViewController.swift */,
+				4FDC49D02041EED3006D9D52 /* MedicationReportsViewController.swift */,
+				E7966EA5211C8BCD00AA0861 /* MedicationHistoryVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E74AC54F204337FC00AD4238 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FDC4A002041EF6E006D9D52 /* Cell */,
+				4FDC49CD2041EED3006D9D52 /* MedicationMedicinesViewController.xib */,
+				4FDC49C72041EED3006D9D52 /* MedicationAddDoseViewController.xib */,
+				4FDC49D12041EED3006D9D52 /* MedicationReportsViewController.xib */,
+				E7653A6A20432367003EFE7F /* DayHeaderCell.swift */,
+				E7653A6B20432367003EFE7F /* DayHeaderCell.xib */,
+				E7653A6D20432367003EFE7F /* MedicationAllViewController.xib */,
+				E7653A6E20432367003EFE7F /* MedicationDateCollectionView.swift */,
+				E7653A6F20432367003EFE7F /* MedicationDateCollectionViewCell.swift */,
+				E7653A7020432367003EFE7F /* MedicationDateCollectionViewCell.xib */,
+				E7653A7220432367003EFE7F /* MedicationListCell.swift */,
+				E7653A7320432367003EFE7F /* MedicationListCell.xib */,
+				E7653A7520432367003EFE7F /* MedicationsDaywiseViewController.xib */,
+				E7653A7820432367003EFE7F /* MedicationTableview.swift */,
+				E7577A5620448698007C566D /* PopOverViewController.xib */,
+				E7577A59204498B7007C566D /* PopUpItemCell.swift */,
+				E7DA1BAF211D95810062624D /* MedicationHistoryCell.swift */,
+				E7DA1BB0211D95810062624D /* MedicationHistoryCell.xib */,
+				E7577A5A204498B7007C566D /* PopUpItemCell.xib */,
+				E7C7208A212AD0F20072FC6D /* MedicationAddEditVC.xib */,
+				E7966EA6211C8BCD00AA0861 /* MedicationHistoryVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E74AC550204337FF00AD4238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7653A7120432367003EFE7F /* MedicationInfo.swift */,
+				E7653A7620432367003EFE7F /* MedicationsService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E75989E320617C85007970C2 /* SleepCell */ = {
+			isa = PBXGroup;
+			children = (
+				E75989EC20617CEF007970C2 /* SleepFirstCell.swift */,
+				E75989ED20617CEF007970C2 /* SleepFirstCell.xib */,
+				E75989F020617D04007970C2 /* SleepTimeCell.swift */,
+				E75989F120617D04007970C2 /* SleepTimeCell.xib */,
+				E75989F420617D18007970C2 /* SleepAddManualCell.swift */,
+				E75989F520617D18007970C2 /* SleepAddManualCell.xib */,
+			);
+			name = SleepCell;
+			sourceTree = "<group>";
+		};
+		E7653A6920432367003EFE7F /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				E74AC550204337FF00AD4238 /* Model */,
+				E74AC54F204337FC00AD4238 /* View */,
+				E74AC54D204337E400AD4238 /* Controller */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		E7AC268420C5A4D700287043 /* WMGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				E777A02F20CAF3640087A935 /* WMGaugeView.h */,
+				E777A02E20CAF3640087A935 /* WMGaugeView.m */,
+				E7AC268720C5A4D700287043 /* WMGaugeViewStyle.h */,
+				E7AC268820C5A4D700287043 /* WMGaugeViewStyle3D.h */,
+				E7AC268920C5A4D700287043 /* WMGaugeViewStyle3D.m */,
+				E7AC268A20C5A4D700287043 /* WMGaugeViewStyleFlatThin.h */,
+				E7AC268B20C5A4D700287043 /* WMGaugeViewStyleFlatThin.m */,
+			);
+			path = WMGaugeView;
+			sourceTree = "<group>";
+		};
+		E7AC269120C5A84400287043 /* AddImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC269420C5A85A00287043 /* AddImageCell.swift */,
+				E7AC269520C5A85A00287043 /* AddImageCell.xib */,
+				E7AC269320C5A85900287043 /* WeightImageListCell.swift */,
+				E7AC269220C5A85900287043 /* WeightImageListCell.xib */,
+			);
+			name = AddImageCell;
+			sourceTree = "<group>";
+		};
+		E7C90FAB21207262008FC353 /* HealthKitManager */ = {
+			isa = PBXGroup;
+			children = (
+				E7C90FAC21207274008FC353 /* HealthManagerKit.swift */,
+				E70A2C6021244C9F005E4365 /* HealthProfileManager.swift */,
+			);
+			name = HealthKitManager;
+			sourceTree = "<group>";
+		};
+		E7CD491620D1919E0090E8C9 /* PickYourGoalCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7CD491720D191D70090E8C9 /* PickGoalListCell.swift */,
+				E7CD491820D191D70090E8C9 /* PickGoalListCell.xib */,
+			);
+			name = PickYourGoalCell;
+			sourceTree = "<group>";
+		};
+		E7E81AD5206027D800763B01 /* WalkCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7E221602058474600D75EAC /* WalkFirstCell.swift */,
+				E7E221612058474600D75EAC /* WalkFirstCell.xib */,
+				E71562492059891C00F4DA5B /* WalkListcell.swift */,
+				E715624A2059891C00F4DA5B /* WalkListcell.xib */,
+			);
+			name = WalkCell;
+			sourceTree = "<group>";
+		};
+		E7E81AD6206027F300763B01 /* RunCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7E81AD72060285200763B01 /* RunFirstCell.swift */,
+				E7E81AD82060285200763B01 /* RunFirstCell.xib */,
+				E7E81ADB2060286400763B01 /* RunListCell.swift */,
+				E7E81ADC2060286400763B01 /* RunListCell.xib */,
+			);
+			name = RunCell;
+			sourceTree = "<group>";
+		};
+		E7E81AE02060351D00763B01 /* CycleCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7E81AE12060354700763B01 /* CycleFirstCell.swift */,
+				E7E81AE22060354700763B01 /* CycleFirstCell.xib */,
+				E7E81AE9206036D200763B01 /* CycleListCell.swift */,
+				E7E81AEA206036D200763B01 /* CycleListCell.xib */,
+			);
+			name = CycleCell;
+			sourceTree = "<group>";
+		};
+		E7EF0C1720C1B4530095633D /* WeightCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF0C1C20C1B4940095633D /* WeightFirstCell.swift */,
+				E7EF0C1D20C1B4950095633D /* WeightFirstCell.xib */,
+				E7EF0C1E20C1B4950095633D /* WeightListCell.swift */,
+				E7EF0C1F20C1B4950095633D /* WeightListCell.xib */,
+			);
+			name = WeightCell;
+			sourceTree = "<group>";
+		};
+		E7F1784B20335C0700199D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1784E20335C8D00199D4D /* LoginViewController.swift */,
+				E7F1784320335C0000199D4D /* InitialViewController.swift */,
+				E7F1784520335C0100199D4D /* RegisterViewController.swift */,
+				E700A6F920696C070054DFC2 /* ForgotPasswordVC.swift */,
+				E7C72092212B23E10072FC6D /* PrivacyPolicyVC.swift */,
+				E7C72093212B23E10072FC6D /* PrivacyPolicyVC.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E7F1784C20335C1A00199D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E78534A52035EC8500DB5C3C /* RegisterInfo.swift */,
+				E78534A92036034900DB5C3C /* RegisterService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E7F1784D20335C1D00199D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1785020335C9700199D4D /* LoginViewController.xib */,
+				E7F1784420335C0000199D4D /* InitialViewController.xib */,
+				E7F1784620335C0100199D4D /* RegisterViewController.xib */,
+				E700A6FA20696C070054DFC2 /* ForgotPasswordVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044DBCB92020D18B00B6DEDF /* YourHealthWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044DBCCF2020D18C00B6DEDF /* Build configuration list for PBXNativeTarget "YourHealthWallet" */;
+			buildPhases = (
+				D0F9E758286B0C206BD976DF /* [CP] Check Pods Manifest.lock */,
+				044DBCB62020D18B00B6DEDF /* Sources */,
+				044DBCB72020D18B00B6DEDF /* Frameworks */,
+				044DBCB82020D18B00B6DEDF /* Resources */,
+				044107AE204A775D00A5E22A /* ShellScript */,
+				4D253FA37765FA3DB6B8947F /* [CP] Embed Pods Frameworks */,
+				ED1A22A2BCED2FCE6F6F48A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YourHealthWallet;
+			productName = YourHealthWallet;
+			productReference = 044DBCBA2020D18C00B6DEDF /* YourHealthWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044DBCB22020D18B00B6DEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yourhealthwallet;
+				TargetAttributes = {
+					044DBCB92020D18B00B6DEDF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 044DBCB52020D18B00B6DEDF /* Build configuration list for PBXProject "YourHealthWallet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044DBCB12020D18B00B6DEDF;
+			productRefGroup = 044DBCBB2020D18C00B6DEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044DBCB92020D18B00B6DEDF /* YourHealthWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044DBCB82020D18B00B6DEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74DFB0120D35C7800E3441F /* CustomGoalVC.xib in Resources */,
+				4FDC49DB2041EED3006D9D52 /* AddDoseDosageTVC.xib in Resources */,
+				E702905C20C2BC77002F9B0D /* AddWeightVC.xib in Resources */,
+				4F4B5FB620591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.xib in Resources */,
+				E7BFBD142131244D00FFA3C4 /* AddSleepVC.xib in Resources */,
+				4F60F32D20373442001CCF27 /* Roboto-Medium.ttf in Resources */,
+				4F60F32820373442001CCF27 /* Avenir55Roman.ttf in Resources */,
+				E7CD491120D18C290090E8C9 /* SleepGoalVC.xib in Resources */,
+				E7F1785120335C9700199D4D /* LoginViewController.xib in Resources */,
+				E75989E220617971007970C2 /* FitnessTrackerSleepVC.xib in Resources */,
+				18E0F5CD212C397E00B5F347 /* AddReminderVC.xib in Resources */,
+				181314542133FC7800299D1C /* Localizable.strings in Resources */,
+				E7F94D32204C2FF500680084 /* HRAActivityVC.xib in Resources */,
+				E75989F320617D04007970C2 /* SleepTimeCell.xib in Resources */,
+				4F60F32620373442001CCF27 /* Avenir35-Light Oblique.ttf in Resources */,
+				0441E629202A238900691572 /* RemindersCollectionViewCell.xib in Resources */,
+				E70FA54E20D043E60072E4C2 /* StepsGoalVC.xib in Resources */,
+				E7E81AEC206036D200763B01 /* CycleListCell.xib in Resources */,
+				4F7B61322052861F00B1EF82 /* FitnessTrackerViewController.xib in Resources */,
+				4F60F32B20373442001CCF27 /* Avenir95-Black Oblique.ttf in Resources */,
+				E7042ECA204D78B80038E0A7 /* HRAMedicalVC.xib in Resources */,
+				E7E81AE42060354700763B01 /* CycleFirstCell.xib in Resources */,
+				E7CD491A20D191D70090E8C9 /* PickGoalListCell.xib in Resources */,
+				18603B582133C7C300836879 /* AddHeartRateReadingVC.xib in Resources */,
+				E7577A5C204498B7007C566D /* PopUpItemCell.xib in Resources */,
+				E703BB4620C3042B00C2E7DA /* AddWeightCell.xib in Resources */,
+				E70788C6204A99E900FD6C27 /* HRAAboutVC.xib in Resources */,
+				E7F3CEE320DABF1000A51F95 /* FitnessTypeCell.xib in Resources */,
+				E715624C2059891C00F4DA5B /* WalkListcell.xib in Resources */,
+				4FDC49DF2041EED3006D9D52 /* AddDoseSelectMedicationTVC.xib in Resources */,
+				E7E81AF02060374B00763B01 /* FitnessTrackerCycleVC.xib in Resources */,
+				E7653A7F20432367003EFE7F /* MedicationDateCollectionViewCell.xib in Resources */,
+				E7C970CC20E3FC63009B6CC2 /* LunchWalkingCell.xib in Resources */,
+				4F60F32E20373442001CCF27 /* Roboto-Regular.ttf in Resources */,
+				E703BB4E20C3047700C2E7DA /* AddWeightImageCell.xib in Resources */,
+				E709ABE3211C9DB700CB92ED /* Info.plist in Resources */,
+				4F7B61362052863100B1EF82 /* FitnessTrackerWalkViewController.xib in Resources */,
+				4FDC49F92041EED3006D9D52 /* MedicationSelectionTVC.xib in Resources */,
+				04B972AA203DE605002597CB /* HTHeartRateCollectionViewCell.xib in Resources */,
+				E75989EF20617CEF007970C2 /* SleepFirstCell.xib in Resources */,
+				E7AC269920C5A85A00287043 /* AddImageCell.xib in Resources */,
+				4F60F33520373774001CCF27 /* YHWTokensTVC.xib in Resources */,
+				E7653A8220432367003EFE7F /* MedicationListCell.xib in Resources */,
+				4FDC49E92041EED3006D9D52 /* MedicationAddDoseViewController.xib in Resources */,
+				E7042ED4204D790A0038E0A7 /* HRAMedicinesVC.xib in Resources */,
+				4F60F32520373442001CCF27 /* Avenir.ttc in Resources */,
+				4F4B5FB02058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.xib in Resources */,
+				E7C78BC5211621E600DAC667 /* RunGoalVC.xib in Resources */,
+				E7042ECE204D78D50038E0A7 /* HRATreatmentVC.xib in Resources */,
+				4FDC49F52041EED3006D9D52 /* MedicationReportTableViewCell.xib in Resources */,
+				E70FA54A20D036310072E4C2 /* ActivityGoalVC.xib in Resources */,
+				E700A6FC20696C070054DFC2 /* ForgotPasswordVC.xib in Resources */,
+				E75122D321024C9A005AD0ED /* ShapeItemListCell.xib in Resources */,
+				E7CD491520D18DD30090E8C9 /* PickYourGoalVC.xib in Resources */,
+				4F4B5FBE2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.xib in Resources */,
+				4F60F32A20373442001CCF27 /* Avenir85-Heavy Oblique.ttf in Resources */,
+				E701C71420CE170D0093D053 /* GoalTrackerVC.xib in Resources */,
+				E7EF0C2120C1B4950095633D /* WeightFirstCell.xib in Resources */,
+				E7F1784A20335C0100199D4D /* RegisterViewController.xib in Resources */,
+				E75989F720617D19007970C2 /* SleepAddManualCell.xib in Resources */,
+				040450F120261D6A00CE2D2B /* ReminderViewController.xib in Resources */,
+				4F60F33420373774001CCF27 /* YHWTokensViewController.xib in Resources */,
+				042ED29A2022ABF500B3D2A5 /* HomeViewController.xib in Resources */,
+				E72B782120DE118000569298 /* WakeUpTimeCell.xib in Resources */,
+				4F60F32720373442001CCF27 /* Avenir45-Book Oblique.ttf in Resources */,
+				4F4B5FC220593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.xib in Resources */,
+				E713B85521170CF1003D48CA /* CaloriesGoalVC.xib in Resources */,
+				4FDC49EF2041EED3006D9D52 /* MedicationMedicinesViewController.xib in Resources */,
+				4FDC49ED2041EED3006D9D52 /* MedicationMedicinesTableViewCell.xib in Resources */,
+				E7E81ADA2060285200763B01 /* RunFirstCell.xib in Resources */,
+				044DBCCB2020D18C00B6DEDF /* LaunchScreen.storyboard in Resources */,
+				D8952174206A1A8E00D6A727 /* FitnessTrackerStartActivity.xib in Resources */,
+				E75122D721024CA8005AD0ED /* ColorItemCell.xib in Resources */,
+				E7F94D2A204C2BB100680084 /* HRABaseVC.xib in Resources */,
+				E7F1784820335C0100199D4D /* InitialViewController.xib in Resources */,
+				4FDC49D92041EED3006D9D52 /* AddDoseAddNotesTVC.xib in Resources */,
+				E7653A7A20432367003EFE7F /* DayHeaderCell.xib in Resources */,
+				4FDC49F32041EED3006D9D52 /* MedicationReportsViewController.xib in Resources */,
+				4F60F32320373442001CCF27 /* Avenir Next Condensed.ttc in Resources */,
+				E7C970C820E3F764009B6CC2 /* LunchWalkingVC.xib in Resources */,
+				04AB233A20407AE100983D36 /* HTBloodSugarCell.xib in Resources */,
+				18131456213400C400299D1C /* AddBloodSugerReadingVC.xib in Resources */,
+				E7EF0C1A20C1B4890095633D /* FitnessTrackerWeightVC.xib in Resources */,
+				E703BB5220C3049700C2E7DA /* AddWeightNoteCell.xib in Resources */,
+				E7DA1BB2211D95810062624D /* MedicationHistoryCell.xib in Resources */,
+				4F60F32920373442001CCF27 /* Avenir65-Medium Oblique.ttf in Resources */,
+				E7653A7C20432367003EFE7F /* MedicationAllViewController.xib in Resources */,
+				E7577A5820448698007C566D /* PopOverViewController.xib in Resources */,
+				E7653A8420432367003EFE7F /* MedicationsDaywiseViewController.xib in Resources */,
+				E7C7208C212AD0F20072FC6D /* MedicationAddEditVC.xib in Resources */,
+				E7AC269620C5A85A00287043 /* WeightImageListCell.xib in Resources */,
+				4F60F32C20373442001CCF27 /* Roboto-Bold.ttf in Resources */,
+				044DBCC82020D18C00B6DEDF /* Assets.xcassets in Resources */,
+				E7C7208F212B0D7B0072FC6D /* MedicationReminderTimesTVC.xib in Resources */,
+				E7087425212DE24A00396912 /* AddActivityWalkRunCycleVC.xib in Resources */,
+				E7F94D2E204C2DD300680084 /* HRAPageVC.xib in Resources */,
+				4F60F32420373442001CCF27 /* Avenir Next.ttc in Resources */,
+				E7F633CA20BAE1110016B9C4 /* LeftMenuVC.xib in Resources */,
+				E712C47D203035D5008BF5C6 /* GoogleService-Info.plist in Resources */,
+				E7966EA8211C8BCD00AA0861 /* MedicationHistoryVC.xib in Resources */,
+				4FDC49F72041EED3006D9D52 /* MedicationReportTableViewSectionCell.xib in Resources */,
+				E7C72095212B23E10072FC6D /* PrivacyPolicyVC.xib in Resources */,
+				E7EF0C2320C1B4950095633D /* WeightListCell.xib in Resources */,
+				1813145C2134135E00299D1C /* AddBloodPressureVC.xib in Resources */,
+				E7C2208520C8486700F5F4D5 /* WeightResultVC.xib in Resources */,
+				4FDC49DD2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.xib in Resources */,
+				4FA12FDF2036A7FF006D90C8 /* HealthTrackerViewController.xib in Resources */,
+				E7E81AD3206024EC00763B01 /* FitnessTrackerRunVC.xib in Resources */,
+				04AB233E2040861C00983D36 /* HTBodyWeightCell.xib in Resources */,
+				049827E12028D4570052A9AB /* RemindersDateCollectionViewCell.xib in Resources */,
+				044DBCC32020D18C00B6DEDF /* Main.storyboard in Resources */,
+				E7E81ADE2060286400763B01 /* RunListCell.xib in Resources */,
+				E7E221632058474600D75EAC /* WalkFirstCell.xib in Resources */,
+				E703BB4220C303F300C2E7DA /* AddWeightDateCell.xib in Resources */,
+				E703BB4A20C3045A00C2E7DA /* AddWeightBodyFatsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044107AE204A775D00A5E22A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 59588e2d92cdb5be9695cb5a6ee3f3d67bf778d1 96bc602576ab72141ededdcc4ea87028cb5564d78f7a30d86e95f9f91e3f3faf";
+		};
+		4D253FA37765FA3DB6B8947F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireJsonToObjects/AlamofireJsonToObjects.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DrawerController/DrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireJsonToObjects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F9E758286B0C206BD976DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YourHealthWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1A22A2BCED2FCE6F6F48A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourHealthWallet/Pods-YourHealthWallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044DBCB62020D18B00B6DEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BE05812037593300C524CD /* Constant.swift in Sources */,
+				E709ABDA211C9DB600CB92ED /* FSCalendarConstants.m in Sources */,
+				044DBCC62020D18C00B6DEDF /* YourHealthWallet.xcdatamodeld in Sources */,
+				04B972A9203DE605002597CB /* HTHeartRateCollectionViewCell.swift in Sources */,
+				E709ABDD211C9DB600CB92ED /* FSCalendarExtensions.m in Sources */,
+				E709ABDF211C9DB600CB92ED /* FSCalendarScopeHandle.m in Sources */,
+				E703BB4520C3042B00C2E7DA /* AddWeightCell.swift in Sources */,
+				E7042EC9204D78B80038E0A7 /* HRAMedicalVC.swift in Sources */,
+				E7E81ADD2060286400763B01 /* RunListCell.swift in Sources */,
+				4FDC49E82041EED3006D9D52 /* MedicationAddDoseViewController.swift in Sources */,
+				E74DFB0020D35C7800E3441F /* CustomGoalVC.swift in Sources */,
+				E7DA1BB1211D95810062624D /* MedicationHistoryCell.swift in Sources */,
+				E72B782020DE118000569298 /* WakeUpTimeCell.swift in Sources */,
+				E7C7208B212AD0F20072FC6D /* MedicationAddEditVC.swift in Sources */,
+				187A3823213FE26500BAC255 /* AddHeartRateInfo.swift in Sources */,
+				E709ABE1211C9DB600CB92ED /* FSCalendarTransitionCoordinator.m in Sources */,
+				E7653A7920432367003EFE7F /* DayHeaderCell.swift in Sources */,
+				042ED29E20238EC400B3D2A5 /* GradientLayer.swift in Sources */,
+				044DBD5C20218EDE00B6DEDF /* TextField.swift in Sources */,
+				E709ABD8211C9DB600CB92ED /* FSCalendarCollectionView.m in Sources */,
+				4FDC49EE2041EED3006D9D52 /* MedicationMedicinesViewController.swift in Sources */,
+				E7BD6C5420A6E39A00C2BB56 /* HRAService.swift in Sources */,
+				E7E81AD92060285200763B01 /* RunFirstCell.swift in Sources */,
+				E75989E120617971007970C2 /* FitnessTrackerSleepVC.swift in Sources */,
+				04AB233D2040861C00983D36 /* HTBodyWeightCell.swift in Sources */,
+				E7F94D31204C2FF500680084 /* HRAActivityVC.swift in Sources */,
+				4F7B61312052861F00B1EF82 /* FitnessTrackerViewController.swift in Sources */,
+				E7CD491020D18C290090E8C9 /* SleepGoalVC.swift in Sources */,
+				04B972AC203DE892002597CB /* StackView.swift in Sources */,
+				E715624B2059891C00F4DA5B /* WalkListcell.swift in Sources */,
+				4F57C7E22036A13100F4786D /* YHWTokensViewController.swift in Sources */,
+				E7C970CB20E3FC63009B6CC2 /* LunchWalkingCell.swift in Sources */,
+				E7577A5720448698007C566D /* PopOverViewController.swift in Sources */,
+				E7653A7B20432367003EFE7F /* MedicationAllViewController.swift in Sources */,
+				4FDC49F22041EED3006D9D52 /* MedicationReportsViewController.swift in Sources */,
+				4F4B5FBA2059201700D9CEE9 /* PlaceholderTextView.swift in Sources */,
+				04B617232022319800AC7311 /* DashboardTabBarController.swift in Sources */,
+				4F7B61352052863100B1EF82 /* FitnessTrackerWalkViewController.swift in Sources */,
+				E7C2208420C8486700F5F4D5 /* WeightResultVC.swift in Sources */,
+				E7AC269720C5A85A00287043 /* WeightImageListCell.swift in Sources */,
+				E7CD491420D18DD30090E8C9 /* PickYourGoalVC.swift in Sources */,
+				044DBD3B20218EDE00B6DEDF /* UIView+ParentController.swift in Sources */,
+				044DBD5820218EDE00B6DEDF /* TableView.swift in Sources */,
+				E7F7534A2127DB1800B894EF /* DateHelper.swift in Sources */,
+				4F3A4BD0206B748C0024A8B1 /* GlobalVars.swift in Sources */,
+				044DBD4820218EDE00B6DEDF /* CollectionViewCell.swift in Sources */,
+				E702905B20C2BC77002F9B0D /* AddWeightVC.swift in Sources */,
+				E7E221622058474600D75EAC /* WalkFirstCell.swift in Sources */,
+				E7C78BC4211621E600DAC667 /* RunGoalVC.swift in Sources */,
+				E7F1784720335C0100199D4D /* InitialViewController.swift in Sources */,
+				044DBD2A20218EDE00B6DEDF /* HelperFunctions.swift in Sources */,
+				E713B85421170CF1003D48CA /* CaloriesGoalVC.swift in Sources */,
+				E70FA54920D036310072E4C2 /* ActivityGoalVC.swift in Sources */,
+				4F4B5FBD2059253000D9CEE9 /* FitnessTrackerAddActivityTimeTVC.swift in Sources */,
+				04B972AE203DF0E6002597CB /* HealthTrackerCollectionVeiw.swift in Sources */,
+				1884463921416AB70018F9DA /* BloodSugarService.swift in Sources */,
+				044DBD5620218EDE00B6DEDF /* ScrollView.swift in Sources */,
+				044DBD6120218EDE00B6DEDF /* ViewController.swift in Sources */,
+				E7653A8620432367003EFE7F /* MedicationsTabBarController.swift in Sources */,
+				E75989EE20617CEF007970C2 /* SleepFirstCell.swift in Sources */,
+				044DBD5A20218EDE00B6DEDF /* TabStripViewController.swift in Sources */,
+				E709ABD7211C9DB600CB92ED /* FSCalendarCell.m in Sources */,
+				042ED2992022ABF500B3D2A5 /* HomeViewController.swift in Sources */,
+				044DBD4420218EDE00B6DEDF /* BackBarButton.swift in Sources */,
+				E7F1784F20335C8D00199D4D /* LoginViewController.swift in Sources */,
+				E7653A8120432367003EFE7F /* MedicationListCell.swift in Sources */,
+				18603B5A2133D40400836879 /* AddHeartRateReadingVC.swift in Sources */,
+				18E0F5CF212C4B0600B5F347 /* AddReminderVC.swift in Sources */,
+				4FDC49DA2041EED3006D9D52 /* AddDoseDosageTVC.swift in Sources */,
+				044DBD3120218EDE00B6DEDF /* NSObject+Copy.swift in Sources */,
+				4FF4AA1E204A5B1B003078C6 /* Date+RUI.swift in Sources */,
+				E75989F620617D19007970C2 /* SleepAddManualCell.swift in Sources */,
+				E7CD491920D191D70090E8C9 /* PickGoalListCell.swift in Sources */,
+				E709ABD4211C9DB600CB92ED /* FSCalendar.m in Sources */,
+				044DBD3920218EDE00B6DEDF /* UIColor+RUI.swift in Sources */,
+				E7E81AEF2060374B00763B01 /* FitnessTrackerCycleVC.swift in Sources */,
+				E703BB4120C303F300C2E7DA /* AddWeightDateCell.swift in Sources */,
+				E7F633C920BAE1110016B9C4 /* LeftMenuVC.swift in Sources */,
+				E7653A8020432367003EFE7F /* MedicationInfo.swift in Sources */,
+				E70AAB4F21370EE7006922C6 /* LocationManager.swift in Sources */,
+				E75989F220617D04007970C2 /* SleepTimeCell.swift in Sources */,
+				044DBCC02020D18C00B6DEDF /* FirstViewController.swift in Sources */,
+				044DBCD320214B5F00B6DEDF /* TextCollectionViewCell.swift in Sources */,
+				0441E625202A232400691572 /* RemindersCollectionView.swift in Sources */,
+				E7653A8520432367003EFE7F /* MedicationsService.swift in Sources */,
+				04E7107C2033610900429195 /* ReminderInfo.swift in Sources */,
+				E7BFBD132131244D00FFA3C4 /* AddSleepVC.swift in Sources */,
+				E7E81AD2206024EC00763B01 /* FitnessTrackerRunVC.swift in Sources */,
+				044DBD5D20218EDE00B6DEDF /* TextView.swift in Sources */,
+				E7577A5B204498B7007C566D /* PopUpItemCell.swift in Sources */,
+				E769B79420ED3EBF009B4D0C /* GoalInfo.swift in Sources */,
+				4FA12FDE2036A7FF006D90C8 /* HealthTrackerViewController.swift in Sources */,
+				044DBD3A20218EDE00B6DEDF /* UIDevice+Type.swift in Sources */,
+				E70FA54D20D043E60072E4C2 /* StepsGoalVC.swift in Sources */,
+				E78534A62035EC8500DB5C3C /* RegisterInfo.swift in Sources */,
+				E70AAB5121372133006922C6 /* ActivityTracker.swift in Sources */,
+				183ADBBE2136B7E7005DBEAB /* Utility.swift in Sources */,
+				E78534AA2036034900DB5C3C /* RegisterService.swift in Sources */,
+				04E710802033689200429195 /* WebcomUrls.swift in Sources */,
+				E709ABE0211C9DB600CB92ED /* FSCalendarStickyHeader.m in Sources */,
+				E7074C1D205D729B00FD1BEB /* BalloonMarker.swift in Sources */,
+				E7AC269820C5A85A00287043 /* AddImageCell.swift in Sources */,
+				044DBD6020218EDE00B6DEDF /* ViewController+RUI.swift in Sources */,
+				E7C970C720E3F764009B6CC2 /* LunchWalkingVC.swift in Sources */,
+				E7DF4299210DAE2A00CA485C /* RadialProgressView.swift in Sources */,
+				044DBD1E20218EDE00B6DEDF /* Array+RUI.swift in Sources */,
+				E70D6E1F20C3C16700F372E2 /* XYChartWeightMarker.swift in Sources */,
+				E709ABDB211C9DB600CB92ED /* FSCalendarDelegationFactory.m in Sources */,
+				E703BB4D20C3047700C2E7DA /* AddWeightImageCell.swift in Sources */,
+				4FDC49F42041EED3006D9D52 /* MedicationReportTableViewCell.swift in Sources */,
+				E7C90FAD21207274008FC353 /* HealthManagerKit.swift in Sources */,
+				4FDC49DE2041EED3006D9D52 /* AddDoseSelectMedicationTVC.swift in Sources */,
+				04315C592041CA8D008185F0 /* CircularBorderView.swift in Sources */,
+				E777A03020CAF3640087A935 /* WMGaugeView.m in Sources */,
+				044DBCBE2020D18C00B6DEDF /* AppDelegate.swift in Sources */,
+				E7F94D29204C2BB100680084 /* HRABaseVC.swift in Sources */,
+				044DBD4920218EDE00B6DEDF /* Colors.swift in Sources */,
+				4F7B612A20527A9A00B1EF82 /* FitnessTrackerTabBarController.swift in Sources */,
+				E7BD6C5620A6E4BC00C2BB56 /* HRAInfo.swift in Sources */,
+				044DBD5920218EDE00B6DEDF /* TableViewCell.swift in Sources */,
+				E700A6FB20696C070054DFC2 /* ForgotPasswordVC.swift in Sources */,
+				E7042ED8204DA8920038E0A7 /* HRAQuestionModel.swift in Sources */,
+				E7C72090212B0D7B0072FC6D /* MedicationReminderTimesTVC.swift in Sources */,
+				E75122D621024CA8005AD0ED /* ColorItemCell.swift in Sources */,
+				044DBD4520218EDE00B6DEDF /* BarButtonItem.swift in Sources */,
+				044DBD5F20218EDE00B6DEDF /* View.swift in Sources */,
+				049827DB2028D3D00052A9AB /* RemindersDateCollectionView.swift in Sources */,
+				E7074C1B205D713000FD1BEB /* XYMarkerView.swift in Sources */,
+				E709ABD6211C9DB600CB92ED /* FSCalendarCalculator.m in Sources */,
+				E709ABD5211C9DB600CB92ED /* FSCalendarAppearance.m in Sources */,
+				E709ABD3211C9DB600CB92ED /* FSCalendar+Deprecated.m in Sources */,
+				E769B79620ED4D7C009B4D0C /* GoalTrackerService.swift in Sources */,
+				E7042ECD204D78D50038E0A7 /* HRATreatmentVC.swift in Sources */,
+				0494202E2039FB1A0031A888 /* DPPickerManager.swift in Sources */,
+				044DBD4B20218EDE00B6DEDF /* DatePicker.swift in Sources */,
+				E7653A7D20432367003EFE7F /* MedicationDateCollectionView.swift in Sources */,
+				E7E81AEB206036D200763B01 /* CycleListCell.swift in Sources */,
+				044DBD4C20218EDE00B6DEDF /* VIYDrawerController.swift in Sources */,
+				040450F020261D6A00CE2D2B /* ReminderViewController.swift in Sources */,
+				183ADBC22136C18D005DBEAB /* BloodPressureService.swift in Sources */,
+				042ED29C202371DE00B3D2A5 /* TabBarController.swift in Sources */,
+				4FDC49F62041EED3006D9D52 /* MedicationReportTableViewSectionCell.swift in Sources */,
+				E7653A8320432367003EFE7F /* MedicationsDaywiseViewController.swift in Sources */,
+				E7EF0C1B20C1B4890095633D /* FitnessTrackerWeightVC.swift in Sources */,
+				044DBD5220218EDE00B6DEDF /* NavigationController.swift in Sources */,
+				044DBD5520218EDE00B6DEDF /* RetryView.swift in Sources */,
+				049827DD2028D3F90052A9AB /* CollectionView.swift in Sources */,
+				E7042ED3204D790A0038E0A7 /* HRAMedicinesVC.swift in Sources */,
+				E7F94D2D204C2DD300680084 /* HRAPageVC.swift in Sources */,
+				E709ABD9211C9DB600CB92ED /* FSCalendarCollectionViewLayout.m in Sources */,
+				E7E81AE32060354700763B01 /* CycleFirstCell.swift in Sources */,
+				E771A6F7203DEF7200D3AD7F /* NetworkConnectivity.swift in Sources */,
+				049827E02028D4570052A9AB /* RemindersDateCollectionViewCell.swift in Sources */,
+				E709ABDC211C9DB600CB92ED /* FSCalendarDelegationProxy.m in Sources */,
+				E70A2C6121244C9F005E4365 /* HealthProfileManager.swift in Sources */,
+				4FDC49F82041EED3006D9D52 /* MedicationSelectionTVC.swift in Sources */,
+				044DBD5020218EDE00B6DEDF /* Label.swift in Sources */,
+				044DBD3020218EDE00B6DEDF /* NSError+RUI.swift in Sources */,
+				04E7107E2033685100429195 /* RemindersService.swift in Sources */,
+				E7653A7E20432367003EFE7F /* MedicationDateCollectionViewCell.swift in Sources */,
+				E7F1784920335C0100199D4D /* RegisterViewController.swift in Sources */,
+				4FDC49DC2041EED3006D9D52 /* AddDoseSelectDateTimeTVC.swift in Sources */,
+				E7EF0C2020C1B4950095633D /* WeightFirstCell.swift in Sources */,
+				E7EF0C2220C1B4950095633D /* WeightListCell.swift in Sources */,
+				044DBD4E20218EDE00B6DEDF /* ImageView.swift in Sources */,
+				E7F3CEE220DABF1000A51F95 /* FitnessTypeCell.swift in Sources */,
+				E7966EA7211C8BCD00AA0861 /* MedicationHistoryVC.swift in Sources */,
+				E75122D921024DBD005AD0ED /* ShapeItemListCell.swift in Sources */,
+				E7087424212DE24A00396912 /* AddActivityWalkRunCycleVC.swift in Sources */,
+				183ADBC02136C105005DBEAB /* BloodPressureInfo.swift in Sources */,
+				043B5EEC2021B18400023E34 /* AppUserDefaults.swift in Sources */,
+				18CA2F22213EB09300E29CAB /* HeartRateService.swift in Sources */,
+				0441E628202A238900691572 /* RemindersCollectionViewCell.swift in Sources */,
+				044DBD4620218EDE00B6DEDF /* Button.swift in Sources */,
+				E703BB4920C3045A00C2E7DA /* AddWeightBodyFatsCell.swift in Sources */,
+				E703BB5120C3049700C2E7DA /* AddWeightNoteCell.swift in Sources */,
+				4F57C7E02036A13100F4786D /* YHWTokensTVC.swift in Sources */,
+				044DBD5120218EDE00B6DEDF /* NavigationBar.swift in Sources */,
+				4FDC49D82041EED3006D9D52 /* AddDoseAddNotesTVC.swift in Sources */,
+				E7042ED6204DA6140038E0A7 /* HRAChoice.swift in Sources */,
+				044DBD5720218EDE00B6DEDF /* SegmentedControl.swift in Sources */,
+				4F4B5FC120593C5700D9CEE9 /* FitnessTrackerAddActivityNotesTVC.swift in Sources */,
+				E7AC268D20C5A4D700287043 /* WMGaugeViewStyle3D.m in Sources */,
+				E7C72094212B23E10072FC6D /* PrivacyPolicyVC.swift in Sources */,
+				1835D812213AA85200071882 /* AddWeightService.swift in Sources */,
+				4F4B5FB520591E1100D9CEE9 /* FitnessTrackerAddActivityDateDescTVC.swift in Sources */,
+				E70788C5204A99E900FD6C27 /* HRAAboutVC.swift in Sources */,
+				1884463B21416EED0018F9DA /* AddBloodSugarInfo.swift in Sources */,
+				04B617262022327000AC7311 /* HomeDraverController.swift in Sources */,
+				1813145A2134135400299D1C /* AddBloodPressureVC.swift in Sources */,
+				044DBD3820218EDE00B6DEDF /* String+RUI.swift in Sources */,
+				E709ABDE211C9DB600CB92ED /* FSCalendarHeaderView.m in Sources */,
+				18131458213400D000299D1C /* AddBloodSugerReadingVC.swift in Sources */,
+				4F4B5FAF2058EB2300D9CEE9 /* FitnessTrackerAddActivityViewController.swift in Sources */,
+				E709ABE2211C9DB700CB92ED /* FSCalendarWeekdayView.m in Sources */,
+				E701C71320CE170D0093D053 /* GoalTrackerVC.swift in Sources */,
+				4FDC49EC2041EED3006D9D52 /* MedicationMedicinesTableViewCell.swift in Sources */,
+				18B6AF68213AA9FF00588C78 /* AddWeightInfo.swift in Sources */,
+				E7AC268E20C5A4D700287043 /* WMGaugeViewStyleFlatThin.m in Sources */,
+				D8952173206A1A8E00D6A727 /* FitnessTrackerStartActivity.swift in Sources */,
+				04AB233920407AE100983D36 /* HTBloodSugarCell.swift in Sources */,
+				E7653A8720432367003EFE7F /* MedicationTableview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		044DBCC12020D18C00B6DEDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044DBCC22020D18C00B6DEDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044DBCC92020D18C00B6DEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044DBCCA2020D18C00B6DEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044DBCCD2020D18C00B6DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044DBCCE2020D18C00B6DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044DBCD02020D18C00B6DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F336D6F2F5F6A9BFCF833D6C /* Pods-YourHealthWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YourHealthWallet/YourHealthWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Varun Ramanujam (GCZ3Y8HD88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Varun Ramanujam (GCZ3Y8HD88)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y2DA4K974Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YourHealthWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourhealthwallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ce138e49-df3c-41ac-9ddc-ef06654f7c13";
+				PROVISIONING_PROFILE_SPECIFIER = "YHW Dev Profile (com.yourhealthwallet)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/YourHealthWallet/YourHealthWallet-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		044DBCD12020D18C00B6DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66A291DE7C6EAC6107781EE /* Pods-YourHealthWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YourHealthWallet/YourHealthWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Varun Ramanujam (GCZ3Y8HD88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Varun Ramanujam (GCZ3Y8HD88)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y2DA4K974Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YourHealthWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourhealthwallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ce138e49-df3c-41ac-9ddc-ef06654f7c13";
+				PROVISIONING_PROFILE_SPECIFIER = "YHW Dev Profile (com.yourhealthwallet)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/YourHealthWallet/YourHealthWallet-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044DBCB52020D18B00B6DEDF /* Build configuration list for PBXProject "YourHealthWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044DBCCD2020D18C00B6DEDF /* Debug */,
+				044DBCCE2020D18C00B6DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044DBCCF2020D18C00B6DEDF /* Build configuration list for PBXNativeTarget "YourHealthWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044DBCD02020D18C00B6DEDF /* Debug */,
+				044DBCD12020D18C00B6DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		044DBCC42020D18C00B6DEDF /* YourHealthWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				044DBCC52020D18C00B6DEDF /* YourHealthWallet.xcdatamodel */,
+			);
+			currentVersion = 044DBCC52020D18C00B6DEDF /* YourHealthWallet.xcdatamodel */;
+			path = YourHealthWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 044DBCB22020D18B00B6DEDF /* Project object */;
+}

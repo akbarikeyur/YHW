@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RemindersCollectionViewCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-2g-PnU" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="369" height="145"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGU-hX-rde" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="145"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3br-bG-qE8" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="100" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor-visit" translatesAutoresizingMaskIntoConstraints="NO" id="qYx-Rb-LlD" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="24" height="28"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gg-Pp-5gj" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="100" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="4gg-Pp-5gj" firstAttribute="leading" secondItem="3br-bG-qE8" secondAttribute="leading" id="8vm-wy-0nk"/>
+                                            <constraint firstItem="qYx-Rb-LlD" firstAttribute="centerX" secondItem="3br-bG-qE8" secondAttribute="centerX" id="VtA-gU-BYB"/>
+                                            <constraint firstItem="4gg-Pp-5gj" firstAttribute="top" secondItem="qYx-Rb-LlD" secondAttribute="bottom" id="YYL-Cx-a0H"/>
+                                            <constraint firstItem="qYx-Rb-LlD" firstAttribute="top" secondItem="3br-bG-qE8" secondAttribute="top" id="eCJ-2b-QHg"/>
+                                            <constraint firstAttribute="trailing" secondItem="4gg-Pp-5gj" secondAttribute="trailing" id="hw6-dY-lvN"/>
+                                            <constraint firstAttribute="bottom" secondItem="4gg-Pp-5gj" secondAttribute="bottom" id="zqH-99-KTR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3br-bG-qE8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CGU-hX-rde" secondAttribute="top" constant="20" id="O3U-mv-cGo"/>
+                                    <constraint firstItem="3br-bG-qE8" firstAttribute="centerX" secondItem="CGU-hX-rde" secondAttribute="centerX" id="VIW-hn-z0j"/>
+                                    <constraint firstItem="3br-bG-qE8" firstAttribute="centerY" secondItem="CGU-hX-rde" secondAttribute="centerY" id="atO-bV-fKv"/>
+                                    <constraint firstItem="3br-bG-qE8" firstAttribute="width" secondItem="CGU-hX-rde" secondAttribute="width" id="ivP-WY-AXJ"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3br-bG-qE8" secondAttribute="bottom" constant="20" id="nwQ-Ni-xQS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-kG-hpv" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="120" y="52" width="229" height="41"/>
+                                <string key="text"> 1-Metoprolol, 2-Loratadine, 
+Paracetemol</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a1q-kG-hpv" firstAttribute="centerY" secondItem="7Zl-2g-PnU" secondAttribute="centerY" id="2st-ld-NKn"/>
+                            <constraint firstItem="CGU-hX-rde" firstAttribute="top" secondItem="7Zl-2g-PnU" secondAttribute="top" id="6vO-Z8-rDc"/>
+                            <constraint firstItem="CGU-hX-rde" firstAttribute="width" secondItem="7Zl-2g-PnU" secondAttribute="width" multiplier="0.27" id="BdA-6D-OQO"/>
+                            <constraint firstItem="a1q-kG-hpv" firstAttribute="leading" secondItem="CGU-hX-rde" secondAttribute="trailing" constant="20" id="Q7s-3x-bYh"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a1q-kG-hpv" secondAttribute="bottom" constant="20" id="YFC-2Z-ncr"/>
+                            <constraint firstItem="CGU-hX-rde" firstAttribute="leading" secondItem="7Zl-2g-PnU" secondAttribute="leading" id="Yab-Wl-Mqh"/>
+                            <constraint firstAttribute="trailing" secondItem="a1q-kG-hpv" secondAttribute="trailing" constant="20" id="iaf-an-HJp"/>
+                            <constraint firstAttribute="width" priority="999" constant="369" id="oAS-hU-dfO"/>
+                            <constraint firstAttribute="bottom" secondItem="CGU-hX-rde" secondAttribute="bottom" id="sy6-MD-2H3"/>
+                            <constraint firstItem="a1q-kG-hpv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Zl-2g-PnU" secondAttribute="top" constant="20" id="ukT-T4-RoM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="7Zl-2g-PnU" secondAttribute="bottom" id="2ZP-sN-B9f"/>
+                <constraint firstItem="7Zl-2g-PnU" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="GgU-5U-92X"/>
+                <constraint firstItem="7Zl-2g-PnU" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="V06-Nf-B6d"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="7Zl-2g-PnU" secondAttribute="trailing" id="xpo-wc-wMq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="369" height="145"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="NO"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cellWidthConatraint" destination="oAS-hU-dfO" id="Scz-Af-6I7"/>
+                <outlet property="imageView" destination="qYx-Rb-LlD" id="w1Y-hz-nFy"/>
+                <outlet property="labelTime" destination="4gg-Pp-5gj" id="ImU-2y-vRX"/>
+                <outlet property="labelTitle" destination="a1q-kG-hpv" id="fE8-ve-YKW"/>
+                <outlet property="leftView" destination="CGU-hX-rde" id="Kfk-lI-zXd"/>
+            </connections>
+            <point key="canvasLocation" x="196.5" y="135.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="doctor-visit" width="24" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealthTrackerViewController" customModule="YourHealthWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="barChartView" destination="YBB-vC-j9n" id="CfT-pu-HTD"/>
+                <outlet property="bloodSugarBorder" destination="Njl-62-wez" id="5fl-fh-ix8"/>
+                <outlet property="bodyWeightBorder" destination="cdi-DV-fdQ" id="btL-GC-rRq"/>
+                <outlet property="collectionView" destination="Kvr-9L-qMV" id="7eK-r1-M7J"/>
+                <outlet property="heartRateBorder" destination="o95-ZW-rvj" id="XEj-SD-lA8"/>
+                <outlet property="labelAverageMeasurement" destination="bzn-9K-Dqs" id="awG-up-OKr"/>
+                <outlet property="labelAverageValue" destination="M8t-Pp-Y65" id="B2C-dC-FDQ"/>
+                <outlet property="labelDaysSelectedType" destination="cAj-DQ-x3c" id="jT6-lq-jmo"/>
+                <outlet property="labelMaximumMeasurement" destination="MO6-WA-WIK" id="sCj-vI-gE5"/>
+                <outlet property="labelMaximumValue" destination="FzW-fu-2sz" id="LmR-S9-Xek"/>
+                <outlet property="labelMinimumMeasurement" destination="jH8-GX-G11" id="nej-TB-8a5"/>
+                <outlet property="labelMinimumValue" destination="5vj-4o-xMl" id="2DR-b5-EcP"/>
+                <outlet property="labelSelectedDate" destination="m3y-89-9UI" id="Sri-px-VAz"/>
+                <outlet property="navigationBarHeight" destination="W9F-Vy-DFe" id="2zD-T4-cs1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="881"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-9N-GoO" userLabel="Top Dummy View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="440.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYq-3W-K32" userLabel="Bottom Dummy View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="440.5" width="375" height="440.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-UV-Dqw" customClass="ScrollView" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="861"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Uy-aDc" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="846"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJh-Ot-KKg" userLabel="Top View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZC-og-CuN" userLabel="Dummy Navigation Bar" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3z-Pm-7mo" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="I3z-Pm-7mo" secondAttribute="height" multiplier="1:1" id="dHs-6Z-Q5W"/>
+                                                    </constraints>
+                                                    <state key="normal" image="back"/>
+                                                    <connections>
+                                                        <action selector="didTapOnBackButton:" destination="-1" eventType="touchUpInside" id="I8A-dT-RB3"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaT-8w-CXC" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="101.5" y="16" width="172" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                                    <state key="normal" title="  Health Tracker" image="health-tracker"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p1-Xq-aGH" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="12.5" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="3p1-Xq-aGH" secondAttribute="height" multiplier="1:1" id="NaG-Ot-pIe"/>
+                                                        <constraint firstAttribute="width" constant="35" id="WX2-ko-364"/>
+                                                    </constraints>
+                                                    <state key="normal" image="profile-selected"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3p1-Xq-aGH" secondAttribute="trailing" id="0lF-C9-X0p"/>
+                                                <constraint firstItem="3p1-Xq-aGH" firstAttribute="centerY" secondItem="wZC-og-CuN" secondAttribute="centerY" id="4xI-0o-FtD"/>
+                                                <constraint firstItem="I3z-Pm-7mo" firstAttribute="top" secondItem="wZC-og-CuN" secondAttribute="top" id="BtM-lO-u7q"/>
+                                                <constraint firstItem="PaT-8w-CXC" firstAttribute="centerY" secondItem="wZC-og-CuN" secondAttribute="centerY" id="J4c-Uo-36t"/>
+                                                <constraint firstAttribute="bottom" secondItem="I3z-Pm-7mo" secondAttribute="bottom" id="MD4-05-3c4"/>
+                                                <constraint firstItem="PaT-8w-CXC" firstAttribute="centerX" secondItem="wZC-og-CuN" secondAttribute="centerX" id="PA2-rW-JbP"/>
+                                                <constraint firstAttribute="height" constant="60" id="W9F-Vy-DFe"/>
+                                                <constraint firstItem="I3z-Pm-7mo" firstAttribute="leading" secondItem="wZC-og-CuN" secondAttribute="leading" id="bb7-ci-zXz"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCq-9v-ery" userLabel="Sections" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="85" width="375" height="73.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSm-mL-aW2" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-rate" translatesAutoresizingMaskIntoConstraints="NO" id="2Nb-MG-1YF" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK7-e1-D6Y" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="33" y="56" width="58" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o95-ZW-rvj" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="33" y="72.5" width="58" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="8tu-Na-kjI"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2Nb-MG-1YF" firstAttribute="centerX" secondItem="FSm-mL-aW2" secondAttribute="centerX" id="Hkg-nl-hsZ"/>
+                                                        <constraint firstItem="eK7-e1-D6Y" firstAttribute="top" secondItem="2Nb-MG-1YF" secondAttribute="bottom" constant="5" id="IYd-gx-ub6"/>
+                                                        <constraint firstItem="2Nb-MG-1YF" firstAttribute="top" secondItem="FSm-mL-aW2" secondAttribute="top" id="K92-L5-4dl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="o95-ZW-rvj" secondAttribute="bottom" id="giA-Fy-i0B"/>
+                                                        <constraint firstItem="o95-ZW-rvj" firstAttribute="trailing" secondItem="eK7-e1-D6Y" secondAttribute="trailing" id="jaZ-l9-bCb"/>
+                                                        <constraint firstItem="o95-ZW-rvj" firstAttribute="top" secondItem="eK7-e1-D6Y" secondAttribute="bottom" constant="2" id="lZf-MK-MVC"/>
+                                                        <constraint firstItem="eK7-e1-D6Y" firstAttribute="centerX" secondItem="2Nb-MG-1YF" secondAttribute="centerX" id="prd-MB-xEy"/>
+                                                        <constraint firstItem="o95-ZW-rvj" firstAttribute="leading" secondItem="eK7-e1-D6Y" secondAttribute="leading" id="yOc-7X-xAE"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j99-CG-qMs" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="125" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blood-sugar" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-FJ-JoZ" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUL-Se-FIM" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="29" y="56" width="66" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njl-62-wez" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="29" y="72.5" width="66" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="sgs-74-pPL"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Njl-62-wez" firstAttribute="top" secondItem="jUL-Se-FIM" secondAttribute="bottom" constant="2" id="ACH-9r-SzZ"/>
+                                                        <constraint firstItem="Njl-62-wez" firstAttribute="trailing" secondItem="jUL-Se-FIM" secondAttribute="trailing" id="BV2-wu-DZ7"/>
+                                                        <constraint firstItem="xAn-FJ-JoZ" firstAttribute="centerX" secondItem="j99-CG-qMs" secondAttribute="centerX" id="CUf-Uj-PZz"/>
+                                                        <constraint firstItem="Njl-62-wez" firstAttribute="leading" secondItem="jUL-Se-FIM" secondAttribute="leading" id="HXL-dr-ovd"/>
+                                                        <constraint firstItem="jUL-Se-FIM" firstAttribute="top" secondItem="xAn-FJ-JoZ" secondAttribute="bottom" constant="5" id="JFD-IL-zqF"/>
+                                                        <constraint firstItem="jUL-Se-FIM" firstAttribute="centerX" secondItem="xAn-FJ-JoZ" secondAttribute="centerX" id="LLT-lX-A0v"/>
+                                                        <constraint firstItem="xAn-FJ-JoZ" firstAttribute="top" secondItem="j99-CG-qMs" secondAttribute="top" id="Xcy-Ji-DRx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Njl-62-wez" secondAttribute="bottom" id="ln5-WI-vLO"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OC-Wi-Sa8" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="250" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body-weight" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-Y4-Wtz" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-kz-7TI" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="28.5" y="56" width="68" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdi-DV-fdQ" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="28.5" y="72.5" width="68" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="lZ8-Ch-HlR"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GgG-kz-7TI" firstAttribute="centerX" secondItem="jgS-Y4-Wtz" secondAttribute="centerX" id="B9K-Ox-XSc"/>
+                                                        <constraint firstItem="cdi-DV-fdQ" firstAttribute="leading" secondItem="GgG-kz-7TI" secondAttribute="leading" id="GOY-2y-G6R"/>
+                                                        <constraint firstItem="cdi-DV-fdQ" firstAttribute="trailing" secondItem="GgG-kz-7TI" secondAttribute="trailing" id="J04-G2-p9r"/>
+                                                        <constraint firstItem="cdi-DV-fdQ" firstAttribute="top" secondItem="GgG-kz-7TI" secondAttribute="bottom" constant="2" id="Laa-NK-0CC"/>
+                                                        <constraint firstItem="jgS-Y4-Wtz" firstAttribute="centerX" secondItem="6OC-Wi-Sa8" secondAttribute="centerX" id="Z0D-Pu-Btj"/>
+                                                        <constraint firstItem="GgG-kz-7TI" firstAttribute="top" secondItem="jgS-Y4-Wtz" secondAttribute="bottom" constant="5" id="mOO-76-xJZ"/>
+                                                        <constraint firstItem="jgS-Y4-Wtz" firstAttribute="top" secondItem="6OC-Wi-Sa8" secondAttribute="top" id="mbp-Ag-NEw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cdi-DV-fdQ" secondAttribute="bottom" id="wKB-yR-kbJ"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="FSm-mL-aW2" firstAttribute="top" secondItem="LCq-9v-ery" secondAttribute="top" id="3Fh-so-jgh"/>
+                                                <constraint firstItem="6OC-Wi-Sa8" firstAttribute="leading" secondItem="j99-CG-qMs" secondAttribute="trailing" id="43h-qE-wjz"/>
+                                                <constraint firstAttribute="bottom" secondItem="FSm-mL-aW2" secondAttribute="bottom" id="LGN-a3-ewe"/>
+                                                <constraint firstItem="6OC-Wi-Sa8" firstAttribute="width" secondItem="j99-CG-qMs" secondAttribute="width" id="MFc-p4-hdm"/>
+                                                <constraint firstItem="6OC-Wi-Sa8" firstAttribute="top" secondItem="j99-CG-qMs" secondAttribute="top" id="bTl-pW-KMH"/>
+                                                <constraint firstItem="j99-CG-qMs" firstAttribute="leading" secondItem="FSm-mL-aW2" secondAttribute="trailing" id="eiL-fX-nnh"/>
+                                                <constraint firstItem="FSm-mL-aW2" firstAttribute="leading" secondItem="LCq-9v-ery" secondAttribute="leading" id="eid-c2-uiT"/>
+                                                <constraint firstItem="j99-CG-qMs" firstAttribute="width" secondItem="FSm-mL-aW2" secondAttribute="width" id="h47-QS-Ci4"/>
+                                                <constraint firstItem="j99-CG-qMs" firstAttribute="top" secondItem="FSm-mL-aW2" secondAttribute="top" id="x2c-VJ-aKk"/>
+                                                <constraint firstItem="FSm-mL-aW2" firstAttribute="width" secondItem="LCq-9v-ery" secondAttribute="width" multiplier="1:3" id="xAk-hq-saR"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.24313725490196078" green="0.56470588235294117" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="LCq-9v-ery" firstAttribute="trailing" secondItem="wZC-og-CuN" secondAttribute="trailing" id="981-cv-H2Q"/>
+                                        <constraint firstItem="LCq-9v-ery" firstAttribute="leading" secondItem="wZC-og-CuN" secondAttribute="leading" id="A9a-05-fiD"/>
+                                        <constraint firstItem="wZC-og-CuN" firstAttribute="top" secondItem="aJh-Ot-KKg" secondAttribute="top" id="LFR-yf-lwf"/>
+                                        <constraint firstItem="LCq-9v-ery" firstAttribute="top" secondItem="wZC-og-CuN" secondAttribute="bottom" constant="25" id="NL9-hr-gnr"/>
+                                        <constraint firstAttribute="trailing" secondItem="wZC-og-CuN" secondAttribute="trailing" id="U1m-KW-BT5"/>
+                                        <constraint firstItem="wZC-og-CuN" firstAttribute="leading" secondItem="aJh-Ot-KKg" secondAttribute="leading" id="qLC-Nh-yqc"/>
+                                        <constraint firstAttribute="bottom" secondItem="LCq-9v-ery" secondAttribute="bottom" constant="140" id="w2F-iS-ocW"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Kvr-9L-qMV" customClass="HealthTrackerCollectionVeiw" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="199" width="375" height="208"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="208" id="aP9-4c-QSr"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Q3g-ZV-fvQ">
+                                        <size key="itemSize" width="50" height="208"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Sa-Ee-h94" customClass="StackView" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="417" width="63" height="23.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-DQ-x3c" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                    <integer key="value" value="17"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="usW-KT-wRB" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="54" y="8.5" width="9" height="7"/>
+                                        </imageView>
+                                    </subviews>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="mDg-qE-NML" appends="YES" id="liQ-wa-hNl"/>
+                                    </connections>
+                                </stackView>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 JAN 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3y-89-9UI" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="263.5" y="417" width="87.5" height="18"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="k23-Rt-jzu" appends="YES" id="ACn-g7-Pgg"/>
+                                    </connections>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-vC-j9n" customClass="BarChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="470.5" width="375" height="250"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="JI4-gl-GOl"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ard-i3-tee" userLabel="BottomView" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="745.5" width="375" height="75.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgJ-NP-u01" userLabel="1st" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axT-nT-rYl" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="34.5" y="0.0" width="55.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vj-4o-xMl" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="44.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH8-GX-G11" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="52.5" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="jH8-GX-G11" secondAttribute="bottom" id="0SW-rW-Rc2"/>
+                                                <constraint firstItem="jH8-GX-G11" firstAttribute="top" secondItem="5vj-4o-xMl" secondAttribute="bottom" constant="5" id="5Tj-Rp-4Ym"/>
+                                                <constraint firstItem="jH8-GX-G11" firstAttribute="centerX" secondItem="5vj-4o-xMl" secondAttribute="centerX" id="O6Y-xA-oln"/>
+                                                <constraint firstItem="axT-nT-rYl" firstAttribute="centerX" secondItem="pgJ-NP-u01" secondAttribute="centerX" id="Qyh-hI-qUy"/>
+                                                <constraint firstItem="5vj-4o-xMl" firstAttribute="top" secondItem="axT-nT-rYl" secondAttribute="bottom" constant="5" id="bAF-sy-qOi"/>
+                                                <constraint firstItem="5vj-4o-xMl" firstAttribute="centerX" secondItem="axT-nT-rYl" secondAttribute="centerX" id="eog-O9-SZY"/>
+                                                <constraint firstItem="axT-nT-rYl" firstAttribute="top" secondItem="pgJ-NP-u01" secondAttribute="top" id="kHA-Ib-Pbw"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxC-Dm-XbN" userLabel="divider" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="124" y="0.0" width="3" height="75.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="3" id="gKY-Zf-o4k"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="303"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opo-8t-E6P" userLabel="2nd" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="127" y="-0.5" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8L-Ln-h7G" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="38.5" y="0.0" width="48" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8t-Pp-Y65" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="44.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-9K-Dqs" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="52.5" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="bzn-9K-Dqs" firstAttribute="centerX" secondItem="M8t-Pp-Y65" secondAttribute="centerX" id="4WA-xV-e4U"/>
+                                                <constraint firstItem="bzn-9K-Dqs" firstAttribute="top" secondItem="M8t-Pp-Y65" secondAttribute="bottom" constant="5" id="8T7-q3-Qck"/>
+                                                <constraint firstAttribute="bottom" secondItem="bzn-9K-Dqs" secondAttribute="bottom" id="KOd-VS-dZm"/>
+                                                <constraint firstItem="l8L-Ln-h7G" firstAttribute="centerX" secondItem="Opo-8t-E6P" secondAttribute="centerX" id="N3X-n4-uP9"/>
+                                                <constraint firstItem="l8L-Ln-h7G" firstAttribute="top" secondItem="Opo-8t-E6P" secondAttribute="top" id="dVV-MN-6vP"/>
+                                                <constraint firstItem="M8t-Pp-Y65" firstAttribute="top" secondItem="l8L-Ln-h7G" secondAttribute="bottom" constant="5" id="gxg-h1-a6Z"/>
+                                                <constraint firstItem="M8t-Pp-Y65" firstAttribute="centerX" secondItem="l8L-Ln-h7G" secondAttribute="centerX" id="nnf-Zp-Cur"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bS-sz-f7y" userLabel="divider" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="251" y="-0.5" width="3" height="75.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="3" id="sEn-rz-Atg"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="303"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwW-ih-3py" userLabel="3rd" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="254" y="-0.5" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAT-uY-hmf" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="32.5" y="0.0" width="58.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-fu-2sz" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="44.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO6-WA-WIK" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="52.5" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="MO6-WA-WIK" secondAttribute="bottom" id="3FG-dN-i6e"/>
+                                                <constraint firstItem="FzW-fu-2sz" firstAttribute="centerX" secondItem="VAT-uY-hmf" secondAttribute="centerX" id="3cE-YO-gLH"/>
+                                                <constraint firstItem="MO6-WA-WIK" firstAttribute="centerX" secondItem="FzW-fu-2sz" secondAttribute="centerX" id="CXL-WG-KmN"/>
+                                                <constraint firstItem="FzW-fu-2sz" firstAttribute="top" secondItem="VAT-uY-hmf" secondAttribute="bottom" constant="5" id="Y1d-17-sbi"/>
+                                                <constraint firstItem="VAT-uY-hmf" firstAttribute="centerX" secondItem="nwW-ih-3py" secondAttribute="centerX" id="mHb-bo-ahH"/>
+                                                <constraint firstItem="VAT-uY-hmf" firstAttribute="top" secondItem="nwW-ih-3py" secondAttribute="top" id="tAw-mK-oMe"/>
+                                                <constraint firstItem="MO6-WA-WIK" firstAttribute="top" secondItem="FzW-fu-2sz" secondAttribute="bottom" constant="5" id="wvS-dc-xNc"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="9bS-sz-f7y" firstAttribute="height" secondItem="VxC-Dm-XbN" secondAttribute="height" id="8hK-ul-Cj0"/>
+                                        <constraint firstItem="VxC-Dm-XbN" firstAttribute="top" secondItem="pgJ-NP-u01" secondAttribute="top" id="9PT-pI-pBy"/>
+                                        <constraint firstItem="pgJ-NP-u01" firstAttribute="top" secondItem="ard-i3-tee" secondAttribute="top" id="AL8-yc-UpI"/>
+                                        <constraint firstItem="Opo-8t-E6P" firstAttribute="width" secondItem="pgJ-NP-u01" secondAttribute="width" id="K2P-xZ-EJC"/>
+                                        <constraint firstItem="9bS-sz-f7y" firstAttribute="leading" secondItem="Opo-8t-E6P" secondAttribute="trailing" id="MoM-mu-9hk"/>
+                                        <constraint firstItem="Opo-8t-E6P" firstAttribute="leading" secondItem="VxC-Dm-XbN" secondAttribute="trailing" id="Ojj-4H-s5N"/>
+                                        <constraint firstItem="nwW-ih-3py" firstAttribute="top" secondItem="Opo-8t-E6P" secondAttribute="top" id="S8m-pe-Jhq"/>
+                                        <constraint firstItem="Opo-8t-E6P" firstAttribute="top" secondItem="pgJ-NP-u01" secondAttribute="top" id="cAm-Gg-EP1"/>
+                                        <constraint firstItem="VxC-Dm-XbN" firstAttribute="leading" secondItem="pgJ-NP-u01" secondAttribute="trailing" id="dii-iu-M0t"/>
+                                        <constraint firstItem="VxC-Dm-XbN" firstAttribute="bottom" secondItem="pgJ-NP-u01" secondAttribute="bottom" id="gSi-TK-emI"/>
+                                        <constraint firstItem="Opo-8t-E6P" firstAttribute="bottom" secondItem="VxC-Dm-XbN" secondAttribute="bottom" id="mKj-Qm-Zcz"/>
+                                        <constraint firstItem="9bS-sz-f7y" firstAttribute="top" secondItem="VxC-Dm-XbN" secondAttribute="top" id="ogz-pi-TBP"/>
+                                        <constraint firstItem="pgJ-NP-u01" firstAttribute="leading" secondItem="ard-i3-tee" secondAttribute="leading" id="r2J-OB-csF"/>
+                                        <constraint firstAttribute="bottom" secondItem="pgJ-NP-u01" secondAttribute="bottom" id="re7-zn-9xQ"/>
+                                        <constraint firstItem="nwW-ih-3py" firstAttribute="width" secondItem="Opo-8t-E6P" secondAttribute="width" id="udI-xq-fM2"/>
+                                        <constraint firstItem="nwW-ih-3py" firstAttribute="leading" secondItem="9bS-sz-f7y" secondAttribute="trailing" id="vLy-3L-XbB"/>
+                                        <constraint firstItem="pgJ-NP-u01" firstAttribute="width" secondItem="ard-i3-tee" secondAttribute="width" multiplier="1:3" constant="-1" id="xP7-Tm-iWg"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="aJh-Ot-KKg" firstAttribute="top" secondItem="08Z-Uy-aDc" secondAttribute="top" id="0IC-Nr-4QK"/>
+                                <constraint firstItem="ard-i3-tee" firstAttribute="top" secondItem="YBB-vC-j9n" secondAttribute="bottom" constant="25" id="11r-Qm-ASO"/>
+                                <constraint firstItem="YBB-vC-j9n" firstAttribute="top" secondItem="0Sa-Ee-h94" secondAttribute="bottom" constant="30" id="25V-QQ-dDR"/>
+                                <constraint firstAttribute="trailing" secondItem="YBB-vC-j9n" secondAttribute="trailing" id="2Zt-dB-h4g"/>
+                                <constraint firstItem="YBB-vC-j9n" firstAttribute="leading" secondItem="08Z-Uy-aDc" secondAttribute="leading" id="72F-5G-hca"/>
+                                <constraint firstItem="m3y-89-9UI" firstAttribute="top" secondItem="0Sa-Ee-h94" secondAttribute="top" id="7d2-sI-MrZ"/>
+                                <constraint firstItem="ard-i3-tee" firstAttribute="leading" secondItem="YBB-vC-j9n" secondAttribute="leading" id="Qzv-OE-8I4"/>
+                                <constraint firstItem="aJh-Ot-KKg" firstAttribute="leading" secondItem="08Z-Uy-aDc" secondAttribute="leading" id="gDP-Xt-QnB"/>
+                                <constraint firstAttribute="trailing" secondItem="aJh-Ot-KKg" secondAttribute="trailing" id="ihm-xQ-F6I"/>
+                                <constraint firstAttribute="bottom" secondItem="ard-i3-tee" secondAttribute="bottom" constant="25" id="mic-EA-6Xk"/>
+                                <constraint firstItem="Kvr-9L-qMV" firstAttribute="leading" secondItem="aJh-Ot-KKg" secondAttribute="leading" id="tHn-cV-jLf"/>
+                                <constraint firstItem="0Sa-Ee-h94" firstAttribute="top" secondItem="Kvr-9L-qMV" secondAttribute="bottom" constant="10" id="tdb-wl-nvT"/>
+                                <constraint firstItem="0Sa-Ee-h94" firstAttribute="leading" secondItem="Kvr-9L-qMV" secondAttribute="leading" constant="24" id="tdp-ns-DIv"/>
+                                <constraint firstItem="ard-i3-tee" firstAttribute="trailing" secondItem="YBB-vC-j9n" secondAttribute="trailing" id="v65-0O-Vk5"/>
+                                <constraint firstItem="Kvr-9L-qMV" firstAttribute="trailing" secondItem="aJh-Ot-KKg" secondAttribute="trailing" id="vEN-fv-cnj"/>
+                                <constraint firstItem="m3y-89-9UI" firstAttribute="trailing" secondItem="Kvr-9L-qMV" secondAttribute="trailing" constant="-24" id="vUB-dR-lRy"/>
+                                <constraint firstItem="Kvr-9L-qMV" firstAttribute="top" secondItem="aJh-Ot-KKg" secondAttribute="bottom" constant="-100" id="wvc-AM-zbb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="08Z-Uy-aDc" secondAttribute="bottom" id="67h-SJ-ep8"/>
+                        <constraint firstItem="08Z-Uy-aDc" firstAttribute="top" secondItem="GhW-UV-Dqw" secondAttribute="top" id="Khb-5r-Pua"/>
+                        <constraint firstAttribute="trailing" secondItem="08Z-Uy-aDc" secondAttribute="trailing" id="Wl9-XT-VUv"/>
+                        <constraint firstItem="08Z-Uy-aDc" firstAttribute="leading" secondItem="GhW-UV-Dqw" secondAttribute="leading" id="ZYZ-x1-Uuc"/>
+                        <constraint firstItem="08Z-Uy-aDc" firstAttribute="width" secondItem="GhW-UV-Dqw" secondAttribute="width" id="rOM-DH-wpt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV2-VC-vUa">
+                    <rect key="frame" x="284" y="790" width="75" height="75"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="plus"/>
+                    <connections>
+                        <action selector="clickToAddReading:" destination="-1" eventType="touchUpInside" id="rpe-8Z-Q3z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IYq-3W-K32" secondAttribute="bottom" id="8hJ-LC-mV3"/>
+                <constraint firstItem="GhW-UV-Dqw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9b5-6j-Laj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vV2-VC-vUa" secondAttribute="trailing" constant="16" id="Dpb-VH-RqT"/>
+                <constraint firstAttribute="trailing" secondItem="GhW-UV-Dqw" secondAttribute="trailing" id="E8p-py-2fP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xfo-9N-GoO" secondAttribute="trailing" id="QoO-VO-QoI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vV2-VC-vUa" secondAttribute="bottom" constant="16" id="RT3-DD-yRn"/>
+                <constraint firstItem="GhW-UV-Dqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eDH-ek-0zp"/>
+                <constraint firstItem="xfo-9N-GoO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ira-Sv-0aq"/>
+                <constraint firstItem="IYq-3W-K32" firstAttribute="leading" secondItem="xfo-9N-GoO" secondAttribute="leading" id="lRS-3q-O7X"/>
+                <constraint firstItem="IYq-3W-K32" firstAttribute="trailing" secondItem="xfo-9N-GoO" secondAttribute="trailing" id="nE9-e6-ZXf"/>
+                <constraint firstItem="IYq-3W-K32" firstAttribute="height" secondItem="xfo-9N-GoO" secondAttribute="height" id="vyV-YP-uT1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GhW-UV-Dqw" secondAttribute="bottom" id="xFe-Y5-due"/>
+                <constraint firstItem="xfo-9N-GoO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:2" id="xs5-bD-1l0"/>
+                <constraint firstItem="xfo-9N-GoO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yxS-HT-4bp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="24.5" y="-175.5"/>
+        </view>
+        <tapGestureRecognizer id="mDg-qE-NML">
+            <connections>
+                <action selector="didTapOnDaysSelectionView:" destination="-1" id="1tm-bb-2dw"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="k23-Rt-jzu">
+            <connections>
+                <action selector="didTapOnDateLabel:" destination="-1" id="LVj-bY-ZVg"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="D1T-Tg-D0e" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="881"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-yz-Rfd" userLabel="Top Dummy View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="440.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrY-d6-3sK" userLabel="Bottom Dummy View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="440.5" width="375" height="440.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-W1-Pe8" customClass="ScrollView" customModule="YourHealthWallet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="861"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lV-7f-NY4" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="846"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-gQ-as7" userLabel="Top View" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-jq-yP4" userLabel="Dummy Navigation Bar" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzy-m0-Yeq" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Zzy-m0-Yeq" secondAttribute="height" multiplier="1:1" id="hys-hR-jsc"/>
+                                                    </constraints>
+                                                    <state key="normal" image="back"/>
+                                                    <connections>
+                                                        <action selector="didTapOnBackButton:" destination="-1" eventType="touchUpInside" id="Bcg-c5-GZg"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9n-mr-HHe" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="101.5" y="16" width="172" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                                    <state key="normal" title="  Health Tracker" image="health-tracker"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsJ-8v-vaO" customClass="Button" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="12.5" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="kND-Vh-dOV"/>
+                                                        <constraint firstAttribute="width" secondItem="VsJ-8v-vaO" secondAttribute="height" multiplier="1:1" id="xY8-Rf-tu4"/>
+                                                    </constraints>
+                                                    <state key="normal" image="profile-selected"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Zzy-m0-Yeq" firstAttribute="leading" secondItem="9t6-jq-yP4" secondAttribute="leading" id="41w-5H-W1f"/>
+                                                <constraint firstAttribute="height" constant="60" id="93D-jv-ruW"/>
+                                                <constraint firstItem="Zzy-m0-Yeq" firstAttribute="top" secondItem="9t6-jq-yP4" secondAttribute="top" id="LD1-S1-Tkb"/>
+                                                <constraint firstAttribute="trailing" secondItem="VsJ-8v-vaO" secondAttribute="trailing" id="m3S-cz-5ot"/>
+                                                <constraint firstItem="t9n-mr-HHe" firstAttribute="centerY" secondItem="9t6-jq-yP4" secondAttribute="centerY" id="mv0-Xy-Cxg"/>
+                                                <constraint firstItem="t9n-mr-HHe" firstAttribute="centerX" secondItem="9t6-jq-yP4" secondAttribute="centerX" id="pJ5-Xy-bSs"/>
+                                                <constraint firstItem="VsJ-8v-vaO" firstAttribute="centerY" secondItem="9t6-jq-yP4" secondAttribute="centerY" id="qYe-pY-WHw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zzy-m0-Yeq" secondAttribute="bottom" id="tB2-sr-Bnm"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-uI-KJa" userLabel="Sections" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="85" width="375" height="73.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-or-N9R" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-rate" translatesAutoresizingMaskIntoConstraints="NO" id="sju-0g-MKH" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9Y-OZ-cpU" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="33" y="56" width="58" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFz-rf-JJy" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="33" y="72.5" width="58" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="X4f-Mi-jRr"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GFz-rf-JJy" firstAttribute="top" secondItem="F9Y-OZ-cpU" secondAttribute="bottom" constant="2" id="7Yf-sE-ub7"/>
+                                                        <constraint firstItem="F9Y-OZ-cpU" firstAttribute="centerX" secondItem="sju-0g-MKH" secondAttribute="centerX" id="Gsk-F8-5QD"/>
+                                                        <constraint firstItem="sju-0g-MKH" firstAttribute="centerX" secondItem="nOg-or-N9R" secondAttribute="centerX" id="R0t-ec-WI9"/>
+                                                        <constraint firstItem="sju-0g-MKH" firstAttribute="top" secondItem="nOg-or-N9R" secondAttribute="top" id="TwC-hP-DiA"/>
+                                                        <constraint firstItem="GFz-rf-JJy" firstAttribute="leading" secondItem="F9Y-OZ-cpU" secondAttribute="leading" id="ajr-Si-snO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GFz-rf-JJy" secondAttribute="bottom" id="byg-i0-GYI"/>
+                                                        <constraint firstItem="F9Y-OZ-cpU" firstAttribute="top" secondItem="sju-0g-MKH" secondAttribute="bottom" constant="5" id="cI0-FS-bC5"/>
+                                                        <constraint firstItem="GFz-rf-JJy" firstAttribute="trailing" secondItem="F9Y-OZ-cpU" secondAttribute="trailing" id="icB-ZC-lvz"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-V0-pU8" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="125" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blood-sugar" translatesAutoresizingMaskIntoConstraints="NO" id="KIx-dW-EQc" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-nj-pbc" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="29" y="56" width="66" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FD6-Tf-JTH" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="29" y="72.5" width="66" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="U5E-L4-FJQ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FD6-Tf-JTH" firstAttribute="top" secondItem="Khj-nj-pbc" secondAttribute="bottom" constant="2" id="FIC-5M-k1Z"/>
+                                                        <constraint firstItem="KIx-dW-EQc" firstAttribute="centerX" secondItem="0Jb-V0-pU8" secondAttribute="centerX" id="Imp-Ap-G34"/>
+                                                        <constraint firstItem="FD6-Tf-JTH" firstAttribute="trailing" secondItem="Khj-nj-pbc" secondAttribute="trailing" id="T0J-4e-Zn5"/>
+                                                        <constraint firstItem="FD6-Tf-JTH" firstAttribute="leading" secondItem="Khj-nj-pbc" secondAttribute="leading" id="ZZt-hR-eKH"/>
+                                                        <constraint firstItem="KIx-dW-EQc" firstAttribute="top" secondItem="0Jb-V0-pU8" secondAttribute="top" id="iMz-5J-I8h"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FD6-Tf-JTH" secondAttribute="bottom" id="sTi-UQ-wtw"/>
+                                                        <constraint firstItem="Khj-nj-pbc" firstAttribute="centerX" secondItem="KIx-dW-EQc" secondAttribute="centerX" id="sxm-mq-l50"/>
+                                                        <constraint firstItem="Khj-nj-pbc" firstAttribute="top" secondItem="KIx-dW-EQc" secondAttribute="bottom" constant="5" id="xM2-7B-hQZ"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-YN-zel" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="250" y="0.0" width="125" height="73.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body-weight" translatesAutoresizingMaskIntoConstraints="NO" id="DlE-iA-T5g" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="36.5" y="0.0" width="51" height="51"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lq-xT-dGK" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="28" y="56" width="68" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSp-Cg-WE4" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="28" y="72.5" width="68" height="1"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="XjS-aO-4fY"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FSp-Cg-WE4" firstAttribute="leading" secondItem="4lq-xT-dGK" secondAttribute="leading" id="0H0-eU-xsX"/>
+                                                        <constraint firstItem="DlE-iA-T5g" firstAttribute="top" secondItem="Z2C-YN-zel" secondAttribute="top" id="5lL-VX-zE0"/>
+                                                        <constraint firstItem="FSp-Cg-WE4" firstAttribute="trailing" secondItem="4lq-xT-dGK" secondAttribute="trailing" id="L6N-vX-org"/>
+                                                        <constraint firstItem="4lq-xT-dGK" firstAttribute="centerX" secondItem="DlE-iA-T5g" secondAttribute="centerX" id="RBU-iA-Yei"/>
+                                                        <constraint firstItem="4lq-xT-dGK" firstAttribute="top" secondItem="DlE-iA-T5g" secondAttribute="bottom" constant="5" id="cTX-LD-6c0"/>
+                                                        <constraint firstItem="FSp-Cg-WE4" firstAttribute="top" secondItem="4lq-xT-dGK" secondAttribute="bottom" constant="2" id="ecB-W4-Ssl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FSp-Cg-WE4" secondAttribute="bottom" id="fPh-mB-wmt"/>
+                                                        <constraint firstItem="DlE-iA-T5g" firstAttribute="centerX" secondItem="Z2C-YN-zel" secondAttribute="centerX" id="mvw-76-cp0"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Z2C-YN-zel" firstAttribute="top" secondItem="0Jb-V0-pU8" secondAttribute="top" id="3Ks-Nd-FcT"/>
+                                                <constraint firstItem="nOg-or-N9R" firstAttribute="leading" secondItem="0eh-uI-KJa" secondAttribute="leading" id="BKF-4f-l1n"/>
+                                                <constraint firstItem="nOg-or-N9R" firstAttribute="top" secondItem="0eh-uI-KJa" secondAttribute="top" id="Ibi-e6-auR"/>
+                                                <constraint firstItem="Z2C-YN-zel" firstAttribute="leading" secondItem="0Jb-V0-pU8" secondAttribute="trailing" id="NxV-5E-jF3"/>
+                                                <constraint firstItem="0Jb-V0-pU8" firstAttribute="width" secondItem="nOg-or-N9R" secondAttribute="width" id="OCl-Wy-61n"/>
+                                                <constraint firstItem="nOg-or-N9R" firstAttribute="width" secondItem="0eh-uI-KJa" secondAttribute="width" multiplier="1:3" id="TXe-AQ-M2B"/>
+                                                <constraint firstItem="Z2C-YN-zel" firstAttribute="width" secondItem="0Jb-V0-pU8" secondAttribute="width" id="cuM-rP-WpK"/>
+                                                <constraint firstAttribute="bottom" secondItem="nOg-or-N9R" secondAttribute="bottom" id="fOv-da-kD6"/>
+                                                <constraint firstItem="0Jb-V0-pU8" firstAttribute="top" secondItem="nOg-or-N9R" secondAttribute="top" id="iAg-9Y-8Cw"/>
+                                                <constraint firstItem="0Jb-V0-pU8" firstAttribute="leading" secondItem="nOg-or-N9R" secondAttribute="trailing" id="oSv-oO-AXb"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.24313725489999999" green="0.56470588239999997" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="0eh-uI-KJa" firstAttribute="leading" secondItem="9t6-jq-yP4" secondAttribute="leading" id="0ei-mP-7Ek"/>
+                                        <constraint firstAttribute="bottom" secondItem="0eh-uI-KJa" secondAttribute="bottom" constant="140" id="3Wj-h2-SSd"/>
+                                        <constraint firstItem="0eh-uI-KJa" firstAttribute="top" secondItem="9t6-jq-yP4" secondAttribute="bottom" constant="25" id="T07-pO-4fc"/>
+                                        <constraint firstAttribute="trailing" secondItem="9t6-jq-yP4" secondAttribute="trailing" id="WSo-wI-DPU"/>
+                                        <constraint firstItem="9t6-jq-yP4" firstAttribute="top" secondItem="Qps-gQ-as7" secondAttribute="top" id="brV-kg-P45"/>
+                                        <constraint firstItem="9t6-jq-yP4" firstAttribute="leading" secondItem="Qps-gQ-as7" secondAttribute="leading" id="ooY-NT-R1e"/>
+                                        <constraint firstItem="0eh-uI-KJa" firstAttribute="trailing" secondItem="9t6-jq-yP4" secondAttribute="trailing" id="vB3-Rh-Icr"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-jl-lIX" customClass="HealthTrackerCollectionVeiw" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="199" width="375" height="208"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="208" id="bnJ-ED-9en"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="rdv-Lc-dKJ">
+                                        <size key="itemSize" width="50" height="208"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-ZM-Rv4" customClass="StackView" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="417" width="63" height="23.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHF-Xj-pTC" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                    <integer key="value" value="17"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-Ye-wxv" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="54" y="8.5" width="9" height="7"/>
+                                        </imageView>
+                                    </subviews>
+                                    <gestureRecognizers/>
+                                </stackView>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 JAN 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3el-5Q-3r9" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="263.5" y="417" width="87.5" height="18"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-AW-jwN" customClass="BarChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="470.5" width="375" height="250"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="ZtJ-oG-kye"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0O-I9-WJk" userLabel="BottomView" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="745.5" width="375" height="75.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNl-9d-clO" userLabel="1st" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCy-8J-xnN" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="35" y="0.0" width="55.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2b-3v-pgs" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="45.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-PD-8a7" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="53" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="b2b-3v-pgs" firstAttribute="centerX" secondItem="PCy-8J-xnN" secondAttribute="centerX" id="5WG-4e-9MQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="eI8-PD-8a7" secondAttribute="bottom" id="ANw-hr-Cyd"/>
+                                                <constraint firstItem="PCy-8J-xnN" firstAttribute="centerX" secondItem="bNl-9d-clO" secondAttribute="centerX" id="KIO-JI-tHE"/>
+                                                <constraint firstItem="b2b-3v-pgs" firstAttribute="top" secondItem="PCy-8J-xnN" secondAttribute="bottom" constant="5" id="YoM-Dc-MK1"/>
+                                                <constraint firstItem="PCy-8J-xnN" firstAttribute="top" secondItem="bNl-9d-clO" secondAttribute="top" id="qWl-ti-UbF"/>
+                                                <constraint firstItem="eI8-PD-8a7" firstAttribute="top" secondItem="b2b-3v-pgs" secondAttribute="bottom" constant="5" id="yZq-yZ-ufK"/>
+                                                <constraint firstItem="eI8-PD-8a7" firstAttribute="centerX" secondItem="b2b-3v-pgs" secondAttribute="centerX" id="zBr-Ms-45M"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkO-Wy-Ck5" userLabel="divider" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="124" y="0.0" width="3" height="75.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="3" id="gfh-L0-F1X"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="303"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMX-lV-eY0" userLabel="2nd" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="127" y="-0.5" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDb-M5-h6s" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="38" y="0.0" width="48" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5R-ga-e36" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="44.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-04-keM" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="52" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="2lz-04-keM" firstAttribute="centerX" secondItem="x5R-ga-e36" secondAttribute="centerX" id="6he-O4-hkN"/>
+                                                <constraint firstItem="EDb-M5-h6s" firstAttribute="top" secondItem="TMX-lV-eY0" secondAttribute="top" id="6qh-WE-5Ri"/>
+                                                <constraint firstItem="EDb-M5-h6s" firstAttribute="centerX" secondItem="TMX-lV-eY0" secondAttribute="centerX" id="AGL-3o-FBc"/>
+                                                <constraint firstItem="2lz-04-keM" firstAttribute="top" secondItem="x5R-ga-e36" secondAttribute="bottom" constant="5" id="IKM-0V-arg"/>
+                                                <constraint firstItem="x5R-ga-e36" firstAttribute="centerX" secondItem="EDb-M5-h6s" secondAttribute="centerX" id="KvN-se-fUw"/>
+                                                <constraint firstItem="x5R-ga-e36" firstAttribute="top" secondItem="EDb-M5-h6s" secondAttribute="bottom" constant="5" id="qQK-bK-tiC"/>
+                                                <constraint firstAttribute="bottom" secondItem="2lz-04-keM" secondAttribute="bottom" id="tq3-J4-IOn"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqF-3Z-hIf" userLabel="divider" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="251" y="-0.5" width="3" height="75.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="3" id="zng-Au-yMR"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="303"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxi-Jh-5KU" userLabel="3rd" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                                            <rect key="frame" x="254" y="-0.5" width="124" height="75.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56h-uR-Fbp" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="32.5" y="0.0" width="58.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ON-WH-hP0" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="44.5" y="20.5" width="34.5" height="35.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.4823529412" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHw-vJ-DQj" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="52" y="61" width="20" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="9ON-WH-hP0" firstAttribute="top" secondItem="56h-uR-Fbp" secondAttribute="bottom" constant="5" id="14Q-pe-O49"/>
+                                                <constraint firstItem="56h-uR-Fbp" firstAttribute="top" secondItem="Lxi-Jh-5KU" secondAttribute="top" id="Ikl-iz-ZhG"/>
+                                                <constraint firstItem="56h-uR-Fbp" firstAttribute="centerX" secondItem="Lxi-Jh-5KU" secondAttribute="centerX" id="KMd-Os-F76"/>
+                                                <constraint firstItem="9ON-WH-hP0" firstAttribute="centerX" secondItem="56h-uR-Fbp" secondAttribute="centerX" id="Plp-o4-lFX"/>
+                                                <constraint firstAttribute="bottom" secondItem="oHw-vJ-DQj" secondAttribute="bottom" id="WXN-rr-cNy"/>
+                                                <constraint firstItem="oHw-vJ-DQj" firstAttribute="centerX" secondItem="9ON-WH-hP0" secondAttribute="centerX" id="bzP-aH-3QM"/>
+                                                <constraint firstItem="oHw-vJ-DQj" firstAttribute="top" secondItem="9ON-WH-hP0" secondAttribute="bottom" constant="5" id="cgE-Aw-8bR"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="dqF-3Z-hIf" firstAttribute="height" secondItem="kkO-Wy-Ck5" secondAttribute="height" id="6cf-oo-VtO"/>
+                                        <constraint firstItem="TMX-lV-eY0" firstAttribute="bottom" secondItem="kkO-Wy-Ck5" secondAttribute="bottom" id="6qc-OG-HjF"/>
+                                        <constraint firstItem="dqF-3Z-hIf" firstAttribute="top" secondItem="kkO-Wy-Ck5" secondAttribute="top" id="Em5-uz-bcf"/>
+                                        <constraint firstItem="kkO-Wy-Ck5" firstAttribute="top" secondItem="bNl-9d-clO" secondAttribute="top" id="R6d-IQ-5B8"/>
+                                        <constraint firstItem="kkO-Wy-Ck5" firstAttribute="bottom" secondItem="bNl-9d-clO" secondAttribute="bottom" id="SXI-rV-0f4"/>
+                                        <constraint firstItem="TMX-lV-eY0" firstAttribute="width" secondItem="bNl-9d-clO" secondAttribute="width" id="V24-V4-3Jj"/>
+                                        <constraint firstItem="bNl-9d-clO" firstAttribute="leading" secondItem="L0O-I9-WJk" secondAttribute="leading" id="Zqa-rf-sN2"/>
+                                        <constraint firstItem="TMX-lV-eY0" firstAttribute="leading" secondItem="kkO-Wy-Ck5" secondAttribute="trailing" id="b9P-n1-RUS"/>
+                                        <constraint firstItem="bNl-9d-clO" firstAttribute="width" secondItem="L0O-I9-WJk" secondAttribute="width" multiplier="1:3" constant="-1" id="bDi-kE-Qoe"/>
+                                        <constraint firstItem="dqF-3Z-hIf" firstAttribute="leading" secondItem="TMX-lV-eY0" secondAttribute="trailing" id="bbP-V7-AG4"/>
+                                        <constraint firstAttribute="bottom" secondItem="bNl-9d-clO" secondAttribute="bottom" id="dQG-Tp-TVw"/>
+                                        <constraint firstItem="bNl-9d-clO" firstAttribute="top" secondItem="L0O-I9-WJk" secondAttribute="top" id="gbY-Ac-3mW"/>
+                                        <constraint firstItem="kkO-Wy-Ck5" firstAttribute="leading" secondItem="bNl-9d-clO" secondAttribute="trailing" id="gjB-5G-IfE"/>
+                                        <constraint firstItem="Lxi-Jh-5KU" firstAttribute="leading" secondItem="dqF-3Z-hIf" secondAttribute="trailing" id="ioL-sT-p8w"/>
+                                        <constraint firstItem="TMX-lV-eY0" firstAttribute="top" secondItem="bNl-9d-clO" secondAttribute="top" id="qC9-Bk-ec4"/>
+                                        <constraint firstItem="Lxi-Jh-5KU" firstAttribute="width" secondItem="TMX-lV-eY0" secondAttribute="width" id="qTQ-iw-2QD"/>
+                                        <constraint firstItem="Lxi-Jh-5KU" firstAttribute="top" secondItem="TMX-lV-eY0" secondAttribute="top" id="rNy-RB-VMm"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="QSr-jl-lIX" firstAttribute="top" secondItem="Qps-gQ-as7" secondAttribute="bottom" constant="-100" id="1jz-QI-sCT"/>
+                                <constraint firstItem="L0O-I9-WJk" firstAttribute="leading" secondItem="vqW-AW-jwN" secondAttribute="leading" id="1p0-hi-YM3"/>
+                                <constraint firstAttribute="bottom" secondItem="L0O-I9-WJk" secondAttribute="bottom" constant="25" id="3ao-rg-XIr"/>
+                                <constraint firstItem="Pcb-ZM-Rv4" firstAttribute="leading" secondItem="QSr-jl-lIX" secondAttribute="leading" constant="24" id="5d8-7Q-ejC"/>
+                                <constraint firstItem="L0O-I9-WJk" firstAttribute="trailing" secondItem="vqW-AW-jwN" secondAttribute="trailing" id="6W1-iE-Spk"/>
+                                <constraint firstAttribute="trailing" secondItem="vqW-AW-jwN" secondAttribute="trailing" id="Obq-Fj-iWP"/>
+                                <constraint firstItem="3el-5Q-3r9" firstAttribute="trailing" secondItem="QSr-jl-lIX" secondAttribute="trailing" constant="-24" id="WkF-pB-qNI"/>
+                                <constraint firstItem="3el-5Q-3r9" firstAttribute="top" secondItem="Pcb-ZM-Rv4" secondAttribute="top" id="Ybx-1b-0St"/>
+                                <constraint firstItem="QSr-jl-lIX" firstAttribute="trailing" secondItem="Qps-gQ-as7" secondAttribute="trailing" id="cra-m0-HoL"/>
+                                <constraint firstItem="Pcb-ZM-Rv4" firstAttribute="top" secondItem="QSr-jl-lIX" secondAttribute="bottom" constant="10" id="gcN-f4-7Rj"/>
+                                <constraint firstItem="QSr-jl-lIX" firstAttribute="leading" secondItem="Qps-gQ-as7" secondAttribute="leading" id="i29-2F-2Yh"/>
+                                <constraint firstItem="Qps-gQ-as7" firstAttribute="leading" secondItem="4lV-7f-NY4" secondAttribute="leading" id="is7-Pn-LcL"/>
+                                <constraint firstItem="vqW-AW-jwN" firstAttribute="leading" secondItem="4lV-7f-NY4" secondAttribute="leading" id="l6x-vg-60f"/>
+                                <constraint firstAttribute="trailing" secondItem="Qps-gQ-as7" secondAttribute="trailing" id="nAg-9r-s3Z"/>
+                                <constraint firstItem="Qps-gQ-as7" firstAttribute="top" secondItem="4lV-7f-NY4" secondAttribute="top" id="qiC-RY-1tV"/>
+                                <constraint firstItem="L0O-I9-WJk" firstAttribute="top" secondItem="vqW-AW-jwN" secondAttribute="bottom" constant="25" id="sc7-cj-FIS"/>
+                                <constraint firstItem="vqW-AW-jwN" firstAttribute="top" secondItem="Pcb-ZM-Rv4" secondAttribute="bottom" constant="30" id="t95-KH-vvj"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4lV-7f-NY4" firstAttribute="leading" secondItem="m4b-W1-Pe8" secondAttribute="leading" id="1Ux-kN-Pfd"/>
+                        <constraint firstItem="4lV-7f-NY4" firstAttribute="width" secondItem="m4b-W1-Pe8" secondAttribute="width" id="7O4-gU-5PS"/>
+                        <constraint firstItem="4lV-7f-NY4" firstAttribute="top" secondItem="m4b-W1-Pe8" secondAttribute="top" id="7rc-Gv-qHb"/>
+                        <constraint firstAttribute="bottom" secondItem="4lV-7f-NY4" secondAttribute="bottom" id="H7n-Cf-s7R"/>
+                        <constraint firstAttribute="trailing" secondItem="4lV-7f-NY4" secondAttribute="trailing" id="tvv-1A-8Ea"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ich-HM-VRt">
+                    <rect key="frame" x="284" y="790" width="75" height="75"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="plus"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TrY-d6-3sK" secondAttribute="bottom" id="9VS-nK-efD"/>
+                <constraint firstItem="mGa-yz-Rfd" firstAttribute="leading" secondItem="dpG-4Y-7mb" secondAttribute="leading" id="9la-uW-BID"/>
+                <constraint firstItem="m4b-W1-Pe8" firstAttribute="top" secondItem="dpG-4Y-7mb" secondAttribute="top" id="9m5-aT-HQT"/>
+                <constraint firstItem="mGa-yz-Rfd" firstAttribute="top" secondItem="D1T-Tg-D0e" secondAttribute="top" id="AAZ-SD-gQN"/>
+                <constraint firstItem="dpG-4Y-7mb" firstAttribute="bottom" secondItem="m4b-W1-Pe8" secondAttribute="bottom" id="ALd-Y3-MUM"/>
+                <constraint firstItem="mGa-yz-Rfd" firstAttribute="height" secondItem="D1T-Tg-D0e" secondAttribute="height" multiplier="1:2" id="WWH-3M-eno"/>
+                <constraint firstItem="TrY-d6-3sK" firstAttribute="height" secondItem="mGa-yz-Rfd" secondAttribute="height" id="Xco-Ak-h0O"/>
+                <constraint firstItem="dpG-4Y-7mb" firstAttribute="trailing" secondItem="Ich-HM-VRt" secondAttribute="trailing" constant="16" id="e6b-f5-Sxj"/>
+                <constraint firstItem="TrY-d6-3sK" firstAttribute="trailing" secondItem="mGa-yz-Rfd" secondAttribute="trailing" id="lGZ-wz-lTP"/>
+                <constraint firstItem="dpG-4Y-7mb" firstAttribute="trailing" secondItem="mGa-yz-Rfd" secondAttribute="trailing" id="lgi-mo-oow"/>
+                <constraint firstItem="TrY-d6-3sK" firstAttribute="leading" secondItem="mGa-yz-Rfd" secondAttribute="leading" id="s7v-ac-LAT"/>
+                <constraint firstAttribute="trailing" secondItem="m4b-W1-Pe8" secondAttribute="trailing" id="xIM-xe-eGm"/>
+                <constraint firstItem="m4b-W1-Pe8" firstAttribute="leading" secondItem="D1T-Tg-D0e" secondAttribute="leading" id="xR5-Sw-McH"/>
+                <constraint firstItem="dpG-4Y-7mb" firstAttribute="bottom" secondItem="Ich-HM-VRt" secondAttribute="bottom" constant="16" id="zmc-fK-y8S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dpG-4Y-7mb"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="24.5" y="-175.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="9" height="7"/>
+        <image name="back" width="15" height="14"/>
+        <image name="blood-sugar" width="51" height="51"/>
+        <image name="body-weight" width="51" height="51"/>
+        <image name="health-tracker" width="29" height="25"/>
+        <image name="heart-rate" width="51" height="51"/>
+        <image name="plus" width="65" height="65"/>
+        <image name="profile-selected" width="25" height="25"/>
+    </resources>
+</document>

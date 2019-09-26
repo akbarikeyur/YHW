@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SleepFirstCell" rowHeight="645" id="KfX-kB-aYi" customClass="SleepFirstCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="645"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KfX-kB-aYi" id="x6Z-Sq-298">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="644.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your sleep levels are very low!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8u3-rl-aEp" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="25" y="30" width="268.5" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep atleast for 7 hours everyday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoE-3O-8hm" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="53" y="61.5" width="212.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMu-dQ-z5I">
+                        <rect key="frame" x="0.0" y="172" width="318" height="473"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-mc-lnw">
+                                <rect key="frame" x="0.0" y="186" width="318" height="287"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="84B-T8-wz5" customClass="StackView" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="1" width="63" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0W-E3-B2g" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-A8-f7D" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                                <rect key="frame" x="54" y="8.5" width="9" height="7"/>
+                                            </imageView>
+                                        </subviews>
+                                        <gestureRecognizers/>
+                                    </stackView>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU 21-27 MAR, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogr-2c-doX" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="153" y="1" width="150" height="18"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pS5-lW-YBx" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="37" width="318" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="lUG-uj-fG4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="287" id="2bN-Oe-wjy"/>
+                                    <constraint firstItem="Ogr-2c-doX" firstAttribute="top" secondItem="DCf-mc-lnw" secondAttribute="top" constant="1" id="7kf-pg-oSG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ogr-2c-doX" secondAttribute="trailing" constant="15" id="Xn4-8o-nCJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pS5-lW-YBx" secondAttribute="trailing" id="Yia-48-zMU"/>
+                                    <constraint firstItem="pS5-lW-YBx" firstAttribute="leading" secondItem="DCf-mc-lnw" secondAttribute="leading" id="dpR-l0-Z8m"/>
+                                    <constraint firstItem="84B-T8-wz5" firstAttribute="top" secondItem="DCf-mc-lnw" secondAttribute="top" constant="1" id="efK-DQ-P1E"/>
+                                    <constraint firstItem="pS5-lW-YBx" firstAttribute="top" secondItem="84B-T8-wz5" secondAttribute="bottom" constant="12.5" id="sLQ-KP-0Ql"/>
+                                    <constraint firstAttribute="bottom" secondItem="pS5-lW-YBx" secondAttribute="bottom" id="shg-PT-LFF"/>
+                                    <constraint firstItem="84B-T8-wz5" firstAttribute="leading" secondItem="DCf-mc-lnw" secondAttribute="leading" constant="15" id="wjW-A3-Dur"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DCf-mc-lnw" secondAttribute="bottom" id="Bbe-Py-ae7"/>
+                            <constraint firstAttribute="trailing" secondItem="DCf-mc-lnw" secondAttribute="trailing" id="pXK-jK-fJ5"/>
+                            <constraint firstItem="DCf-mc-lnw" firstAttribute="top" secondItem="WMu-dQ-z5I" secondAttribute="top" constant="186" id="qSa-ze-KIg"/>
+                            <constraint firstItem="DCf-mc-lnw" firstAttribute="leading" secondItem="WMu-dQ-z5I" secondAttribute="leading" id="vAS-10-RGE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zz2-FN-Fgr" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="15" y="118" width="288" height="232"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTY-BB-gU3" customClass="RangeCircularSlider" customModule="HGCircularSlider">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="232"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hours" translatesAutoresizingMaskIntoConstraints="NO" id="3By-rO-7Yo">
+                                        <rect key="frame" x="49" y="21" width="190" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="GSU-sA-C2A"/>
+                                            <constraint firstAttribute="height" constant="190" id="HO6-vf-V21"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10h 10m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4z-da-FVs" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="104.5" y="90.5" width="79.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pej-7U-g5X" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="124" width="69.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3By-rO-7Yo" firstAttribute="centerY" secondItem="YTY-BB-gU3" secondAttribute="centerY" id="86L-L9-Wxz"/>
+                                    <constraint firstItem="3By-rO-7Yo" firstAttribute="centerX" secondItem="YTY-BB-gU3" secondAttribute="centerX" id="CiX-nD-MJY"/>
+                                    <constraint firstItem="J4z-da-FVs" firstAttribute="centerX" secondItem="YTY-BB-gU3" secondAttribute="centerX" id="Y20-h2-UT8"/>
+                                    <constraint firstItem="Pej-7U-g5X" firstAttribute="centerX" secondItem="YTY-BB-gU3" secondAttribute="centerX" id="c8P-Pq-OjZ"/>
+                                    <constraint firstItem="J4z-da-FVs" firstAttribute="top" secondItem="YTY-BB-gU3" secondAttribute="top" constant="90.5" id="iqp-ce-vpR"/>
+                                    <constraint firstItem="Pej-7U-g5X" firstAttribute="top" secondItem="J4z-da-FVs" secondAttribute="bottom" constant="10" id="k6N-V2-mki"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
+                                        <color key="value" red="1" green="0.77254901960784317" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backtrackLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfRounds">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startThumbStrokeHighlightedColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startThumbStrokeColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startThumbTintColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbTintColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeHighlightedColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeColor">
+                                        <color key="value" red="1" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YTY-BB-gU3" firstAttribute="leading" secondItem="Zz2-FN-Fgr" secondAttribute="leading" id="437-9g-g0o"/>
+                            <constraint firstAttribute="trailing" secondItem="YTY-BB-gU3" secondAttribute="trailing" id="Zku-16-vxK"/>
+                            <constraint firstAttribute="bottom" secondItem="YTY-BB-gU3" secondAttribute="bottom" id="fGk-pl-rdO"/>
+                            <constraint firstItem="YTY-BB-gU3" firstAttribute="top" secondItem="Zz2-FN-Fgr" secondAttribute="top" id="j0e-Ng-TeA"/>
+                            <constraint firstAttribute="height" constant="232" id="vxq-6m-0hI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8u3-rl-aEp" firstAttribute="centerX" secondItem="x6Z-Sq-298" secondAttribute="centerX" id="9JW-tf-Wi1"/>
+                    <constraint firstItem="SoE-3O-8hm" firstAttribute="top" secondItem="8u3-rl-aEp" secondAttribute="bottom" constant="8" id="DlS-DH-dL9"/>
+                    <constraint firstItem="8u3-rl-aEp" firstAttribute="top" secondItem="x6Z-Sq-298" secondAttribute="top" constant="30" id="IOb-OC-Hzu"/>
+                    <constraint firstItem="WMu-dQ-z5I" firstAttribute="leading" secondItem="x6Z-Sq-298" secondAttribute="leading" id="Ita-xd-njN"/>
+                    <constraint firstItem="WMu-dQ-z5I" firstAttribute="top" secondItem="SoE-3O-8hm" secondAttribute="bottom" constant="94" id="dSF-VZ-bQF"/>
+                    <constraint firstAttribute="trailing" secondItem="WMu-dQ-z5I" secondAttribute="trailing" id="gRE-HI-NPP"/>
+                    <constraint firstItem="SoE-3O-8hm" firstAttribute="centerX" secondItem="x6Z-Sq-298" secondAttribute="centerX" id="hrh-Vd-hf7"/>
+                    <constraint firstAttribute="trailing" secondItem="Zz2-FN-Fgr" secondAttribute="trailing" constant="15" id="i9p-6q-yzr"/>
+                    <constraint firstItem="Zz2-FN-Fgr" firstAttribute="leading" secondItem="x6Z-Sq-298" secondAttribute="leading" constant="15" id="k6q-f6-GYC"/>
+                    <constraint firstAttribute="bottom" secondItem="WMu-dQ-z5I" secondAttribute="bottom" id="vKn-hh-R7x"/>
+                    <constraint firstItem="Zz2-FN-Fgr" firstAttribute="top" secondItem="SoE-3O-8hm" secondAttribute="bottom" constant="40" id="vlb-Xa-aIh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <viewLayoutGuide key="safeArea" id="vvm-Cv-x6e"/>
+            <connections>
+                <outlet property="barChartView" destination="pS5-lW-YBx" id="o1J-9G-mNN"/>
+                <outlet property="durationLabel" destination="J4z-da-FVs" id="eR5-jR-64t"/>
+                <outlet property="labelDaysSelectedType" destination="x0W-E3-B2g" id="rj5-G6-Of6"/>
+                <outlet property="labelSelectedDate" destination="Ogr-2c-doX" id="fm5-4N-dBr"/>
+                <outlet property="lblSleepInfo" destination="Pej-7U-g5X" id="b9e-mb-oZN"/>
+                <outlet property="rangeCircularSlider" destination="YTY-BB-gU3" id="b7i-RB-9pJ"/>
+                <outlet property="viewStackType" destination="84B-T8-wz5" id="YUj-uK-zSK"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="123.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Hours" width="219" height="219"/>
+        <image name="arrow" width="9" height="7"/>
+    </resources>
+</document>

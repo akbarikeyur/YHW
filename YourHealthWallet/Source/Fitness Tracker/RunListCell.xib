@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RunListCell" rowHeight="106" id="5nb-Ln-r76" customClass="RunListCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5nb-Ln-r76" id="f8S-Ar-K9q">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecr-j0-KGp" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="290" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch Running" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-rN-Lsw" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="106.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="or7-Fe-adt" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="15" y="44" width="85" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:44 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fZL-Xh-N2P" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                <rect key="frame" x="205" y="33.5" width="70" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="306"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kgg-rN-Lsw" firstAttribute="leading" secondItem="Ecr-j0-KGp" secondAttribute="leading" constant="15" id="8b4-ng-k04"/>
+                            <constraint firstItem="fZL-Xh-N2P" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ecr-j0-KGp" secondAttribute="top" constant="30" id="JdE-cq-xaG"/>
+                            <constraint firstItem="fZL-Xh-N2P" firstAttribute="centerY" secondItem="Ecr-j0-KGp" secondAttribute="centerY" id="Vik-oK-fiQ"/>
+                            <constraint firstItem="kgg-rN-Lsw" firstAttribute="top" secondItem="Ecr-j0-KGp" secondAttribute="top" constant="15" id="Wxs-I3-J6f"/>
+                            <constraint firstItem="or7-Fe-adt" firstAttribute="leading" secondItem="Ecr-j0-KGp" secondAttribute="leading" constant="15" id="Zgr-Od-Pkk"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fZL-Xh-N2P" secondAttribute="bottom" constant="30" id="bFe-FA-0Zx"/>
+                            <constraint firstItem="or7-Fe-adt" firstAttribute="top" secondItem="kgg-rN-Lsw" secondAttribute="bottom" constant="10" id="dYX-3b-1Ae"/>
+                            <constraint firstAttribute="trailing" secondItem="fZL-Xh-N2P" secondAttribute="trailing" constant="15" id="t4Q-lT-GJa"/>
+                            <constraint firstAttribute="bottom" secondItem="or7-Fe-adt" secondAttribute="bottom" constant="15" id="zUs-DH-vkD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ecr-j0-KGp" secondAttribute="trailing" constant="15" id="E0X-cP-ZR7"/>
+                    <constraint firstAttribute="bottom" secondItem="Ecr-j0-KGp" secondAttribute="bottom" constant="10.5" id="Oen-5g-HBz"/>
+                    <constraint firstItem="Ecr-j0-KGp" firstAttribute="top" secondItem="f8S-Ar-K9q" secondAttribute="top" constant="10" id="epf-lq-uNh"/>
+                    <constraint firstItem="Ecr-j0-KGp" firstAttribute="leading" secondItem="f8S-Ar-K9q" secondAttribute="leading" constant="15" id="xDo-dx-aZN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="NBG-Xd-36q"/>
+            <connections>
+                <outlet property="lblDuration" destination="or7-Fe-adt" id="j6B-gZ-zq5"/>
+                <outlet property="lblTime" destination="fZL-Xh-N2P" id="Gxb-R3-woA"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="4"/>
+        </tableViewCell>
+    </objects>
+</document>

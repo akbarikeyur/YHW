@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayHeaderCell" id="KGk-i7-Jjw" customClass="DayHeaderCell" customModule="YourHealthWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Fh-cN-3k8" customClass="View" customModule="YourHealthWallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-jB-Ebk">
+                                <rect key="frame" x="91" y="0.0" width="139" height="55"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u41-p3-0zj" customClass="ImageView" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24" width="27" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="pL0-uS-LUd"/>
+                                            <constraint firstAttribute="width" constant="27" id="s5j-sb-W5U"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-Qo-fXK" customClass="Label" customModule="YourHealthWallet" customModuleProvider="target">
+                                        <rect key="frame" x="37" y="15" width="102" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5Bt-Qo-fXK" secondAttribute="trailing" id="94z-0z-rev"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Bt-Qo-fXK" secondAttribute="bottom" constant="5" id="Dvv-JS-RAa"/>
+                                    <constraint firstAttribute="width" constant="139" id="FbN-BD-OMV"/>
+                                    <constraint firstItem="5Bt-Qo-fXK" firstAttribute="top" secondItem="eM8-jB-Ebk" secondAttribute="top" constant="15" id="Zdj-zQ-fc3"/>
+                                    <constraint firstItem="u41-p3-0zj" firstAttribute="leading" secondItem="eM8-jB-Ebk" secondAttribute="leading" id="ejd-wz-qOa"/>
+                                    <constraint firstItem="5Bt-Qo-fXK" firstAttribute="leading" secondItem="u41-p3-0zj" secondAttribute="trailing" constant="10" id="kUt-r5-5aC"/>
+                                    <constraint firstAttribute="bottom" secondItem="u41-p3-0zj" secondAttribute="bottom" constant="13" id="yMw-mm-BbL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eM8-jB-Ebk" firstAttribute="centerX" secondItem="8Fh-cN-3k8" secondAttribute="centerX" id="D9n-rY-rQ3"/>
+                            <constraint firstItem="eM8-jB-Ebk" firstAttribute="top" secondItem="8Fh-cN-3k8" secondAttribute="top" id="bf4-M7-pYN"/>
+                            <constraint firstAttribute="bottom" secondItem="eM8-jB-Ebk" secondAttribute="bottom" id="jMp-v1-dD0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="401"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8Fh-cN-3k8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="65Q-0T-6sZ"/>
+                    <constraint firstItem="8Fh-cN-3k8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G9a-oh-xYJ"/>
+                    <constraint firstAttribute="bottom" secondItem="8Fh-cN-3k8" secondAttribute="bottom" constant="-0.5" id="bbj-lr-fEG"/>
+                    <constraint firstAttribute="trailing" secondItem="8Fh-cN-3k8" secondAttribute="trailing" id="xnc-mc-mQz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgHeader" destination="u41-p3-0zj" id="NGu-rJ-uKJ"/>
+                <outlet property="labelTitle" destination="5Bt-Qo-fXK" id="BxZ-Zc-S1t"/>
+            </connections>
+            <point key="canvasLocation" x="-185" y="-203"/>
+        </tableViewCell>
+    </objects>
+</document>
